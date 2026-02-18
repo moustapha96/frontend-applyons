@@ -1,0 +1,3092 @@
+{
+    "gestionprogramme": {
+        "title": "Gestion des programmes",
+        "tabs": {
+            "departements": "Départements",
+            "filieres": "Filières"
+        },
+        "departements": {
+            "name": "Nom du département",
+            "code": "Code",
+            "description": "Description",
+            "actions": "Actions",
+            "add": "Ajouter un département",
+            "edit": "Modifier le département",
+            "total": "Total",
+            "items": "départements",
+            "search_placeholder": "Rechercher un département...",
+            "create_success": "Département créé avec succès",
+            "update_success": "Département mis à jour avec succès",
+            "error_create": "Erreur lors de la création du département",
+            "error_update": "Erreur lors de la mise à jour du département",
+            "error_fetch": "Erreur lors du chargement des données"
+        },
+        "filieres": {
+            "title": "Filières",
+            "name": "Nom de la filière",
+            "code": "Code",
+            "description": "Description",
+            "departement": "Département",
+            "actions": "Actions",
+            "add": "Ajouter une filière",
+            "edit": "Modifier la filière",
+            "total": "Total",
+            "items": "filières",
+            "search_placeholder": "Rechercher une filière...",
+            "select_departement": "Sélectionner un département",
+            "create_success": "Filière créée avec succès",
+            "update_success": "Filière mise à jour avec succès",
+            "error_create": "Erreur lors de la création de la filière",
+            "error_update": "Erreur lors de la mise à jour de la filière"
+        },
+        "form": {
+            "name_required": "Le nom est requis",
+            "code_required": "Le code est requis",
+            "description_required": "Entrez une description",
+            "departement_required": "Le département est requis",
+            "cancel": "Annuler",
+            "save": "Enregistrer",
+            "loading": "Chargement..."
+        },
+        "title": "Gestion des Programmes",
+        "subtitle": "Gérer les départements et filières",
+        "tabs": {
+            "departements": "Départements",
+            "filieres": "Filières"
+        },
+        "departements": {
+            "institut": "Institut",
+            "title": "Liste des Départements",
+            "add": "Ajouter un Département",
+            "edit": "Modifier le Département",
+            "name": "Nom",
+            "code": "Code",
+            "description": "Description",
+            "actions": "Actions",
+            "search_placeholder": "Rechercher un département...",
+            "total": "Total",
+            "items": "départements",
+            "create_success": "Département créé avec succès",
+            "update_success": "Département modifié avec succès",
+            "delete_success": "Département supprimé avec succès",
+            "error_create": "Erreur lors de la création du département",
+            "error_update": "Erreur lors de la modification du département",
+            "error_fetch": "Erreur lors du chargement des départements"
+        },
+        "filieres": {
+            "title": "Liste des Filières",
+            "add": "Ajouter une Filière",
+            "edit": "Modifier la Filière",
+            "name": "Nom",
+            "code": "Code",
+            "description": "Description",
+            "departement": "Département",
+            "actions": "Actions",
+            "search_placeholder": "Rechercher une filière...",
+            "total": "Total",
+            "items": "filières",
+            "select_departement": "Sélectionner un département",
+            "create_success": "Filière créée avec succès",
+            "update_success": "Filière modifiée avec succès",
+            "delete_success": "Filière supprimée avec succès",
+            "error_create": "Erreur lors de la création de la filière",
+            "error_update": "Erreur lors de la modification de la filière",
+            "error_fetch": "Erreur lors du chargement des filières"
+        },
+        "form": {
+            "name_required": "Le nom est requis",
+            "code_required": "Le code est requis",
+            "description_required": "La description est requise",
+            "departement_required": "Le département est requis",
+            "save": "Enregistrer",
+            "cancel": "Annuler",
+            "loading": "Chargement..."
+        }
+    },
+    "demandePartage": {
+        "select_year": "Sélectionner l'année",
+        "personal_information": "Informations personnelles",
+        "academic_background": "Parcours académique",
+        "english_proficiency": "Maîtrise de l'anglais",
+        "family_information": "Informations familiales",
+        "financial_information": "Informations financières",
+        "visa_information": "Informations de visa",
+        "activities_and_achievements": "Activités et réalisations",
+        "essays": "Essais",
+        "shared_documents": "Documents partagés",
+        "document_management": "Gestion des documents",
+        "requester_information": "Informations du demandeur",
+        "applications": "Candidatures",
+        "documentTool": "Outil de document",
+        "gestion_programme": "Gestion des programmes",
+        "partages": "Partages"
+    },
+    "admin": {
+        "website": "Site web",
+        "payment_success": "Paiement réussi",
+        "payment_failed": "Paiement échoué",
+        "subscription_activated": "Abonnement activé",
+        "subscription_expired": "Abonnement expiré",
+        "subscription_required": "Abonnement requis",
+        "payment_method": "Méthode de paiement",
+        "amount": "Montant",
+        "currency": "Devise",
+        "paypal": "PayPal",
+        "stripe": "Stripe",
+        "payment_processing": "Traitement du paiement"
+    },
+    "inscriptionPage": {
+        "country_simple": "Pays",
+        "traducteur": "Traducteur",
+        "createApplicantAccount": "Créer un compte demandeur",
+        "fullName": "Nom complet",
+        "enterFullName": "Veuillez entrer votre nom complet",
+        "email": "Email",
+        "enterEmail": "Veuillez entrer votre email",
+        "enterValidEmail": "Veuillez entrer un email valide",
+        "phone": "Numéro de téléphone",
+        "enterPhone": "Veuillez entrer votre numéro de téléphone",
+        "profession": "Profession",
+        "enterProfession": "Veuillez entrer votre profession",
+        "address": "Adresse",
+        "enterAddress": "Veuillez entrer votre adresse",
+        "addressPlaceholder": "Votre adresse complète",
+        "country": "Pays de résidence",
+        "enterCountry": "Veuillez entrer votre pays",
+        "countryPlaceholder": "Votre pays de résidence",
+        "birthPlace": "Pays de naissance",
+        "enterBirthPlace": "Veuillez entrer votre pays de naissance",
+        "birthPlacePlaceholder": "Ville, Pays",
+        "birthDate": "Date de naissance",
+        "enterBirthDate": "Veuillez entrer votre date de naissance",
+        "birthDatePlaceholder": "Sélectionner une date",
+        "gender": "Genre",
+        "enterGender": "Veuillez sélectionner votre genre",
+        "selectGender": "Sélectionner un genre",
+        "male": "Homme",
+        "female": "Femme",
+        "password": "Mot de passe",
+        "enterPassword": "Veuillez entrer votre mot de passe",
+        "passwordMinLength": "Le mot de passe doit contenir au moins 8 caractères",
+        "passwordPlaceholder": "Entrez un mot de passe sécurisé",
+        "confirmPassword": "Confirmer le mot de passe",
+        "enterConfirmPassword": "Veuillez confirmer votre mot de passe",
+        "confirmPasswordPlaceholder": "Ré-entrez votre mot de passe",
+        "passwordMismatch": "Les deux mots de passe ne correspondent pas",
+        "loading": "Traitement en cours",
+        "register": "S'inscrire",
+        "createInstituteAccount": "Créer un compte institut",
+        "instituteName": "Nom de l'institut",
+        "enterInstituteName": "Veuillez entrer le nom de l'institut",
+        "instituteNamePlaceholder": "Nom de votre institution",
+        "instituteType": "Type d'institut",
+        "selectInstituteType": "Sélectionner le type d'institut",
+        "school": "École",
+        "bank": "Banque",
+        "college": "Collège",
+        "highSchool": "Lycée",
+        "embassy": "Ambassade",
+        "university": "Université",
+        "emailPlaceholder": "votre@email.com",
+        "website": "Site web",
+        "enterValidURL": "Veuillez entrer une URL valide",
+        "confirmPasswordRequired": "Veuillez confirmer votre mot de passe",
+        "passwordsDoNotMatch": "Les mots de passe ne correspondent pas",
+        "title": "Inscription",
+        "successTitle": "Inscription réussie",
+        "successMessage": "Votre compte a été créé avec succès. Pour terminer l'inscription, veuillez vérifier votre boîte mail et suivre les instructions pour activer votre compte.",
+        "errorTitle": "Erreur d'inscription",
+        "errorMessage": "Une erreur s'est produite lors de l'inscription. Veuillez réessayer.",
+        "createAccount": "Créer un compte",
+        "chooseAccountType": "Choisissez le type de compte que vous souhaitez créer"
+    },
+    "applyons": {
+        "hero": {
+            "title": "Simplifiez tout processus de candidature.",
+            "subtitle": "ApplyOns simplifie la soumission, la vérification et l'approbation des documents pour les universités, les ambassades et les entreprises.",
+            "cta": "Commencer maintenant"
+        },
+        "features": {
+            "title": "Fonctionnalités",
+            "subtitle": "Des outils puissants pour simplifier vos processus",
+            "customForms": {
+                "title": "Formulaires personnalisés",
+                "description": "Créez des formulaires adaptés à vos besoins spécifiques"
+            },
+            "documentVerification": {
+                "title": "Vérification de documents",
+                "description": "Authentifiez rapidement les documents soumis"
+            },
+            "automation": {
+                "title": "Automatisation des processus",
+                "description": "Optimisez vos flux de travail avec une automatisation intelligente"
+            },
+            "realTimeUpdates": {
+                "title": "Mises à jour en temps réel",
+                "description": "Obtenez des mises à jour instantanées sur l'état de votre candidature"
+            },
+            "security": {
+                "title": "Sécurité renforcée",
+                "description": "Assurez-vous que vos données sont protégées avec des mesures de sécurité de premier ordre"
+            },
+            "analytics": {
+                "title": "Analytique avancée",
+                "description": "Obtenez des informations avec des outils d'analyse puissants"
+            },
+            "collaboration": {
+                "title": "Collaboration d'équipe",
+                "description": "Collaborez sans problème avec votre équipe"
+            }
+        },
+        "pricing": {
+            "title": "Tarification",
+            "subtitle": "Des plans flexibles adaptés à tous les besoins",
+            "popular": "Populaire",
+            "plans": {
+                "cta": "Commencer Maintenant",
+                "institution": {
+                    "title": "Entreprises",
+                    "description": "Pour les entreprises et les petites organisations",
+                    "price": "99",
+                    "period": "/mois",
+                    "features": [
+                        "Authentification illimitée des documents",
+                        "Tableau de bord complet",
+                        "Gestion des demandes",
+                        "Support prioritaire",
+                        "Accès multi-utilisateurs",
+                        "Rapports détaillés",
+                        "Sécurité renforcée"
+                    ],
+                    "cta": "Commencer"
+                },
+                "applicant": {
+                    "title": "Candidature",
+                    "description": "Pour les étudiants et autres candidats.",
+                    "price": "49",
+                    "period": "/candidature",
+                    "features": [
+                        "49$ par candidature",
+                        "Suivi des candidatures en temps réel",
+                        "Téléchargement sécurisé des documents",
+                        "Notifications automatiques",
+                        "Support par email",
+                        "Interface intuitive",
+                        "Paiement sécurisé"
+                    ],
+                    "cta": "Commencer"
+                },
+                "universities": {
+                    "title": "Universités, ambassades et grandes organisations",
+                    "content": "Une solution adéquate pour gérer les demandes, suivre les évolutions des submission avec une intégration d’un outil de diagnostic des données.",
+                    "contact": "Contactez notre équipe commerciale",
+                    "note": "Tarification personnalisée selon les besoins spécifiques de votre établissement",
+                    "allUsers": "Tous les utilisateurs",
+                    "contactSale": "Contacter le service des ventes",
+                    "features": [
+                        "Gestion complète des candidatures",
+                        "Outils d'analyse avancés",
+                        "Intégration avec les systèmes existants",
+                        "Formation et support dédiés",
+                        "Solutions personnalisées"
+                    ]
+                }
+            }
+        },
+        "footer": {
+            "description": "Simplifiez vos processus de candidature et de vérification de documents",
+            "product": "Produit",
+            "features": "Fonctionnalités",
+            "pricing": "Tarification",
+            "faq": "FAQ",
+            "testimonials": "Témoignages",
+            "company": "Entreprise",
+            "about": "À propos",
+            "contact": "Contact",
+            "legal": "Légal",
+            "privacy": "Confidentialité",
+            "terms": "Conditions d'utilisation",
+            "copyright": "Tous droits réservés",
+            "rights": "Tous droits réservés."
+        },
+        "about": {
+            "title": "À propos d'ApplyOns",
+            "subtitle": "Révolutionner la vérification des diplômes pour un avenir sécurisé",
+            "mission": {
+                "title": "Notre Mission",
+                "description": "ApplyOns s'engage à simplifier et à sécuriser le processus de vérification des diplômes académiques. Nous créons un pont numérique entre les institutions éducatives, les étudiants et les employeurs, garantissant l'authenticité et l'intégrité des qualifications."
+            },
+            "vision": {
+                "title": "Notre Vision",
+                "description": "Nous aspirons à devenir la référence mondiale en matière de vérification des diplômes, en créant un écosystème où la confiance et la transparence sont au cœur de l'éducation et du recrutement."
+            },
+            "values": {
+                "title": "Nos Valeurs",
+                "trust": {
+                    "title": "Confiance",
+                    "description": "Nous construisons des relations durables basées sur la transparence et l'intégrité."
+                },
+                "innovation": {
+                    "title": "Innovation",
+                    "description": "Nous repoussons constamment les limites technologiques pour améliorer nos services."
+                },
+                "security": {
+                    "title": "Sécurité",
+                    "description": "La protection des données et la confidentialité sont au cœur de nos préoccupations."
+                },
+                "accessibility": {
+                    "title": "Accessibilité",
+                    "description": "Nous rendons la vérification des diplômes accessible à tous, partout dans le monde."
+                }
+            },
+            "team": {
+                "title": "Notre Équipe",
+                "description": "Une équipe passionnée dédiée à transformer la vérification des diplômes.",
+                "member1": {
+                    "name": "Fallou DIOP",
+                    "role": "Fondateur & PDG"
+                },
+                "member2": {
+                    "name": "Fallou DIOP",
+                    "role": "Directeur Technique"
+                },
+                "member3": {
+                    "name": "Fallou DIOP",
+                    "role": "Responsable Marketing"
+                }
+            }
+        },
+        "brands": {
+            "title": "Ils nous font confiance",
+            "subtitle": "Des institutions renommées utilisent ApplyOns pour leurs processus de candidature"
+        },
+        "designedFor": {
+            "badge": "Solutions Professionnelles",
+            "title": "Conçu pour vos besoins",
+            "subtitle": "Des solutions adaptées à chaque secteur pour optimiser vos processus de vérification et de gestion.",
+            "keyFeatures": "Fonctionnalités clés",
+            "whyChoose": "Pourquoi choisir Applyons ?",
+            "business": {
+                "title": "Solutions Entreprise",
+                "subtitle": "Pour les organisations",
+                "description": "Optimisez vos processus de vérification et de gestion des demandes avec notre plateforme dédiée aux entreprises.",
+                "action": "Découvrir les solutions entreprise",
+                "features": {
+                    "automation": "Gestion automatisée des demandes",
+                    "analytics": "Tableau de bord analytique",
+                    "api": "Intégration API complète",
+                    "support": "Support technique dédié"
+                }
+            },
+            "education": {
+                "title": "Solutions Éducation",
+                "subtitle": "Pour les institutions",
+                "description": "Simplifiez la vérification des diplômes et la gestion des demandes académiques avec nos outils spécialisés.",
+                "action": "Explorer les solutions éducation",
+                "features": {
+                    "verification": "Vérification des diplômes",
+                    "workflow": "Workflow personnalisable",
+                    "reports": "Rapports détaillés",
+                    "security": "Sécurité renforcée"
+                }
+            },
+            "benefits": {
+                "verification": {
+                    "title": "Vérification Rapide",
+                    "description": "Vérification automatique et sécurisée des documents"
+                },
+                "workflow": {
+                    "title": "Workflow Optimisé",
+                    "description": "Processus de traitement simplifié et efficace"
+                },
+                "reports": {
+                    "title": "Rapports Avancés",
+                    "description": "Analyses détaillées et tableaux de bord personnalisés"
+                }
+            }
+        },
+        "faq": {
+            "title": "Questions Fréquentes",
+            "subtitle": "Trouvez les réponses à vos questions sur ApplyOns",
+            "questions": {
+                "q1": "Comment fonctionne la vérification des diplômes sur ApplyOns ?",
+                "q2": "Combien de temps prend le processus de vérification ?",
+                "q3": "Quels types de documents puis-je faire vérifier ?",
+                "q4": "Comment la sécurité de mes données est-elle assurée ?",
+                "q5": "Quels sont les coûts associés à l'utilisation d'ApplyOns ?"
+            },
+            "answers": {
+                "a1": "ApplyOns utilise une technologie avancée pour vérifier l'authenticité des diplômes directement auprès des établissements d'enseignement. Nous assurons une vérification complète des informations et des signatures pour garantir la validité des documents.",
+                "a2": "La durée de vérification varie selon le type de document et l'établissement. En moyenne, le processus prend 24 à 72 heures. Pour les vérifications urgentes, nous proposons un service express avec des délais réduits.",
+                "a3": "Nous vérifions tous types de diplômes académiques : diplômes universitaires, certificats professionnels, relevés de notes, et autres documents éducatifs. Chaque document est traité avec le même niveau de rigueur.",
+                "a4": "Nous utilisons un cryptage de bout en bout et des protocoles de sécurité avancés pour protéger vos données. Notre plateforme est conforme aux normes RGPD et nos serveurs sont hébergés dans des centres de données sécurisés.",
+                "a5": "Nos tarifs varient selon le type de service et le niveau de vérification requis. Nous proposons des forfaits adaptés aux besoins individuels et des solutions d'entreprise personnalisées. Consultez notre page de tarification pour plus de détails."
+            }
+        }
+    },
+    "nav": {
+        "home": "Accueil",
+        "about": "À propos",
+        "features": "Services",
+        "solutions": "Solutions",
+        "pricing": "Tarification",
+        "contact": "Contact",
+        "faq": "FAQ",
+        "pricings": "Tarification",
+        "concuPour": "Conçu pour"
+    },
+    "offerPeaceOfMind": "Offrez-vous une tranquillité d'esprit : Vérifiez vos diplômes en toute simplicité.",
+    "authenticateDocuments": "Authentifiez vos documents académiques en toute confiance.",
+    "simplifyValidation": "Simplifiez le processus de validation des diplômes pour les étudiants et les établissements.",
+    "requestAuthentication": "Faire une demande d'authentification",
+    "checkDocumentAuthenticity": "Vérifier l'authenticité d'un document",
+    "login": "Connexion",
+    "signup": "Inscription",
+    "logout": "Déconnexion",
+    "dashboard": "Tableau de bord",
+    "profile": "Profil",
+    "settings": "Paramètres",
+    "contactUs": "Contactez-nous",
+    "faq": "FAQ",
+    "simplifyProcess": {
+        "pageTitle": "Simplifiez Votre Processus - AuthenticPage",
+        "title": "La Valeur de la Vérification des Identités, Diplômes et Titres",
+        "introduction": "À une époque où l'authenticité compte plus que jamais, la vérification des identités, des diplômes et des titres offre des avantages significatifs tant pour les individus que pour les organisations. Voici pourquoi ce processus vital devrait être une priorité absolue :",
+        "benefitsTitle": "Avantages de la Vérification",
+        "benefit1": {
+            "title": "Établir la Confiance",
+            "content": "La vérification favorise une culture de confiance. Que vous embauchiez un employé potentiel ou admettiez un nouvel étudiant, savoir que leurs titres sont authentiques renforce la confiance en leurs capacités et leur caractère."
+        },
+        "benefit2": {
+            "title": "Améliorer la Sécurité",
+            "content": "Dans un monde où le vol d'identité et la fraude sont de plus en plus courants, la vérification des identités aide à protéger votre organisation contre les risques potentiels, en s'assurant que les personnes avec lesquelles vous interagissez sont bien celles qu'elles prétendent être."
+        },
+        "benefit3": {
+            "title": "Atténuer les Risques",
+            "content": "La vérification des certificats et diplômes éducatifs non seulement protège l'intégrité de votre institution, mais réduit également le risque d'embaucher du personnel non qualifié ou d'admettre des étudiants qui n'ont pas les titres nécessaires."
+        },
+        "benefit4": {
+            "title": "Rationaliser les Processus",
+            "content": "Une vérification précise accélère les processus d'embauche et d'admission en éliminant le besoin de vérifications répétitives. Lorsque les titres sont vérifiés dès le départ, vous pouvez prendre des décisions éclairées rapidement et efficacement."
+        },
+        "benefit5": {
+            "title": "Soutenir la Conformité",
+            "content": "De nombreuses industries sont soumises à des exigences réglementaires concernant la vérification des qualifications. La mise en place de processus de vérification robustes aide à assurer la conformité, évitant des amendes coûteuses et protégeant la réputation de votre institution."
+        },
+        "benefit6": {
+            "title": "Favoriser l'Équité",
+            "content": "S'assurer que les titres de chacun sont vérifiés favorise l'égalité des chances. Cela permet un terrain de jeu équitable, permettant aux individus de concourir sur la base de qualifications authentiques."
+        },
+        "benefit7": {
+            "title": "Solutions de Pointe",
+            "content": "Avec les solutions de vérification de pointe d'AuthenticPage, vous pouvez simplifier le processus tout en élevant le standard de vérité et de transparence dans votre organisation."
+        },
+        "conclusion": "Rejoignez-nous pour faire de l'authenticité la norme ! AuthenticPage vous permet de migrer et d'authentifier vos documents avec une rapidité et une efficacité sans précédent. Notre plateforme est conçue pour réduire les temps d'arrêt et maximiser la productivité, rendant le processus aussi fluide que possible. Profitez d'une intégration transparente avec des mises à jour en temps réel et une sécurité renforcée grâce à notre système unique d'ADN de document. Nos solutions vous offrent une tranquillité d'esprit totale contre les risques de fraude documentaire et de vol d'identité.",
+        "videoDemo": "Démo Vidéo"
+    },
+    "trustSecurity": {
+        "pageTitle": "AuthenticPage - Authentification Sécurisée des Diplômes",
+        "title": "Sécurisez Votre Avenir avec AuthenticPage",
+        "introduction": "AuthenticPage offre une solution de pointe pour l'authentification des diplômes, garantissant que vos titres sont reconnus et valorisés dans le monde entier.",
+        "benefitsTitle": "Pourquoi Choisir AuthenticPage ?",
+        "benefit1": {
+            "title": "Reconnaissance Mondiale",
+            "content": "Si vous cherchez à travailler ou étudier à l'étranger, les diplômes authentifiés sont souvent une exigence pour les demandes de visa et les placements professionnels. Le stockage sécurisé dans le cloud d'AuthenticPage vous permet de partager facilement vos titres vérifiés avec des institutions du monde entier."
+        },
+        "benefit2": {
+            "title": "Renforcez Votre Crédibilité",
+            "content": "Les employeurs se concentrent de plus en plus sur les qualifications vérifiées. L'authentification de votre diplôme non seulement renforce votre crédibilité, mais ouvre également les portes à de nouvelles opportunités de carrière."
+        },
+        "benefit3": {
+            "title": "Prévenez la Fraude",
+            "content": "Avec l'augmentation des incidents de fraude aux diplômes, établir vos qualifications grâce à notre système avancé de détection de fraude garantit que vos titres sont reconnus et valorisés."
+        },
+        "benefit4": {
+            "title": "Simplifiez les Processus de Recrutement",
+            "content": "En fournissant une documentation vérifiée, vous simplifiez le processus de recrutement pour les employeurs potentiels. Cela vous donne un avantage concurrentiel, car ils peuvent faire confiance à la validité de vos qualifications sans délais de vérification supplémentaires."
+        },
+        "benefit5": {
+            "title": "Mises à Jour en Temps Réel",
+            "content": "Notre solution innovante inclut des mises à jour d'authentification en temps réel, garantissant que vos titres sont toujours à jour et facilement accessibles. Cette flexibilité vous permet de vous concentrer sur votre carrière pendant que nous gérons la vérification."
+        },
+        "benefit6": {
+            "title": "Tranquillité d'Esprit",
+            "content": "Avec AuthenticPage, vous pouvez être sûr que vos documents précieux sont sécurisés et authentiques. Notre technologie de pointe garantit que vous, vos employeurs et les institutions académiques peuvent vérifier vos titres sans effort."
+        },
+        "conclusion": "Ne laissez pas votre avenir au hasard - assurez l'authenticité de votre diplôme avec AuthenticPage. Élevons ensemble vos possibilités de carrière !",
+        "videoDemo": "Démo Vidéo"
+    },
+    "aboutUs": {
+        "title": "À Propos de nous",
+        "content": "AuthenticPage est le leader de la vérification documentaire, auquel les institutions gouvernementales, les ambassades, les écoles, les entreprises et les particuliers du monde entier font confiance. Notre objectif est de redéfinir les normes de sécurité en offrant une solution innovante, qui renforce la confiance et simplifie la gestion des documents.",
+        "premierTxt": "À l'ère du numérique, la fraude documentaire et le vol d'identité sont des préoccupations majeures pour les institutions gouvernementales, les ambassades, les institutions financières, les écoles, les entreprises et les particuliers. Les méthodes traditionnelles de vérification manuelle des documents prennent du temps, sont sujettes aux erreurs humaines et n'offrent pas de mises à jour en temps réel. Cela crée une opportunité pour les fraudeurs de manipuler ou de falsifier des documents, ce qui entraîne des risques et des conséquences tels que des pertes financières, des litiges juridiques, des atteintes à la réputation et des risques pour la sécurité.",
+        "secondTxt": "AuthenticPage offre une solution innovante pour la vérification des documents. Grâce à notre processus automatisé, nous offrons une approche fluide et efficace pour suivre et vérifier l'authenticité des documents importants. En incorporant des systèmes de détection antifraude avancés, l'intégration de la stockage en nuage secure et des mises à jour en temps réel de l'authentification, nous fournissons aux institutions gouvernementales, aux ambassades, aux institutions financières, aux entreprises et aux particuliers un solution fiable et secure pour la vérification des documents.",
+        "Our_Mission": {
+            "title": "Mission",
+            "content": "Notre mission est de révolutionner le processus de vérification des documents en fournissant une solution efficace et automatisée qui garantit l'authenticité et la validité des documents importants, réduisant ainsi les risques associés à la fraude."
+        },
+        "Our_Vision": {
+            "title": "Vision",
+            "content": "Notre vision est de devenir le principal fournisseur de services d'authentification et de vérification de documents, reconnu par les institutions gouvernementales, les institutions financières, les administrations, les écoles, les entreprises et les particuliers du monde entier. Nous visons à établir de nouvelles normes industrielles et à fournir des solutions innovantes qui améliorent la sécurité et rationalisent les processus de gestion des documents."
+        },
+        "Integrity": {
+            "title": "Intégrité",
+            "content": "Nous agissons avec honnêteté et transparence dans toutes nos interactions."
+        },
+        "Innovation": {
+            "title": "Innovation",
+            "content": "Nous cherchons constamment à améliorer nos services et à adopter de nouvelles technologies."
+        },
+        "Accessibility": {
+            "title": "Accessibilité",
+            "content": "Nous croyons que chaque étudiant mérite un accès équitable à l'éducation."
+        }
+    },
+    "Fonctionnality": {
+        "premier": {
+            "title": "L'importance de l'authentification des diplômes",
+            "subTitle": "Sécurité fiable",
+            "description1": "L'authentification de vos diplômes est cruciale dans le paysage concurrentiel actuel, car elle renforce votre crédibilité, prévient la fraude, améliore les perspectives d'emploi et garantit que vos qualifications sont mondialement reconnues par les employeurs et les établissements d'enseignement.",
+            "description2": "",
+            "learn": "Découvrez comment cela fonctionne"
+        },
+        "deuxieme": {
+            "subTitle": "Processus simplifié",
+            "title": "L'importance de la vérification de l'identité et des références des candidats pour les universités, les ambassades et les entreprises",
+            "description1": "Pour les universités : La vérification des diplômes est essentielle pour maintenir l'intégrité académique, s'assurer que les étudiants remplissent les conditions d'admission et préserver la valeur de leurs diplômes. Elle aide les universités à préserver leur réputation et à se protéger contre les candidatures frauduleuses.",
+            "description2": "Pour les ambassades : La vérification de l'identité et des références des candidats est cruciale pour la sécurité nationale et les processus d'immigration. Une vérification précise aide les ambassades à évaluer l'éligibilité aux visas, garantissant que seules les personnes légitimes sont admises, renforçant ainsi les normes de sécurité mondiales.",
+            "description3": "Pour les entreprises : La vérification de l'identité et des références est essentielle pour constituer une main-d'œuvre fiable. Elle minimise le risque d'embaucher ou d'intégrer des candidats non qualifiés, protège l'entreprise contre d'éventuels problèmes juridiques et favorise un lieu de travail fondé sur la confiance et la transparence.",
+            "learn": "Contactez-nous pour en savoir plus"
+        }
+    },
+    "ServicesContent": {
+        "title": "Services",
+        "subTitle": "AuthenticPage est une solution logicielle de gestion de documents avec 3 outils différents :",
+        "contenu": {
+            "1": {
+                "title": "Outil d'authentification et de vérification: ",
+                "content": "Cet outil est un système avancé de vérification de la fraude qui utilise de nouvelles technologies telles que le micro-clouding pour prouver la provenance des documents grâce à un numéro de document d'authentification (ADN).",
+                "moreInfoContent": "Content more info"
+            },
+            "2": {
+                "title": "Outil d'authentification de masse: ",
+                "content": "Cet outil est principalement destiné aux écoles afin de les aider à authentifier des centaines de diplômes, de certificats et de finales en un seul clic en leur générant des numéros de documents d'authentification.",
+                "moreInfoContent": "Content more info"
+            },
+            "3": {
+                "title": "Outil d'application: ",
+                "content": "Obtenez le document du demandeur auprès de l'émetteur en un seul clic, voyez la progression sur la liste de contrôle et recevez une notification lorsqu'une demande est prête à être examinée.",
+                "moreInfoContent": "Content more info"
+            },
+            "moreInfo": "En savoir plus"
+        }
+    },
+    "mission": {
+        "title": "Notre Mission",
+        "content": "Notre mission est de simplifier le processus d'authentification des diplômes et certificats académiques pour les étudiants et les établissements. Nous nous engageons à offrir une plateforme fiable qui renforce la confiance dans les qualifications académiques."
+    },
+    "vision": {
+        "title": "Notre Vision",
+        "content": "Nous aspirons à devenir la référence mondiale en matière d'authentification des documents académiques, en garantissant la sécurité et l'intégrité des informations tout en facilitant l'accès à l'éducation pour tous."
+    },
+    "values": {
+        "integrity": "Nous agissons avec honnêteté et transparence dans toutes nos interactions.",
+        "innovation": "Nous cherchons constamment à améliorer nos services et à adopter de nouvelles technologies.",
+        "accessibility": "Nous croyons que chaque étudiant mérite un accès équitable à l'éducation."
+    },
+    "termsAndConditions": "Conditions générales",
+    "notifications": "Notifications",
+    "SécuriteeConfiance": "Sécurité et confiance",
+    "Intégrité": "Intégrité",
+    "Innovation": "Innovation",
+    "Accessibilité": "Accessibilité",
+    "Une_Authentification_Fiable_Dès_le_Départ": "Une authentification fiable dès le départ",
+    "contact": {
+        "title": "Contactez-nous",
+        "subtitle": "Nous sommes là pour vous aider. Envoyez-nous un message et nous vous répondrons dans les plus brefs délais.",
+        "form": {
+            "name": "Nom complet",
+            "email": "Adresse e-mail",
+            "subject": "Sujet",
+            "message": "Message",
+            "submit": "Envoyer le message",
+            "sending": "Envoi en cours...",
+            "success": "Votre message a bien été envoyé.",
+            "error": "Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer.",
+            "placeholders": {
+                "name": "Votre nom complet",
+                "email": "votre@email.com",
+                "subject": "Le sujet de votre message",
+                "message": "Votre message ici..."
+            }
+        },
+        "validation": {
+            "nameRequired": "Veuillez saisir votre nom.",
+            "invalidEmail": "Veuillez saisir une adresse e-mail valide.",
+            "emailRequired": "Veuillez saisir votre adresse e-mail.",
+            "subjectRequired": "Veuillez saisir le sujet de votre message.",
+            "messageRequired": "Veuillez saisir votre message.",
+            "messageLength": "Votre message doit contenir au moins 10 caractères."
+        },
+        "info": {
+            "email": "E-mail",
+            "phone": "Téléphone",
+            "address": "Adresse"
+        },
+        "premierText": "Nous vous aidons à sécuriser un avantage concurrentiel",
+        "deuxiemeText": "Avec ApplyOns, validez vos diplômes de manière simple et sécurisée."
+    },
+    "Accueil_content": {
+        "title": "Ayez l'esprit tranquille : vérifiez vos diplômes sans effort.",
+        "subTitle": "Authentifiez vos documents académiques en toute confiance.",
+        "description": "Simplifiez le processus de validation des diplômes pour les étudiants et les établissements.",
+        "buttonText1": "Faire une demande d'authentification",
+        "buttonText2": "Vérifier l'authenticité d'un document"
+    },
+    "PricingContent": {
+        "title": "Tarification",
+        "subTitle": "L'authentification est gratuite pour toutes les écoles.",
+        "content": "Choisissez le plan qui vous convient.",
+        "Student": {
+            "title": "Frais des étudiants",
+            "content": "Authentification rapide et sécurisée des documents académiques. Créez un compte pour soumettre vos demandes.",
+            "button": "Créer un compte étudiant"
+        },
+        "Enterprise": {
+            "title": "Plan Entreprise",
+            "content": "Cette option permet aux entreprises et organisations d'obtenir toutes sortes de documents : relevés de solde, certificats d'emploi, documents bancaires, etc. Recevez ces documents directement de l'émetteur avec une sécurité optimale et une flexibilité inégalée.",
+            "button": "Créer un compte entreprise"
+        },
+        "Universities": {
+            "title": "Abonnement Universités et Ambassades",
+            "content": "Accès illimité aux vérifications de diplômes, certificats bancaires et plus encore, ainsi qu'à l'authentification illimitée de documents.",
+            "Note": "Remarque : l'authentification est gratuite pour toutes les écoles et universités. Seule la vérification est payante.",
+            "contact": "Contactez l'équipe commerciale pour connaître les tarifs",
+            "contact_sale": "Contactez l'équipe commerciale"
+        }
+    },
+    "ContactContent": {
+        "title": "Contact",
+        "description": "Nous sommes là pour vous aider. N'hésitez pas à nous contacter pour toute question ou demande de renseignements.",
+        "subTitle2": "Nous vous aidons à obtenir un avantage concurrentiel",
+        "subTitle3": "Avec ApplyOns, validez vos diplômes de manière simple et sécurisée.",
+        "subTitle4": "N'hésitez pas à nous contacter !",
+        "subTitle5": "Nous sommes là pour répondre à toutes vos questions sur nos services.",
+        "showMore": "Afficher plus",
+        "showLess": "Voir moins",
+        "name": "Nom",
+        "email": "Email",
+        "subject": "Sujet",
+        "message": "Message",
+        "needs": "Vos besoins",
+        "send": "Envoyer",
+        "Submitting": "Envoi en cours",
+        "content": {
+            "title": "Contactez-nous",
+            "paragraph1": "Nous sommes là pour répondre à toutes vos questions et vous fournir l'assistance dont vous avez besoin pour valider vos documents de manière fiable et sécurisée.",
+            "paragraph2": "N'hésitez pas à nous contacter pour toute demande, support technique ou question liée à l'authentification de vos documents.",
+            "email": "Email : support@authenticpage.com",
+            "phone": "Téléphone : +1 234 567 890",
+            "address": "Adresse : 123 Rue Exemple, Ville, Pays"
+        },
+        "callUs": "Appelez-nous",
+        "emailUs": "Envoyez-nous un email",
+        "followUs": "Suivez-nous",
+        "discoverOurWork": "Découvrez notre travail",
+        "simplifiedValidation": "Processus de validation simplifié",
+        "simplifiedValidationDesc": "Notre plateforme vous permet de valider vos diplômes en quelques clics, sans tracas ni paperasse inutile. Vous pouvez ainsi vous concentrer sur l'essentiel : votre avenir professionnel.",
+        "maximumSecurity": "Sécurité maximale",
+        "maximumSecurityDesc": "Grâce à des technologies avancées, y compris la blockchain, vos diplômes sont protégés contre toute falsification. Chaque validation est traçable et vérifiable par les employeurs potentiels, assurant ainsi leur authenticité.",
+        "internationalRecognition": "Reconnaissance internationale",
+        "internationalRecognitionDesc": "Nos services sont conçus pour être acceptés par des institutions à travers le monde, facilitant votre mobilité professionnelle et académique.",
+        "dedicatedSupport": "Support client dédié",
+        "dedicatedSupportDesc": "Notre équipe est disponible pour répondre à toutes vos questions et vous accompagner tout au long du processus de validation.",
+        "footer": {
+            "company": "Entreprise",
+            "about": "À propos",
+            "contact": "Contact",
+            "faq": "FAQ",
+            "testimonials": "Témoignages",
+            "services": "Services",
+            "forInstitutions": "Pour les institutions",
+            "forApplicants": "Pour les candidats",
+            "howItWorks": "Comment ça marche",
+            "legal": "Légal",
+            "privacy": {
+                "title": "Politique de Confidentialité",
+                "subtitle": "Votre confidentialité est notre priorité",
+                "lastUpdated": "Dernière mise à jour : 12 mai 2025",
+                "introduction": {
+                    "title": "Introduction",
+                    "description": "ApplyOns s'engage à protéger votre vie privée et vos données personnelles. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations."
+                },
+                "dataCollection": {
+                    "title": "Collecte de Données",
+                    "description": "Nous collectons les informations suivantes :",
+                    "items": {
+                        "personal": "Informations personnelles (nom, adresse e-mail)",
+                        "academic": "Informations académiques (diplômes, certifications)",
+                        "verification": "Données de vérification (documents soumis)",
+                        "usage": "Données d'utilisation du service"
+                    }
+                },
+                "dataUse": {
+                    "title": "Utilisation des Données",
+                    "description": "Vos données sont utilisées pour :",
+                    "items": {
+                        "verification": "Vérifier l'authenticité des diplômes",
+                        "communication": "Communiquer avec vous concernant nos services",
+                        "improvement": "Améliorer nos services",
+                        "security": "Assurer la sécurité de la plateforme"
+                    }
+                },
+                "dataSecurity": {
+                    "title": "Sécurité des Données",
+                    "description": "Nous protégeons vos données grâce à :",
+                    "items": {
+                        "encryption": "Cryptage de bout en bout",
+                        "access": "Contrôles d'accès stricts",
+                        "monitoring": "Surveillance continue de la sécurité",
+                        "compliance": "Conformité aux normes RGPD"
+                    }
+                },
+                "userRights": {
+                    "title": "Vos Droits",
+                    "description": "Vous avez le droit de :",
+                    "items": {
+                        "access": "Accéder à vos données personnelles",
+                        "rectification": "Rectifier vos informations",
+                        "deletion": "Demander la suppression de vos données",
+                        "portability": "Obtenir la portabilité de vos données"
+                    }
+                },
+                "cookies": {
+                    "title": "Politique des Cookies",
+                    "description": "Nous utilisons des cookies pour :",
+                    "items": {
+                        "essential": "Fonctionnement essentiel du site",
+                        "preferences": "Mémoriser vos préférences",
+                        "analytics": "Analyser l'utilisation du site",
+                        "security": "Renforcer la sécurité"
+                    }
+                },
+                "contact": {
+                    "title": "Nous Contacter",
+                    "description": "Pour toute question concernant votre vie privée, contactez notre Délégué à la Protection des Données à privacy@applyons.com"
+                }
+            },
+            "termsOfUse": {
+                "title": "Conditions Générales d'Utilisation",
+                "subtitle": "Veuillez lire attentivement ces conditions avant d'utiliser nos services.",
+                "acceptance": {
+                    "title": "Acceptation des Conditions",
+                    "description": "En accédant et en utilisant ApplyOns, vous acceptez d'être lié par ces conditions. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser nos services."
+                },
+                "services": {
+                    "title": "Services Fournis",
+                    "description": "ApplyOns fournit une plateforme de vérification de diplômes qui inclut les services suivants :",
+                    "items": {
+                        "applications": "Traitement des demandes de vérification de diplômes",
+                        "documents": "Stockage sécurisé des documents",
+                        "communication": "Communication entre les établissements et les demandeurs",
+                        "tracking": "Suivi en temps réel des demandes"
+                    }
+                },
+                "userObligations": {
+                    "title": "Obligations des Utilisateurs",
+                    "description": "En tant qu'utilisateur de nos services, vous vous engagez à :",
+                    "items": {
+                        "accuracy": "Fournir des informations exactes et véridiques",
+                        "security": "Protéger vos identifiants de connexion",
+                        "compliance": "Respecter toutes les lois et règlements applicables",
+                        "responsibility": "Assumer la responsabilité de toute activité sur votre compte"
+                    }
+                },
+                "intellectualProperty": {
+                    "title": "Propriété Intellectuelle",
+                    "description": "Tout le contenu et les fonctionnalités disponibles sur ApplyOns sont la propriété exclusive d'ApplyOns et sont protégés par les lois sur la propriété intellectuelle."
+                },
+                "liability": {
+                    "title": "Limitation de Responsabilité",
+                    "description": "ApplyOns ne peut être tenu responsable des dommages directs ou indirects résultant de l'utilisation ou de l'impossibilité d'utiliser nos services."
+                },
+                "termination": {
+                    "title": "Résiliation",
+                    "description": "Nous nous réservons le droit de suspendre ou de résilier votre accès à nos services en cas de violation de ces conditions."
+                },
+                "modifications": {
+                    "title": "Modifications des Conditions",
+                    "description": "ApplyOns se réserve le droit de modifier ces conditions à tout moment. Les modifications prennent effet dès leur publication sur notre site."
+                },
+                "contact": {
+                    "title": "Nous Contacter",
+                    "description": "Pour toute question concernant ces conditions, veuillez nous contacter à contact@applyons.com."
+                }
+            },
+            "social": "Réseaux sociaux",
+            "rights": "Tous droits réservés.",
+            "newsletter": {
+                "title": "Newsletter",
+                "subtitle": "Inscrivez-vous pour recevoir nos actualités",
+                "placeholder": "Votre email",
+                "button": "S'inscrire",
+                "success": "Merci de votre inscription !"
+            }
+        },
+        "testimonials": {
+            "title": "Témoignages",
+            "subtitle": "Ce que disent nos utilisateurs",
+            "person1": {
+                "name": "Marie Dubois",
+                "role": "Étudiante en Master",
+                "content": "ApplyOns m'a permis de postuler facilement à plusieurs universités. Le processus était simple et efficace."
+            },
+            "person2": {
+                "name": "Pierre Martin",
+                "role": "Responsable Admissions",
+                "content": "ApplyOns nous aide à gérer efficacement les candidatures et à communiquer avec les candidats."
+            },
+            "person3": {
+                "name": "Sophie Laurent",
+                "role": "Étudiante Internationale",
+                "content": "Grâce à ApplyOns, j'ai pu postuler à des établissements français depuis l'étranger sans difficulté."
+            }
+        },
+        "FAQContent": {
+            "title": "Questions fréquemment posées",
+            "description": "Trouvez des réponses aux questions courantes sur AuthenticPage"
+        },
+        "faqItems": [{
+                "title": "Comment puis-je authentifier mon diplôme ?",
+                "description": "Pour authentifier votre diplôme, créez un compte sur notre plateforme et soumettez une demande d'authentification. Des frais de 50 $ seront facturés pour chaque demande."
+            },
+            {
+                "title": "Quelles institutions peuvent utiliser AuthenticPage ?",
+                "description": "AuthenticPage peut être utilisé par diverses institutions, notamment les universités, les écoles académiques, les ambassades, les institutions financières et les entreprises. Toute organisation ou entité qui a besoin de vérifier des documents académiques ou officiels peut bénéficier de l'utilisation d'AuthenticPage."
+            },
+            {
+                "title": "Quel est le coût d'abonnement pour les institutions ?",
+                "description": "Les institutions peuvent s'abonner à AuthenticPage pour 100 $ par mois, leur donnant un accès illimité aux services de vérification de documents. Cet abonnement permet aux institutions de soumettre des demandes d'authentification illimitées pour divers types de documents."
+            },
+            {
+                "title": "Les données sont-elles sécurisées ?",
+                "description": "Oui, AuthenticPage emploie des mesures de sécurité avancées pour protéger les données sensibles. Nous assurons la confidentialité de toutes les informations des utilisateurs grâce au chiffrement, au stockage sécurisé dans le cloud et aux mises à jour en temps réel. Notre plateforme adhère à des normes élevées de protection des données pour prévenir les accès non autorisés et assurer la confidentialité."
+            },
+            {
+                "title": "Que dois-je faire si j'ai des problèmes avec ma demande d'authentification ?",
+                "description": "Si vous rencontrez des problèmes avec votre demande d'authentification, veuillez contacter notre équipe de support client via la page de contact sur notre site web. Notre équipe de support est prête à vous aider et à résoudre tout problème ou question que vous pourriez avoir concernant le processus d'authentification."
+            }
+        ],
+        "footerContent": {
+            "title": "Contactez-nous",
+            "description": "AuthenticPage est dédié à fournir une solution sécurisée et efficace pour l'authentification des diplômes et certificats académiques.",
+            "email": "Email",
+            "termsLink": "Conditions d'utilisation et politique",
+            "footerLinks": {
+                "0": {
+                    "title": "Liens utiles",
+                    "items": {
+                        "0": {
+                            "name": "À propos",
+                            "link": "À propos"
+                        },
+                        "1": {
+                            "name": "Services",
+                            "link": "Services"
+                        },
+                        "2": {
+                            "name": "Tarification",
+                            "link": "Tarification"
+                        },
+                        "3": {
+                            "name": "Contact",
+                            "link": "Contact"
+                        }
+                    }
+                },
+                "1": {
+                    "title": "Réseaux sociaux",
+                    "items": {
+                        "0": {
+                            "name": "Facebook"
+                        },
+                        "1": {
+                            "name": "Instagram"
+                        },
+                        "2": {
+                            "name": "Twitter"
+                        },
+                        "3": {
+                            "name": "LinkedIn"
+                        }
+                    }
+                },
+                "2": {
+                    "title": "Mentions légales",
+                    "items": {
+                        "0": {
+                            "name": "Politique de confidentialité",
+                            "link": "/privacy-policy"
+                        },
+                        "1": {
+                            "name": "Conditions générales",
+                            "link": "/terms-and-conditions"
+                        }
+                    }
+                }
+            }
+        },
+        "validation": {
+            "emailValid": "Veuillez entrer une adresse email valide",
+            "emailRequired": "L'email est requis"
+        },
+        "alt": {
+            "logo": "Logo AuthenticPage"
+        },
+        "termsConditions": {
+            "pageTitle": "Conditions générales",
+            "title": "Conditions générales",
+            "introduction": "Bienvenue sur AuthenticPage. En accédant et en utilisant notre plateforme, vous acceptez nos conditions générales. Ce document vise à vous informer de vos droits et obligations en tant qu'utilisateur. Nous vous encourageons à lire attentivement ces conditions avant d'utiliser nos services.",
+            "section1": {
+                "title": "1. Acceptation des conditions",
+                "content": [
+                    "En accédant à notre site web, en vous inscrivant ou en utilisant tout service fourni par AuthenticPage, vous confirmez avoir lu et accepté ces conditions générales. Toute utilisation non autorisée de la plateforme est strictement interdite.",
+                    "AuthenticPage se réserve le droit de modifier ces conditions à tout moment. Les modifications prennent effet dès leur publication sur cette page, et il est de votre responsabilité de les consulter régulièrement."
+                ]
+            },
+            "section2": {
+                "title": "2. Utilisation de la plateforme",
+                "content": [
+                    "AuthenticPage est exclusivement destiné à l'authentification et à la vérification de documents académiques et administratifs. Vous vous engagez à ne pas utiliser notre plateforme pour des activités frauduleuses, illégales ou non autorisées. Toute violation de cette politique peut entraîner la suspension ou la résiliation de votre compte.",
+                    "Nous nous réservons également le droit de surveiller l'utilisation de la plateforme pour nous assurer que tous les utilisateurs respectent nos conditions générales. Toute tentative d'accès non autorisé aux données ou au système de sécurité sera signalée aux autorités compétentes."
+                ]
+            },
+            "section3": {
+                "title": "3. Inscription, compte et sécurité",
+                "content": [
+                    "Pour utiliser certains services sur AuthenticPage, vous devez créer un compte en fournissant des informations exactes, à jour et complètes. Vous êtes responsable du maintien de la confidentialité de vos identifiants et de toutes les activités menées avec votre compte. Si vous soupçonnez une utilisation non autorisée, contactez immédiatement notre service client.",
+                    "AuthenticPage n'est pas responsable des pertes ou dommages résultant de votre incapacité à protéger votre compte. Nous vous recommandons d'utiliser un mot de passe fort et de mettre régulièrement à jour vos informations."
+                ]
+            },
+            "section4": {
+                "title": "4. Tarification et paiement",
+                "content": [
+                    "Les tarifs des services fournis par AuthenticPage sont indiqués sur notre site et peuvent varier en fonction du type de document et du service demandé. Les paiements effectués ne sont pas remboursables, sauf indication contraire dans notre politique de remboursement.",
+                    "Toutes les transactions sont sécurisées par des protocoles de paiement modernes. En effectuant un paiement, vous acceptez de fournir des informations de paiement exactes et complètes. AuthenticPage se réserve le droit de suspendre les comptes en cas de non-paiement ou de suspicion de fraude."
+                ]
+            },
+            "section5": {
+                "title": "5. Propriété intellectuelle",
+                "content": [
+                    "Tout le contenu de notre site, y compris les textes, graphiques, logos, images et logiciels, est protégé par des droits de propriété intellectuelle. Vous ne pouvez pas reproduire, distribuer ou exploiter notre contenu sans l'autorisation écrite préalable d'AuthenticPage.",
+                    "Toute violation des droits de propriété intellectuelle entraînera des actions en justice et des sanctions appropriées, y compris la suspension ou la résiliation de l'accès aux services."
+                ]
+            },
+            "section6": {
+                "title": "6. Limitation de responsabilité",
+                "content": [
+                    "AuthenticPage s'efforce de fournir un service fiable et sécurisé mais ne garantit pas l'absence de dysfonctionnements ou d'erreurs. Nous déclinons toute responsabilité pour les dommages directs, indirects ou consécutifs découlant de l'utilisation de notre plateforme, sauf en cas de faute intentionnelle de notre part.",
+                    "Il est de votre responsabilité de vérifier la validité et l'exactitude des informations fournies avant d'utiliser nos services pour des décisions importantes."
+                ]
+            },
+            "section7": {
+                "title": "7. Modification des conditions",
+                "content": [
+                    "AuthenticPage se réserve le droit de modifier ces conditions générales pour refléter les changements de législation ou les améliorations de notre service. En continuant à utiliser la plateforme après une modification, vous acceptez les conditions mises à jour."
+                ]
+            },
+            "section8": {
+                "title": "8. Résiliation",
+                "content": [
+                    "AuthenticPage peut résilier ou suspendre votre accès à la plateforme si vous violez ces conditions, en cas de suspicion de fraude ou pour des raisons de sécurité. En cas de résiliation, toutes les obligations financières en cours restent dues."
+                ]
+            },
+            "contact": "Pour toute question concernant nos conditions générales, n'hésitez pas à nous contacter via notre page de contact. AuthenticPage s'engage à vous fournir un service transparent et sécurisé."
+        },
+        "privacyPolicy": {
+            "pageTitle": "Politique de confidentialité",
+            "title": "Politique de confidentialité",
+            "introduction": "Bienvenue sur la politique de confidentialité d'AuthenticPage. La protection de votre vie privée est essentielle pour nous, et nous nous engageons à traiter vos informations personnelles de manière transparente et sécurisée. Cette politique explique comment nous collectons, utilisons et protégeons vos informations tout en respectant vos droits.",
+            "section1": {
+                "title": "1. Collecte d'informations",
+                "content": "Nous collectons des informations personnelles lorsque vous interagissez avec notre plateforme, par exemple lors de la création de votre compte, de la soumission de documents pour vérification ou de demandes d'assistance. Ces informations peuvent inclure votre nom, votre adresse e-mail et les documents nécessaires à l'authentification."
+            },
+            "section2": {
+                "title": "2. Utilisation des informations",
+                "content": "Nous utilisons vos informations pour fournir nos services d'authentification et de vérification, améliorer l'expérience utilisateur et personnaliser nos offres en fonction de vos besoins. De plus, avec votre consentement, nous pouvons vous envoyer des mises à jour concernant les nouvelles fonctionnalités et offres disponibles sur AuthenticPage."
+            },
+            "section3": {
+                "title": "3. Sécurité et protection des données",
+                "content": "AuthenticPage prend des mesures de sécurité strictes pour protéger vos informations personnelles. Nos serveurs sont protégés par des protocoles de sécurité avancés et des systèmes de cryptage qui garantissent que vos informations sont stockées en toute sécurité. Nous effectuons également des audits réguliers pour maintenir la sécurité de notre infrastructure."
+            },
+            "section4": {
+                "title": "4. Partage d'informations",
+                "content": "Nous ne partageons vos informations que lorsque cela est nécessaire pour fournir nos services, par exemple avec des partenaires académiques et financiers pour l'authentification de vos documents. Nous ne vendons ni ne divulguons vos informations à des tiers sans votre consentement."
+            },
+            "section5": {
+                "title": "5. Vos droits",
+                "content": "En vertu des lois sur la protection des données, vous avez le droit d'accéder à vos informations, de les corriger et de demander leur suppression. Vous pouvez exercer ces droits en nous contactant via notre page de contact. Nous nous engageons à traiter votre demande dans les meilleurs délais."
+            },
+            "section6": {
+                "title": "6. Conservation des données",
+                "content": "Nous conservons vos informations personnelles uniquement le temps nécessaire pour fournir nos services ou pour nous conformer aux obligations légales. Une fois cette période écoulée, vos informations sont définitivement supprimées de nos bases de données."
+            },
+            "section7": {
+                "title": "7. Modifications de cette politique",
+                "content": "AuthenticPage peut mettre à jour cette politique de confidentialité pour refléter les changements dans nos services ou pour se conformer aux nouvelles lois. Nous vous encourageons à consulter régulièrement cette page pour rester informé."
+            },
+            "contact": "Si vous avez des questions ou des demandes concernant la confidentialité, n'hésitez pas à nous contacter. Nous vous remercions de votre confiance et nous nous engageons à protéger vos informations personnelles de manière responsable."
+        },
+        "footer": {
+            "description": "Simplifiez la vérification de vos diplômes avec notre plateforme sécurisée et innovante.",
+            "product": "Produit",
+            "features": "Fonctionnalités",
+            "pricing": "Tarification",
+            "faq": "FAQ",
+            "testimonials": "Témoignages",
+            "company": "Entreprise",
+            "about": "À propos",
+            "contact": "Contact",
+            "legal": "Mentions légales",
+            "privacy": "Politique de confidentialité",
+            "terms": "Conditions d'utilisation",
+            "rights": "Tous droits réservés.",
+            "social": {
+                "facebook": "Suivez-nous sur Facebook",
+                "twitter": "Suivez-nous sur Twitter",
+                "instagram": "Suivez-nous sur Instagram",
+                "linkedin": "Suivez-nous sur LinkedIn"
+            },
+            "copyright": "Tous droits réservés.",
+            "version": "Version {version}",
+            "conditions": "Conditions générales",
+            "privacyLink": "Politique de confidentialité",
+            "cookies": "Cookies"
+        },
+        "loading_message": "Chargement...",
+        "loading": "Chargement...",
+        "error_message": "Une erreur s'est produite : {{error}}",
+        "request_details_title": "Détails de la demande",
+        "request_info_title": "Informations sur la demande",
+        "request_date": "Date de la demande",
+        "request_title": "Titre de la demande",
+        "request_year": "Année d'obtention",
+        "request_status": "Statut de la demande",
+        "status_accepted": "Acceptée",
+        "status_rejected": "Rejetée",
+        "status_pending": "En attente",
+        "institution_info_title": "Informations sur l'institution",
+        "institution_name": "Nom de l'institution",
+        "institution_website": "Site web de l'institution",
+        "document_preview_title": "Aperçu du document",
+        "institution_phone": "Téléphone",
+        "institution_address": "Adresse",
+        "institution_country": "Pays",
+        "institution_type": "Institut",
+        "institution_associated": "Institution associée",
+        "associated_document_title": "Document associé",
+        "adn_code": "Code ADN",
+        "document_type": "Type",
+        "obtaining_year": "Année d'obtention",
+        "document_status": "Statut",
+        "document_title": "Titre",
+        "Institut du Demandeur": "Institut du demandeur",
+        "Nom": "Nom",
+        "Email": "Email",
+        "Téléphone": "Téléphone",
+        "Adresse": "Adresse",
+        "Pays": "Pays",
+        "Non disponible": "Non disponible",
+        "Document_Preview": "Aperçu du document"
+    },
+    "common": {
+        "save": "Enregistrer",
+        "submit": "Soumettre",
+        "search": "Rechercher",
+        "actions": "Actions",
+        "total": "Total",
+        "of": "sur",
+        "showing": "Affichage",
+        "items": "éléments",
+        "details": "Détails",
+        "success": "Succès",
+        "error": "Erreur",
+        "please_wait": "Veuillez patienter",
+        "search_documents": "Rechercher par code ADN, intitulé ou institut...",
+        "documents": "document(s)",
+        "confirm_delete": "Confirmer suppression",
+        "status": {
+            "accepted": "Accepté"
+        },
+        "payment": {
+            "processing": "Traitement du paiement",
+            "pleaseWait": "Veuillez patienter",
+            "paymentSuccess": "Paiement réussi",
+            "requestCreatedSuccess": "Votre demande a été enregistrée avec succès"
+        },
+        "notSpecified": "Non renseigné",
+        "welcome": "Bienvenue",
+        "confirm_status_change_title": "Confirmer le changement de statut",
+        "confirm_status_change_content": "Êtes-vous sûr de vouloir changer le statut ?",
+        "no": "Non",
+        "yes": "Oui",
+        "yes_confirm": "Oui, confirmer",
+        "update": "Mettre à jour",
+        "copied_to_clipboard": "Copié dans le presse-papiers !",
+        "yes_delete": "Oui, supprimer",
+        "edit": "Modifier",
+        "delete": "Supprimer",
+        "loading": "Chargement...",
+        "codeAdn": "Code ADN",
+        "back": "Retour",
+        "na": "N/A",
+        "currency": "EUR",
+        "add": "Ajouter",
+        "cancel": "Annuler",
+        "copy": "Copier",
+        "copied": "Copié",
+        "reset_filters": "Réinitialiser les filtres",
+        "no_documents": "Aucun document",
+        "viewAll": "Voir tout",
+        "not_specified": "Non spécifié",
+        "no_data_found": "Aucune donnée trouvée",
+        "code": "Code",
+        "document": {
+            "code": "Code",
+            "type": "Type",
+            "obtention_date": "Date d'obtention",
+            "status": "Statut",
+            "adn_code": "Code ADN",
+            "view": "Voir le document"
+        },
+        "statut": {
+            "accepted": "Accepté",
+            "pending": "En attente",
+            "rejected": "Refusé",
+            "processing": "En traitement"
+        }
+    },
+    "submitting": "Soumission en cours...",
+    "fileUpload": {
+        "requiredFormat": "Format de nom de fichier requis :",
+        "formatInstructions": "Les fichiers doivent être nommés selon le format :",
+        "example": "Exemple :"
+    },
+    "institutPartage": {
+        "of": "de",
+        "applican": "Candidat(e)",
+        "type": "Type",
+        "name": "Nom Complet",
+        "info": "Informations",
+        "view_translation": "Voir la traduction",
+        "institute_information_sharing": "Information de partage d'institut",
+        "demande_de_partage": "Demande de partage",
+        "this_month": "Ce mois",
+        "total_requests": "Total des demandes",
+        "total_documents": "Total des documents",
+        "please_fill_required_fields": "Veuillez remplir les champs obligatoires",
+        "form_validated_proceed_payment": "Formulaires validés, procéder au paiement",
+        "document_sharing": "Partage de Documents",
+        "assigned_requests_list": "Liste des demandes attribuées",
+        "add_document": "Ajouter un document",
+        "search_placeholder": "Rechercher par code ou demandeur...",
+        "total": "Total",
+        "requests": "demandes",
+        "code": "Code",
+        "request_date": "Date de Demande",
+        "requester": "Demandeur",
+        "documents": "Documents",
+        "document_count": "document(s)",
+        "actions": "Actions",
+        "details": "Détails",
+        "view_request_details": "Voir les détails de la demande",
+        "request_details": "Détails de la demande",
+        "email": "Email",
+        "phone": "Téléphone",
+        "dna_code": "Code ADN",
+        "error_fetching_requests": "Erreur lors de la récupération des demandes",
+        "status": {
+            "accepted": "Accepté",
+            "pending": "En attente",
+            "rejected": "Rejeté",
+            "processing": "En cours"
+        },
+        "abonnementRequis": "Abonnement requis",
+        "souscrivezAbonnement": "Souscrivez à un abonnement pour accéder aux fonctionnalités de partage",
+        "accesLimite": "Accès limité",
+        "accesLimiteDescription": "Vous devez souscrire à un abonnement pour accéder aux demandes de partage et leurs détails.",
+        "abonnementPremium": "Abonnement Premium",
+        "accesIllimite": "Accès illimité aux fonctionnalités de partage",
+        "nomComplet": "Nom complet",
+        "dateDebut": "Date de début",
+        "dateFin": "Date de fin",
+        "methodePaiement": "Méthode de paiement",
+        "selectionnezMethodePaiement": "Sélectionnez une méthode de paiement",
+        "paypal": "PayPal",
+        "stripe": "Stripe",
+        "validerFormulaire": "Valider le formulaire",
+        "traitement": "Traitement...",
+        "procederPaiement": "Procéder au paiement",
+        "montant": "Montant",
+        "paiementReussi": "Paiement réussi ! Votre abonnement a été activé.",
+        "paiementEchoue": "Le paiement a échoué. Veuillez réessayer.",
+        "error_checking_subscription": "Erreur lors de la vérification de l'abonnement",
+        "error_initialization": "Erreur lors de l'initialisation du composant",
+        "error_payment_preparation": "Une erreur est survenue lors de la préparation du paiement",
+        "payment_success": "Abonnement effectué avec succès!",
+        "subscription_effective": "Abonnement effectif",
+        "error_payment_confirmation": "Une erreur est survenue lors de la confirmation du paiement",
+        "error_creating_subscription": "Erreur lors de la création de l'abonnement",
+        "subscription_expired": "Votre abonnement a expiré",
+        "subscription_activated": "Votre abonnement a été activé",
+        "active_subscription": "Abonnement actif"
+    },
+    "institutPartageDetails": {
+        "respond_to_request": "Répondre à la demande",
+        "status": "Statut",
+        "select_status": "Sélectionnez un statut",
+        "status_accepted": "Accepté",
+        "status_rejected": "Rejeté",
+        "status_pending": "En attente",
+        "observation": "Observation",
+        "enter_observation": "Entrez vos observations...",
+        "language": "Langue",
+        "select_language": "Sélectionnez une langue",
+        "status_updated_successfully": "Statut mis à jour avec succès !",
+        "error_updating_status": "Erreur lors de la mise à jour du statut.",
+        "section_completed": "Section terminée",
+        "date_demande": "Date de la demande",
+        "documents": "Document(s)",
+        "document_deleted": "Document supprimé avec succès",
+        "request_details": "Détails de la Demande",
+        "request_information": "Information de la Demande",
+        "code": "Code",
+        "request_date": "Date de la demande",
+        "description": "Description",
+        "requester_information": "Information du Demandeur",
+        "name": "Nom",
+        "gender": "Sexe",
+        "email": "Email",
+        "phone": "Téléphone",
+        "profession": "Profession",
+        "birth_date": "Date de naissance",
+        "birth_place": "Lieu de naissance",
+        "country_of_residence": "Pays de résidence",
+        "shared_documents": "Documents Partagés",
+        "view_document": "Voir le document",
+        "title": "Intitulé",
+        "type": "Type",
+        "dna_code": "Code ADN",
+        "statut": {
+            "accepted": "Accepté",
+            "pending": "En attente",
+            "rejected": "Rejeté",
+            "processing": "En cours"
+        },
+        "date_obtained": "Date d'obtention",
+        "year_obtained": "Année d'obtention",
+        "institute_information": "Information de l'Institut",
+        "country": "Pays",
+        "address": "Adresse",
+        "no_shared_documents": "Aucun document partagé",
+        "pdf_document": "Document PDF",
+        "loading_document": "Chargement du document...",
+        "pdf_viewer": "Visionneuse PDF",
+        "no_document_to_display": "Aucun document à afficher",
+        "error_loading_document": "Erreur lors du chargement du document",
+        "error_fetching_details": "Erreur lors de la récupération des détails de la demande"
+    },
+    "documentForm": {
+        "title": "Ajouter un document",
+        "document_code": "Code du document",
+        "enter_document_code": "Entrez le code du document",
+        "title_label": "Intitulé",
+        "mention": "Mention",
+        "document_type": "Type de document",
+        "select_document_type": "Sélectionnez le type de document",
+        "document_types": {
+            "transcript": "Relevé",
+            "certificate": "Attestation",
+            "diploma": "Diplôme",
+            "certification": "Certificat"
+        },
+        "year_obtained": "Année d'obtention",
+        "document": "Document",
+        "upload_document": "Télécharger un document (PDF uniquement)",
+        "submitting": "Envoi en cours...",
+        "submit": "Ajouter le document",
+        "success": "Document ajouté avec succès",
+        "error": "Une erreur est survenue lors de l'ajout du document",
+        "errors": {
+            "yearRequired": "L'année est obligatoire.",
+            "intituleRequired": "L'intitulé est requis",
+            "codeRequired": "Le code de la demande est requis",
+            "mentionRequired": "La mention est requise",
+            "typeRequired": "Le type de document est requis",
+            "documentRequired": "Le document est requis",
+            "fileSize": "Le fichier doit être inférieur à 10MB",
+            "fileType": "Seuls les fichiers PDF sont acceptés"
+        },
+        "title": "Ajouter un document",
+        "document_code": "Code du document",
+        "enter_document_code": "Entrez le code du document",
+        "title_label": "Intitulé",
+        "mention": "Mention",
+        "document_type": "Type de document",
+        "year_obtained": "Année d'obtention",
+        "document": "Document",
+        "select_document_type": "Sélectionner le type de document",
+        "upload_document": "Téléverser le document",
+        "submitting": "Envoi en cours...",
+        "submit": "Soumettre",
+        "success": "Document ajouté avec succès",
+        "error": "Erreur lors de l'ajout du document",
+        "document_types": {
+            "transcript": "Relevé",
+            "certificate": "Attestation",
+            "diploma": "Diplôme",
+            "certification": "Certificat"
+        },
+        "errors": {
+            "intituleRequired": "L'intitulé est requis",
+            "codeRequired": "Le code est requis",
+            "mentionRequired": "La mention est requise",
+            "typeRequired": "Le type est requis",
+            "yearRequired": "L'année est requise",
+            "documentRequired": "Le document est requis",
+            "fileSize": "Le fichier est trop volumineux (max 10MB)",
+            "fileType": "Seuls les fichiers PDF sont acceptés"
+        }
+    },
+    "demandePartage": {
+        "periode": "Periode",
+        "please_select_periode": "Veuillez sélectionner une période",
+        "select_periode": "Sélectionnez une période",
+        "periode_1": "Printemps",
+        "periode_2": "Été",
+        "periode_3": "Automne",
+        "periode_4": "Hiver",
+        "periode_5": "Autre",
+        "year": "Année",
+        "please_select_year": "Veuillez sélectionner une année",
+        "select_year": "Sélectionnez une année"
+    },
+    "demandeurPartage": {
+        "payment_error": "Erreur de paiement",
+        "payment_failed": "Le paiement a echoué",
+        "payment_intent_error": "Erreur lors de la création de l'intent de paiement",
+        "request_created_and_payment_success": "Demande créée et paiement effectué avec succès",
+        "please_try_again": "Veuillez réessayer",
+        "paymentAmount": "Montant du paiement",
+        "validate_form": "valider le formulaire",
+        "form_validated_proceed_payment": "Formulaires validés, procéder au paiement",
+        "detailsDemandeur": "Détails du Demandeur",
+        "requester": "Demandeur",
+        "document_sharing": "Partage de Documents",
+        "new_request": "Nouvelle Demande",
+        "my_requests": "Mes Demandes",
+        "request_description": "Diplôme recherché",
+        "please_enter_description": "Veuillez entrer une description",
+        "institute": "Institut",
+        "please_select_institute": "Veuillez sélectionner un institut",
+        "select_institute": "Sélectionnez un institut",
+        "create_request": "Créer la demande",
+        "search_placeholder": "Rechercher par code ou institut...",
+        "code": "Code",
+        "request_date": "Date Demande",
+        "documents": "Documents",
+        "document_count": "document(s)",
+        "actions": "Actions",
+        "view_request_details": "Voir les détails de la demande",
+        "details": "Détails",
+        "email": "Email",
+        "phone": "Téléphone",
+        "dna_code": "Code ADN",
+        "request_details": "Détails de la demande",
+        "total": "Total",
+        "requests": "demandes",
+        "error_fetching_institutes": "Erreur lors de la récupération des instituts",
+        "request_created_success": "Demande créée avec succès",
+        "error_creating_request": "Erreur lors de la création de la demande",
+        "status": {
+            "accepted": "Accepté",
+            "pending": "En attente",
+            "rejected": "Rejeté",
+            "processing": "En cours"
+        }
+    },
+    "demandeurPartageDetails": {
+        "request_details": "Détails de la Demande",
+        "request_information": "Information de la Demande",
+        "code": "Code",
+        "request_date": "Date de la demande",
+        "description": "Description",
+        "institute_information": "Information de l'Institut",
+        "name": "Nom",
+        "type": "Type",
+        "country": "Pays",
+        "email": "Email",
+        "phone": "Téléphone",
+        "address": "Adresse",
+        "shared_documents": "Documents Partagés",
+        "view_document": "Voir le document",
+        "title": "Intitulé",
+        "dna_code": "Code ADN",
+        "document_information": "Informations du Document",
+        "requester_information": "Informations du Demandeur",
+        "document": "Document",
+        "status": {
+            "accepted": "Accepté",
+            "pending": "En attente",
+            "rejected": "Rejeté",
+            "processing": "En cours"
+        },
+        "date_obtained": "Date d'obtention",
+        "year_obtained": "Année d'obtention",
+        "no_shared_documents": "Aucun document partagé",
+        "pdf_document": "Document PDF",
+        "loading_document": "Chargement du document...",
+        "pdf_viewer": "Visionneuse PDF",
+        "no_document_to_display": "Aucun document à afficher",
+        "error_loading_document": "Erreur lors du chargement du document",
+        "error_fetching_details": "Erreur lors de la récupération des détails de la demande"
+    },
+    "errors": {
+        "document": {
+            "add": "Erreur lors de l'ajout du document",
+            "delete": "Erreur lors de la suppression du document",
+            "update": "Erreur lors de la mise à jour du document",
+            "logo": "Erreur lors de la mise à jour du logo"
+        },
+        "request": {
+            "create": "Erreur lors de la création de la demande",
+            "update": "Erreur lors de la mise à jour de la demande",
+            "delete": "Erreur lors de la suppression de la demande"
+        },
+        "configuration": {
+            "get": "Erreur lors de la récupération de la configuration",
+            "forgotPassword": "Mot de passe oublié ?",
+            "loading": "Connexion en cours...",
+            "signInButton": "Se connecter",
+            "noAccount": "Vous n’avez pas de compte ?",
+            "signUpButton": "Créer un compte"
+        },
+        "signUp": {
+            "title": "Inscription",
+            "institutTitle": "Inscription Institution",
+            "institutSubtitle": "Créez votre compte institution pour commencer à authentifier vos documents",
+            "demandeurTitle": "Inscription Demandeur",
+            "demandeurSubtitle": "Créez votre compte pour faire vos demandes d'authentification",
+            "institutName": "Nom de l'institution",
+            "institutType": "Type d'institution",
+            "university": "Université",
+            "college": "École supérieure",
+            "school": "École",
+            "other": "Autre",
+            "email": "Adresse email",
+            "phone": "Numéro de téléphone",
+            "address": "Adresse",
+            "country": "Pays",
+            "website": "Site web",
+            "firstName": "Prénom",
+            "lastName": "Nom",
+            "password": "Mot de passe",
+            "confirmPassword": "Confirmer le mot de passe",
+            "signUpButton": "S'inscrire",
+            "loading": "Inscription en cours...",
+            "haveAccount": "Vous avez déjà un compte ?",
+            "signInButton": "Se connecter",
+            "placeholders": {
+                "institutName": "Entrez le nom de votre institution",
+                "institutType": "Sélectionnez le type de votre institution",
+                "email": "exemple@email.com",
+                "phone": "+XXX XXXXXXXXX",
+                "address": "Entrez votre adresse complète",
+                "country": "Entrez votre pays",
+                "website": "https://www.votresite.com",
+                "firstName": "Entrez votre prénom",
+                "lastName": "Entrez votre nom",
+                "password": "Minimum 8 caractères",
+                "confirmPassword": "Confirmez votre mot de passe",
+                "demandeurFirstName": "Entrez votre prénom",
+                "demandeurLastName": "Entrez votre nom"
+            },
+            "errors": {
+                "institutName": "Le nom de l'institution est requis",
+                "institutType": "Le type d'institution est requis",
+                "email": "L'adresse email est requise",
+                "invalidEmail": "Format d'email invalide",
+                "phone": "Le numéro de téléphone est requis",
+                "invalidPhone": "Format de téléphone invalide",
+                "address": "L'adresse est requise",
+                "country": "Le pays est requis",
+                "website": "L'URL doit être valide",
+                "firstName": "Le prénom est requis",
+                "lastName": "Le nom est requis",
+                "password": "Le mot de passe est requis",
+                "passwordLength": "Le mot de passe doit contenir au moins 8 caractères",
+                "confirmPassword": "La confirmation du mot de passe est requise",
+                "passwordMatch": "Les mots de passe ne correspondent pas"
+            }
+        },
+        "forgotPassword": {
+            "title": "Mot de passe oublié",
+            "description": "Veuillez entrer votre adresse email pour recevoir un lien de réinitialisation.",
+            "emailLabel": "Adresse email",
+            "emailPlaceholder": "Entrez votre email",
+            "forgotPasswordButton": "Envoyer le lien",
+            "loading": "Envoi en cours...",
+            "alreadyHaveAccount": "Vous avez déjà un compte ?",
+            "signIn": "Connexion"
+        },
+        "resetPassword": {
+            "title": "Réinitialiser le mot de passe",
+            "newPasswordLabel": "Nouveau mot de passe",
+            "confirmPasswordLabel": "Confirmer le mot de passe",
+            "saveButton": "Enregistrer",
+            "loading": "Enregistrement...",
+            "alreadyHaveAccount": "Vous avez déjà un compte ?",
+            "signIn": "Connexion",
+            "newPasswordRequired": "Veuillez entrer un nouveau mot de passe",
+            "passwordsMustMatch": "Les mots de passe doivent correspondre"
+        },
+        "activatedAccount": {
+            "title": "Activation du compte",
+            "verifying": "Vérification en cours...",
+            "activationSuccess": "Votre compte a été activé avec succès.",
+            "activationError": "Une erreur s'est produite lors de l'activation du compte.",
+            "redirecting": "Redirection vers la page de connexion...",
+            "alreadyHaveAccount": "Vous avez déjà un compte ?",
+            "signIn": "Connexion"
+        },
+        "logout": {
+            "title": "Déconnexion",
+            "heading": "À bientôt !",
+            "description": "Vous êtes maintenant déconnecté avec succès.",
+            "alreadyAccount": "Vous avez déjà un compte ?",
+            "login": "Connexion"
+        }
+    },
+    "demandeur": {
+        "dashboard": "Tableau de bord",
+        "searchInstitut": "Rechercher un institut...",
+        "chargement": "Chargement...",
+        "Liste des Demandes": "Liste des demandes",
+        "Nouvelle Demande": "Nouvelle demande",
+        "Rechercher par intitulé ou demandeur...": "Rechercher par titre ou demandeur...",
+        "Institut": "Institut",
+        "Institut Demandeur": "Institut demandeur",
+        "Date de Demande": "Date de demande",
+        "Résultat": "Résultat",
+        "Actions": "Actions",
+        "Détails": "Détails",
+        "Inconnue": "Inconnue",
+        "showing_entries": "Affichage de {{first}} à {{last}} sur {{total}} entrées",
+        "Précédent": "Précédent",
+        "Suivant": "Suivant",
+        "Non disponible": "Non disponible",
+        "Accepted": "Accepté",
+        "Declined": "Refusé",
+        "Pending": "En attente",
+        "En cours": "En cours",
+        "En attente": "En attente",
+        "Intitulé": "Titre",
+        "transactions_list": "Liste des transactions",
+        "search_placeholder": "Rechercher par type de transaction ou paiement...",
+        "transaction_id": "ID",
+        "amount": "Montant",
+        "date": "Date",
+        "demand": "Demande",
+        "payment_type": "Type de paiement",
+        "status": "Statut",
+        "status_succeeded": "Réussi",
+        "status_pending": "En attente",
+        "status_failed": "Échoué",
+        "loadingDocuments": "Chargement des documents...",
+        "error": "Erreur : {error}",
+        "documentsList": "Liste des documents",
+        "searchByTitle": "Rechercher par titre...",
+        "actions": "Actions",
+        "adn": "#ADN",
+        "title": "Titre",
+        "documentType": "Type de document",
+        "obtainingYear": "Année d'obtention",
+        "institution": "Institution",
+        "details": "Détails",
+        "showingDocuments": "Affichage de {first} à {last} sur {total} documents",
+        "documentDetails": "Détails du document",
+        "requestDetails": "Détails de la demande",
+        "dateOfRequest": "Date de la demande",
+        "result": "Résultat",
+        "copyCodeAdn": "Copier le code ADN",
+        "previous": "Précédent",
+        "next": "Suivant",
+        "loadingInstitutDetails": "Chargement des détails de l'institut...",
+        "institutDetails": "Détails de l'institut",
+        "type": "Type",
+        "email": "Email",
+        "phone": "Téléphone",
+        "website": "Site web",
+        "address": "Adresse",
+        "country": "Pays",
+        "showing": "Affichage",
+        "to": "à",
+        "of": "sur",
+        "results": "résultats",
+        "nouvelleDemandeTitle": "Nouvelle demande",
+        "liste": "Liste",
+        "intituleLabel": "Titre du document demandé",
+        "institutLabel": "Quelle institution souhaitez-vous authentifier votre document ?",
+        "selectInstitut": "Sélectionner un institut",
+        "nameInstitutLabel": "Nom de l'institut demandant l'authenticité du document",
+        "emailInstitutLabel": "Email de l'institut",
+        "phoneInstitutLabel": "Téléphone de l'institut",
+        "adresseInstitutLabel": "Adresse de l'institut",
+        "paysInstitutLabel": "Pays de l'institut",
+        "anneeObtentionLabel": "Année d'obtention",
+        "institutDemandeurLabel": "Quelle institution demande ce document ?",
+        "selectInstitutDemandeur": "Sélectionner l'institut demandeur",
+        "paymentMethodLabel": "Méthode de paiement",
+        "selectPaymentMethod": "Sélectionner une méthode de paiement",
+        "cancel": "Annuler",
+        "pleaseWait": "Veuillez patienter...",
+        "validateForm": "Valider le formulaire",
+        "proceedToPayment": "Procéder au paiement",
+        "paymentSuccess": "Paiement réussi ! Votre demande a été enregistrée.",
+        "paymentFailed": "Échec du paiement. Veuillez réessayer.",
+        "loading": "Chargement...",
+        "cancelButton": "Annuler",
+        "codeUser": "ID",
+        "errors": {
+            "stripeInitializationError": "Erreur lors de l'initialisation de Stripe",
+            "intituleRequired": "Le titre est requis",
+            "nameInstitutRequired": "Le nom de l'institut est requis",
+            "invalidEmail": "Email invalide",
+            "emailInstitutRequired": "L'email de l'institut est requis",
+            "phoneInstitutRequired": "Le téléphone de l'institut est requis",
+            "adresseInstitutRequired": "L'adresse de l'institut est requise",
+            "paysInstitutRequired": "Le pays de l'institut est requis",
+            "anneeObtentionRequired": "L'année d'obtention est requise",
+            "institutDemandeurRequired": "L'institut demandeur est requis",
+            "paymentMethodRequired": "La méthode de paiement est requise"
+        },
+        "profileTitle": "Profil du demandeur",
+        "editButton": "Modifier",
+        "saveButton": "Enregistrer",
+        "lieuNaissance": "Pays de naissance",
+        "profession": "Profession",
+        "adresse": "Adresse",
+        "telephone": "Téléphone",
+        "paysResidence": "Pays de résidence",
+        "sexe": "Genre",
+        "fileTypeError": "Type de fichier non pris en charge. Veuillez choisir une image JPEG, PNG ou GIF.",
+        "fileSizeError": "L'image est trop volumineuse. La taille maximale est de 5 Mo.",
+        "imageUploadSuccess": "Image de profil mise à jour avec succès",
+        "imageUploadError": "Erreur lors du téléchargement de l'image. Veuillez réessayer.",
+        "saveError": "Erreur lors de l'enregistrement des modifications",
+        "loading_message": "Chargement...",
+        "demandesCount": "Nombre de candidatures",
+        "demandesAccepteCount": "Nombre de candidatures acceptées",
+        "demandesRejeteCount": "Nombre de candidatures rejetées",
+        "documentsCount": "Nombre de documents",
+        "recentOrders": "Commandes récentes",
+        "id": "#",
+        "intitule": "Titre",
+        "institut": "Institut",
+        "institutDemandeur": "Institut demandeur",
+        "dateDemande": "Date de la demande",
+        "resultat": "Résultat",
+        "unknown": "Inconnu",
+        "accepted": "Accepté",
+        "declined": "Refusé",
+        "pending": "En attente",
+        "inProgress": "En cours"
+    },
+    "institut": {
+        "profil": {
+            "profile": "Profil",
+            "loading": "Chargement...",
+            "profileUpdated": "Profil mis à jour avec succès",
+            "saveError": "Erreur lors de la sauvegarde des modifications",
+            "unsupportedFileType": "Type de fichier non supporté. Veuillez choisir une image JPEG, PNG ou GIF.",
+            "imageTooLarge": "L'image est trop volumineuse. La taille maximale est de 5MB.",
+            "profileImageUpdated": "Image de profil mise à jour avec succès",
+            "imageUploadError": "Erreur lors du téléchargement de l'image. Veuillez réessayer.",
+            "error": "Erreur",
+            "edit": "Modifier",
+            "saving": "Enregistrement...",
+            "save": "Sauvegarder",
+            "cancel": "Annuler",
+            "name": "Nom",
+            "type": "Type",
+            "address": "Adresse",
+            "phone": "Téléphone",
+            "email": "Email",
+            "country": "Pays",
+            "website": "Site Web",
+            "notSpecified": "Non renseigné",
+            "enter": "Entrez"
+        },
+        "abonnement": {
+            "newSubscription": "Nouvel Abonnement",
+            "list": "Liste",
+            "fullName": "Nom complet",
+            "fullName required": "Le nom complet est requis",
+            "startDate": "Date de début",
+            "startDate required": "La date de début est requise",
+            "endDate": "Date de fin",
+            "endDate required": "La date de fin est requise",
+            "paymentMethod": "Méthode de paiement",
+            "paymentMethod required": "La méthode de paiement est requise",
+            "selectPaymentMethod": "Sélectionnez une méthode de paiement",
+            "cancel": "Annuler",
+            "submitForm": "Valider le formulaire",
+            "proceedToPayment": "Procéder au paiement",
+            "paymentSuccess": "Paiement réussi ! Votre demande a été enregistrée.",
+            "paymentFailed": "Le paiement a échoué. Veuillez réessayer."
+        },
+        "type": {
+            "Ecole": "École",
+            "Banque": "Banque",
+            "Ambassade": "Ambassade",
+            "Université": "Université",
+            "Collège": "Collège",
+            "Lycée": "Lycée"
+        },
+        "typeAuth": "Type d'authentification",
+        "AUTH_MASS": "Authentification en masse",
+        "AUTH_SIMPLE": "Authentification simple",
+        "AUTH_DOCUMENT": "Authentification de document",
+        "demandesCount": "Nombre de demandes",
+        "demandesAccepteCount": "Nombre de demandes acceptées",
+        "demandesRejeteCount": "Nombre de demandes rejetées",
+        "documentsCount": "Nombre de documents",
+        "recentOrders": "Commandes récentes",
+        "id": "#",
+        "intitule": "Titre",
+        "demandeur": "Demandeur",
+        "dateDemande": "Date de la demande",
+        "anneeObtention": "Année d'obtention",
+        "resultat": "Résultat",
+        "actions": "Actions",
+        "details": "Détails",
+        "authentifier": "Authentifier",
+        "accepted": "Accepté",
+        "declined": "Refusé",
+        "pending": "En attente",
+        "loadingMessage": "Chargement des demandes...",
+        "errorMessage": "Erreur : ",
+        "demandesList": "Liste des demandes",
+        "verificationButton": "Faire une vérification",
+        "authenticateButton": "Authentifier",
+        "searchPlaceholder": "Rechercher par titre ou demandeur...",
+        "showingEntries": "Affichage de {{first}} à {{last}} sur {{total}} entrées",
+        "noDataFound": "Aucune donnée trouvée",
+        "demandeTitle": "Détails de la demande",
+        "demandeInfo": "Informations sur la demande",
+        "institutDemandeur": "Institut demandeur",
+        "nom": "Nom",
+        "email": "Email",
+        "telephone": "Téléphone",
+        "adresse": "Adresse",
+        "pays": "Pays",
+        "paysResidence": "Pays de résidence",
+        "document": "Document",
+        "typeDocument": "Type de document",
+        "dateObtention": "Date d'obtention",
+        "statut": "Statut",
+        "codeAdn": "Code ADN",
+        "documentPreview": "Aperçu du document",
+        "documentsList": "Liste des documents",
+        "documentDetails": "Détails du document",
+        "institutAssocie": "Institut associé",
+        "adn": "#ADN",
+        "documentTitle": "Détails du document"
+    },
+    "institutAuthentifier": {
+        "placeholderMention": "Entrez la mention",
+        "loadingMessage": "Chargement des détails du document...",
+        "errorMessage": "Erreur : ",
+        "documentTitle": "Détails du document",
+        "codeAdn": "Code ADN",
+        "typeDocument": "Type de document",
+        "dateObtention": "Date d'obtention",
+        "anneeObtention": "Année d'obtention",
+        "statut": "Statut",
+        "institutDemandeur": "Institut demandeur",
+        "nom": "Nom",
+        "email": "Email",
+        "telephone": "Téléphone",
+        "adresse": "Adresse",
+        "pays": "Pays",
+        "demandeur": "Demandeur",
+        "paysResidence": "Pays de résidence",
+        "documentPreview": "Aperçu du document",
+        "nomComplet": "Nom complet",
+        "dateNaissance": "Date de naissance",
+        "mention": "Mention",
+        "resultatDemande": "Résultat de la demande",
+        "document": "Document",
+        "fileSizeError": "Le fichier doit être inférieur à 10 Mo",
+        "fileTypeError": "Seuls les fichiers PDF sont acceptés",
+        "accepted": "Accepté",
+        "declined": "Refusé",
+        "pending": "En attente",
+        "cancelAuthentication": "Annuler l'authentification",
+        "save": "Enregistrer",
+        "newAuthentication": "Nouvelle authentification",
+        "selectDemandeur": "Sélectionner le demandeur",
+        "selectMention": "Mention",
+        "selectTypeDocument": "Sélectionner le type de document",
+        "selectAnneeObtention": "Sélectionner l'année d'obtention",
+        "selectResultatDemande": "Sélectionner le résultat de la demande",
+        "selectDocument": "Sélectionner le document",
+        "uploadDocument": "Télécharger le document",
+        "removeFile": "Supprimer le fichier",
+        "cancel": "Annuler",
+        "submit": "Soumettre",
+        "nouvelle_authentification": "Nouvelle authentification",
+        "description": "Remplissez le formulaire pour authentifier un document",
+        "pdfOnly": "PDF uniquement, max 10MB",
+        "authentification_masse_text": "Téléchargez plusieurs documents à la fois",
+        "dragAndDrop": "ou glissez-déposez vos fichiers ici",
+        "authentification_masse": "Authentification en masse",
+        "bientot_disponible": "Bientôt disponible",
+        "noFilesSelected": "Aucun fichier sélectionné",
+        "uploadedFiles": "Fichiers téléchargés"
+    },
+    "institutAbonnement": {
+        "En cours de validité": "En cours de validité",
+        "Expiré": "Expiré",
+        "subscriptions": "Abonnements",
+        "institut": "Institut",
+        "startDate": "Date de début",
+        "endDate": "Date de fin",
+        "amount": "Montant",
+        "status": "Statut",
+        "subscriptionList": "Liste des abonnements",
+        "addSubscription": "Ajouter un abonnement",
+        "searchPlaceholder": "Rechercher par date ou montant...",
+        "loading": "Chargement des abonnements...",
+        "error": "Erreur : ",
+        "valid": "Valide",
+        "expired": "Expiré",
+        "displaying": "Affichage de {indexOfFirstItem + 1} à {Math.min(indexOfLastItem, filteredAbonnements.length)} sur {filteredAbonnements.length} entrées"
+    },
+    "admin": {
+        "price": "Prix",
+        "fullName": "Nom complet",
+        "users": "Utilisateurs",
+        "userList": "Liste des utilisateurs",
+        "addUser": "Ajouter un utilisateur",
+        "firstName": "Prénom",
+        "lastName": "Nom",
+        "email": "Email",
+        "password": "Mot de passe",
+        "role": "Rôle",
+        "actions": "Actions",
+        "edit": "Modifier",
+        "save": "Enregistrer",
+        "cancel": "Annuler",
+        "submit": "Soumettre",
+        "contact_list": "Liste des contacts",
+        "search_placeholder": "Rechercher par nom ou email...",
+        "name": "Nom",
+        "subject": "Sujet",
+        "message": "Message",
+        "error_loading_contacts": "Erreur lors du chargement des contacts",
+        "dashboard": "Tableau de bord",
+        "loading_dashboard": "Chargement du tableau de bord...",
+        "error_loading_data": "Erreur lors du chargement des données",
+        "error": "Erreur",
+        "instituts": "Instituts",
+        "type": "Type",
+        "residence_country": "Pays de résidence",
+        "number_of_requests": "Nombre de demandes",
+        "requests": "Demandes",
+        "details": "Détails",
+        "demandeurs": "Demandeurs",
+        "phone": "Téléphone",
+        "profession": "Profession",
+        "demandes": "Demandes",
+        "title": "Titre",
+        "institut": "Institut",
+        "demandeur": "Demandeur",
+        "request_date": "Date de la demande",
+        "obtention_year": "Année d'obtention",
+        "result": "Résultat",
+        "demande_list": "Liste des demandes",
+        "loading_demandes": "Chargement des demandes...",
+        "error_loading_demandes": "Erreur lors du chargement des demandes",
+        "showing": "Affichage",
+        "to": "à",
+        "of": "sur",
+        "entries": "entrées",
+        "demande_details": "Détails de la demande",
+        "demande_info": "Informations sur la demande",
+        "associated_institut": "Institut associé",
+        "address": "Adresse",
+        "country": "Pays",
+        "demandeur_info": "Informations sur le demandeur",
+        "document": "Document",
+        "document_type": "Type de document",
+        "dna_code": "Code ADN",
+        "document_preview": "Aperçu du document",
+        "loading_demande_details": "Chargement des détails de la demande...",
+        "error_loading_demande": "Erreur lors du chargement des détails de la demande",
+        "no_data_found": "Aucune donnée trouvée",
+        "institut_list": "Liste des instituts",
+        "account": "Compte",
+        "active": "Actif",
+        "inactive": "Inactif",
+        "institut_documents": "Documents de l'institut",
+        "close": "Fermer",
+        "loading_instituts": "Chargement des instituts...",
+        "error_loading_instituts": "Erreur lors du chargement des instituts",
+        "confirm_status_change": "Confirmer le changement de statut ?",
+        "institut_details": "Détails de l'institut",
+        "website": "Site web",
+        "demandes_list": "Liste des demandes",
+        "id": "ID",
+        "date": "Date",
+        "previous": "Précédent",
+        "next": "Suivant",
+        "results": "résultats",
+        "loading_institut_details": "Chargement des détails de l'institut...",
+        "error_loading_institut": "Erreur lors du chargement des détails de l'institut",
+        "document_institut": "Document institut",
+        "unknown": "Inconnu",
+        "loading_documents": "Chargement des documents...",
+        "error_loading_documents": "Erreur lors du chargement des documents",
+        "demande_institut": "Demandes de l'institut",
+        "document_details": "Détails du document",
+        "document_details_info": "Détails du document",
+        "status": "Statut",
+        "institut_demandeur": "Institut demandeur",
+        "loading_document_details": "Chargement des détails du document...",
+        "error_loading_document": "Erreur lors du chargement des détails du document",
+        "document_list": "Liste des documents",
+        "export": "Exporter",
+        "documents": "documents",
+        "subscribers": "Abonnés",
+        "institutAbonnement": {
+            "subscriptions": "Abonnements",
+            "subscriptionList": "Liste des abonnements",
+            "addSubscription": "Ajouter un abonnement",
+            "searchPlaceholder": "Rechercher un abonnement...",
+            "newSubscription": "Nouvel abonnement",
+            "list": "Liste des abonnements",
+            "subscription_type": "Type d'abonnement",
+            "start_date": "Date de début",
+            "end_date": "Date de fin",
+            "amount": "Montant",
+            "status": "Statut",
+            "payment_method": "Méthode de paiement",
+            "payment_status": "Statut du paiement",
+            "created_at": "Créé le",
+            "actions": "Actions",
+            "no_subscriptions": "Aucun abonnement trouvé",
+            "active": "Actif",
+            "expired": "Expiré",
+            "pending": "En attente",
+            "cancelled": "Annulé"
+        }
+    },
+    "demandeurMenu": {
+        "dashboard": "Tableau de bord",
+        "requests": "Demandes",
+        "applicationTool": "Mes candidatures",
+        "myApplications": "Mes candidatures",
+        "newApplicationTool": "Nouvelle candidature",
+        "transaction": "Transaction",
+        "documents": "Documents",
+        "demandes": "Demandes",
+        "Nouvelle Demande": "Nouvelle demande",
+        "partages": "Partages",
+        "nouvelleDemande": "Nouvelle demande",
+        "mesDemandes": "Mes demandes",
+        "nouvelleDemandePartage": "Nouvelle demande partagée",
+        "mesPartages": "Mes partages",
+        "transactions": "Transactions",
+        "profil": "Profil",
+        "deconnexion": "Deconnexion",
+        "layout": {
+            "topbar": {
+                "demandeur": "Demandeur",
+                "mon_profil": "Mon profil",
+                "deconnexion": "Deconnexion",
+                "paramettre": "Paramettre"
+            }
+        }
+    },
+    "institutMenu": {
+        "addManageAdmin": "Ajouter un admin",
+        "manage_admins": "Gérer les admins",
+        "programme": "Programme",
+        "superviseurList": "Superviseurs",
+        "documentTool": "Outil de document",
+        "dashboard": "Tableau de bord",
+        "demandes": "Demandes",
+        "documents": "Documents",
+        "applicationTool": "Outil d'application",
+        "applications": "Candidatures",
+        "authentifier": "Authentifier",
+        "faire_une_verification": "Vérifier",
+        "abonnements": "Abonnements",
+        "dashboardDemandeur": "Tableau de bord du demandeur",
+        "partages": "Partages",
+        "ajouterPartage": "Partager un document",
+        "profil": "Profil",
+        "deconnexion": "Déconnexion",
+        "layout": {
+            "topbar": {
+                "institut": "Institut",
+                "noDemande": "Aucune demande trouvée",
+                "noDocumentsPartages": "Aucun document partagé",
+                "mon_profil": "Mon profil",
+                "deconnexion": "Deconnexion",
+                "paramettre": "Paramettre"
+            }
+        }
+    },
+    "adminMenu": {
+        "dashboard": "Tableau de bord",
+        "demandes": "Demandes",
+        "demandeurs": "Demandeurs",
+        "instituts": "Instituts",
+        "documents": "Documents",
+        "configuration": "Configuration",
+        "contacts": "Contacts",
+        "partages": "Partages",
+        "users": "Utilisateurs",
+        "profil": "Profil",
+        "deconnexion": "Deconnexion",
+        "mailer": "Mailer",
+        "configurations": "Configurations",
+        "comptes": "Comptes",
+        "layout": {
+            "topbar": {
+                "admin": "Administrateur",
+                "mon_profil": "Mon profil",
+                "deconnexion": "Deconnexion",
+                "paramettre": "Paramettre"
+            }
+        }
+    },
+    "adminConfiguration": {
+        "configuration": "Configuration",
+        "loading": "Chargement...",
+        "edit": "Modifier",
+        "save": "Enregistrer",
+        "cancel": "Annuler",
+        "error_loading_configurations": "Erreur lors du chargement des configurations",
+        "error_saving_changes": "Erreur lors de l'enregistrement des modifications",
+        "error_saving_logo": "Erreur lors de l'enregistrement du logo",
+        "email": "Email",
+        "name": "Nom",
+        "title_1": "Titre 1",
+        "title_2": "Titre 2",
+        "tel": "Téléphone",
+        "logo1": "Logo 1",
+        "logo2": "Logo 2",
+        "linkedin": "Linkedin",
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "prixDemandeur": "Prix demandeur",
+        "prixInstitut": "Prix institut"
+    },
+    "adminDemandeur": {
+        "loading_demandeurs": "Chargement des demandeurs...",
+        "error": "Erreur",
+        "demandeur_list": "Liste des demandeurs",
+        "search_placeholder": "Rechercher par nom ou email...",
+        "name": "Nom",
+        "email": "Email",
+        "phone": "Téléphone",
+        "country_of_residence": "Pays de résidence",
+        "profession": "Profession",
+        "actions": "Actions",
+        "details": "Détails",
+        "showing": "Affichage",
+        "to": "à",
+        "of": "sur",
+        "entries": "entrées"
+    },
+    "adminProfil": {
+        "configuration": "Configuration",
+        "admin_management": "Gestion des administrateurs",
+        "new_admin": "Nouvel administrateur",
+        "update_profile": "Mettre à jour le profil",
+        "manage_accounts": "Gérer les comptes",
+        "create_new_admin": "Créer un nouvel administrateur",
+        "admin_profile": "Profil administrateur",
+        "authentic_page_adn": "Apply Ons",
+        "username": "Nom d'utilisateur",
+        "email": "Email",
+        "current_password": "Mot de passe actuel",
+        "new_password": "Nouveau mot de passe",
+        "confirm_new_password": "Confirmer le nouveau mot de passe",
+        "saving": "Enregistrement...",
+        "save_changes": "Enregistrer les modifications",
+        "unsupported_file_type": "Type de fichier non pris en charge. Veuillez choisir une image JPEG, PNG ou GIF.",
+        "image_too_large": "L'image est trop volumineuse. La taille maximale est de 5 Mo.",
+        "profile_image_updated": "Image de profil mise à jour avec succès",
+        "error_uploading_image": "Erreur lors du téléchargement de l'image. Veuillez réessayer.",
+        "error_uploading_image_retry": "Erreur lors du téléchargement de l'image. Veuillez réessayer.",
+        "error_fetching_admins": "Erreur lors de la récupération des administrateurs",
+        "passwords_do_not_match": "Les mots de passe ne correspondent pas.",
+        "error_updating_profile": "Erreur lors de la mise à jour du profil",
+        "profile_updated": "Profil administrateur mis à jour avec succès",
+        "creating_new_admin": "Création d'un nouvel administrateur :",
+        "admin_account_created": "Compte administrateur créé avec succès",
+        "error_creating_admin": "Erreur lors de la création du compte administrateur",
+        "account_deactivated": "Compte désactivé avec succès",
+        "account_activated": "Compte activé avec succès",
+        "error_changing_status": "Erreur lors du changement de statut",
+        "search_by_username_or_email": "Rechercher par nom d'utilisateur ou email...",
+        "id": "ID",
+        "roles": "Rôles",
+        "status": "Statut",
+        "actions": "Actions",
+        "showing": "Affichage",
+        "to": "à",
+        "of": "sur",
+        "entries": "entrées",
+        "active": "Actif",
+        "inactive": "Inactif",
+        "deactivate": "Désactiver",
+        "activate": "Activer",
+        "admin": "Administrateur",
+        "demandeur": "Demandeur",
+        "institut": "Institut",
+        "create_admin": "Créer l'administrateur"
+    },
+    "adminDashboard": {
+        "demandes_count": "Nombre de demandes",
+        "demandeurs_count": "Nombre de demandeurs",
+        "instituts_count": "Nombre d'instituts",
+        "documents_count": "Nombre de documents",
+        "applications": "Candidatures",
+        "documents": "Documents",
+        "demandeurs": "Demandeurs",
+        "instituts": "Instituts"
+    },
+    "institutVerification": {
+        "user_code": "Code utilisateur",
+        "phone": "Téléphone",
+        "birth_date": "Date de naissance",
+        "birth_place": "Lieu de naissance",
+        "institute_name": "Nom de l'institut",
+        "type": "Type",
+        "email": "Email",
+        "address": "Adresse",
+        "profession": "Profession",
+        "gender": "Genre",
+        "country": "Pays",
+        "auth_type": "Type d'authentification",
+        "subscription_active_message": "Votre abonnement est actif. Vous pouvez effectuer des vérifications.",
+        "subscription_required_message": "Souscrivez à un abonnement pour accéder au service de vérification.",
+        "loading_information": "Chargement des informations...",
+        "verification_form": "Formulaire de Vérification",
+        "subscription_info_detail": "Pour accéder au service de vérification, veuillez souscrire à un abonnement. Le paiement est sécurisé et l'accès est immédiat après confirmation.",
+        "verification": "Vérification",
+        "make_verification": "Effectuer une vérification",
+        "document_details": "Détails du document",
+        "subscription_required": "Abonnement requis pour accéder au service de vérification",
+        "subscription_active": "Votre abonnement est actif",
+        "no_document_found": "Aucun document trouvé avec ces informations",
+        "document_found": "Document trouvé et vérifié",
+        "verification_success": "Vérification effectuée avec succès",
+        "verification_error": "Erreur lors de la vérification",
+        "payment_required": "Paiement requis pour accéder au service",
+        "payment_success": "Paiement effectué avec succès",
+        "make_payment": "Effectuer un paiement",
+        "initialization_error": "Erreur lors de l'initialisation",
+        "full_name": "Nom complet",
+        "enter_full_name": "Entrez le nom complet",
+        "adn_code": "Code ADN",
+        "enter_adn_code": "Entrez le code ADN",
+        "start_date": "Date de début",
+        "end_date": "Date de fin",
+        "reset": "Réinitialiser",
+        "verify": "Vérifier",
+        "verifying": "Vérification en cours...",
+        "loading_document": "Chargement du document...",
+        "document_error": "Erreur lors du chargement du document",
+        "view_document": "Voir le document",
+        "download_document": "Télécharger",
+        "document_authentic": "Document Authentique",
+        "document_expired": "Document Authentique (Expiré)",
+        "document_info": "Informations du Document",
+        "requester_info": "Informations du Demandeur",
+        "institute_info": "Informations de l'Institut",
+        "additional_info": "Informations Complémentaires",
+        "show_more": "Afficher plus d'informations",
+        "show_less": "Afficher moins d'informations",
+        "verified_by": "Ce document a été vérifié et authentifié par",
+        "verified_on": "Vérifié le",
+        "subscription_info": "Pour accéder au service de vérification, veuillez souscrire à un abonnement",
+        "subscription_premium": "Abonnement Premium",
+        "unlimited_access": "Accès illimité aux vérifications de documents",
+        "per_year": "par an",
+        "new_verification": "Nouvelle vérification",
+        "system_title": "Système de Vérification de Documents",
+        "system_description": "Vérifiez l'authenticité des documents en utilisant le code ADN et le nom complet du demandeur",
+        "loading": "Chargement...",
+        "payment_method": "Méthode de paiement",
+        "select_payment_method": "Sélectionner une méthode de paiement",
+        "credit_card": "Carte de crédit",
+        "cancel": "Annuler",
+        "validate": "Valider",
+        "pay_and_verify": "Payer et vérifier"
+    },
+    "authentifier_un_document": "Authentifier un document",
+    "adminMailer": {
+        "addEmail": "Ajouter un email",
+        "typeToAddEmail": "Type d'ajout d'email",
+        "recipients": "Destinataires",
+        "enterEmails": "Entrez les adresses email des destinataires",
+        "title": "Envoi de courrier administratif",
+        "email": "Email",
+        "subject": "Sujet",
+        "name": "Nom",
+        "message": "Message",
+        "cancel": "Annuler",
+        "submit": "Valider le formulaire",
+        "emailInvalid": "Email invalide",
+        "emailRequired": "L'email est requis",
+        "subjectRequired": "Le sujet est requis",
+        "nameRequired": "Le nom est requis",
+        "messageRequired": "Le message est requis"
+    },
+    "signIn": {
+        "title": "Connexion",
+        "emailLabel": "Adresse email",
+        "passwordLabel": "Mot de passe",
+        "rememberMe": "Se souvenir de moi",
+        "forgotPassword": "Mot de passe oublié ?",
+        "loading": "Chargement...",
+        "signInButton": "Se connecter",
+        "noAccount": "Vous n'avez pas de compte ?",
+        "signUp": "S'inscrire"
+    },
+    "resetPassword": {
+        "title": "Réinitialiser le mot de passe",
+        "newPasswordLabel": "Nouveau mot de passe",
+        "confirmPasswordLabel": "Confirmer le mot de passe",
+        "loading": "Chargement...",
+        "saveButton": "Enregistrer",
+        "alreadyHaveAccount": "Vous avez déjà un compte ?",
+        "signIn": "Se connecter"
+    },
+    "forgotPassword": {
+        "title": "Mot de passe oublié",
+        "emailLabel": "Adresse email",
+        "emailPlaceholder": "Entrez votre adresse email",
+        "forgotPasswordButton": "Mot de passe oublié",
+        "loading": "Chargement...",
+        "alreadyHaveAccount": "Vous avez déjà un compte ?",
+        "signIn": "Se connecter"
+    },
+    "institutDashboardDemandeur": {
+        "documents": "Tableau de bord des documents",
+        "liste_documents": "Documents du demandeur",
+        "search_documents": "Rechercher des documents",
+        "adn_code": "Code ADN",
+        "user_code": "Code demandeur",
+        "enter_adn_code": "Entrez le code du demandeur",
+        "full_name": "Nom complet",
+        "enter_full_name": "Entrez le nom complet",
+        "search": "Rechercher",
+        "no_document_found": "Aucun document trouvé",
+        "documents_found": "{{count}} document(s) trouvé(s)",
+        "verification_error": "Une erreur s'est produite lors de la vérification",
+        "add_document": "Ajouter un document",
+        "document_type": "Type de document",
+        "document_title": "Titre du document",
+        "year_obtained": "Année d'obtention",
+        "found_documents": "Documents trouvés",
+        "mention": "Mention",
+        "intituleLabel": "Titre du document",
+        "selectMention": "Mention",
+        "selectTypeDocument": "Type de document",
+        "selectAnneeObtention": "Année d'obtention",
+        "document": "Document",
+        "uploadDocument": "Télécharger un document",
+        "errors": {
+            "intituleRequired": "Le titre est requis"
+        },
+        "submitting": "Soumission en cours..."
+    },
+    "document": {
+        "type": "Type",
+        "obtention_date": "Date d'obtention",
+        "status": "Statut",
+        "adn_code": "Code ADN",
+        "view": "Voir le document"
+    },
+    "auth": {
+        "signIn": {
+            "success": "Connexion réussie",
+            "title": "Se connecter",
+            "connexion": "Se connecter",
+            "email": "Adresse e-mail",
+            "passwordLabel": "Mot de passe",
+            "rememberMe": "Se souvenir de moi",
+            "forgotPassword": "Mot de passe oublié?",
+            "loading": "Connexion en cours...",
+            "signInButton": "Se connecter",
+            "noAccount": "Vous n'avez pas de compte?",
+            "signUpButton": "S'inscrire",
+            "accountNotVerified": "Votre compte n'est pas actif"
+        },
+        "signUp": {
+            "loading": "Inscription en cours...",
+            "demandeurTitle": "Inscription Demandeur",
+            "demandeurSubtitle": "Créez votre compte pour faire vos demandes d'authentification",
+            "institutTitle": "Inscription",
+            "institutSubtitle": "Créez votre compte institution pour commencer à authentifier vos documents",
+            "title": "Inscription",
+            "name": "Nom complet",
+            "email": "Adresse e-mail",
+            "phone": "Numéro de téléphone",
+            "profession": "Profession",
+            "birthPlace": "Lieu de naissance",
+            "country": "Pays",
+            "birthDate": "Date de naissance",
+            "gender": "Genre",
+            "selectGender": "Sélectionner",
+            "male": "Homme",
+            "female": "Femme",
+            "other": "Autre",
+            "address": "Adresse",
+            "password": "Mot de passe",
+            "confirmPassword": "Confirmer le mot de passe",
+            "submit": "S'inscrire",
+            "alreadyAccount": "Vous avez déjà un compte ?",
+            "login": "Se connecter",
+            "type": "Type",
+            "university": "Université",
+            "school": "École",
+            "college": "Collège",
+            "website": "Site web",
+            "ambassade": "Ambassade",
+            "banque": "Banque",
+            "lycee": "Lycée",
+            "titre": "Titre",
+            "placeholders": {
+                "titre": "Entrez votre titre",
+                "institutName": "Entrez le nom de votre institut",
+                "institutType": "Entrez le type de votre institut",
+                "website": "Entrez votre site web",
+                "name": "Entrez votre nom complet",
+                "email": "Entrez votre e-mail",
+                "phone": "Entrez votre numéro",
+                "profession": "Entrez votre profession",
+                "birthPlace": "Entrez votre lieu de naissance",
+                "country": "Entrez votre pays",
+                "birthDate": "JJ/MM/AAAA",
+                "address": "Entrez votre adresse",
+                "password": "Entrez votre mot de passe",
+                "confirmPassword": "Confirmez votre mot de passe"
+            },
+            "errors": {
+                "name": "Veuillez entrer votre nom complet",
+                "email": "Veuillez entrer votre e-mail",
+                "invalidEmail": "E-mail invalide",
+                "phone": "Veuillez entrer votre numéro de téléphone",
+                "profession": "Veuillez entrer votre profession",
+                "birthPlace": "Veuillez entrer votre lieu de naissance",
+                "country": "Veuillez entrer votre pays",
+                "birthDate": "Veuillez entrer votre date de naissance",
+                "gender": "Veuillez sélectionner votre genre",
+                "address": "Veuillez entrer votre adresse",
+                "password": "Veuillez entrer votre mot de passe",
+                "passwordLength": "Au moins 6 caractères",
+                "confirmPassword": "Veuillez confirmer votre mot de passe",
+                "passwordMatch": "Les mots de passe doivent correspondre"
+            }
+        },
+        "resetPassword": {
+            "title": "Réinitialiser le mot de passe",
+            "newPasswordLabel": "Nouveau mot de passe",
+            "confirmPasswordLabel": "Confirmer le mot de passe",
+            "saveButton": "Enregistrer",
+            "loading": "Enregistrement...",
+            "alreadyHaveAccount": "Vous avez déjà un compte?",
+            "signIn": "Se connecter",
+            "newPasswordRequired": "Veuillez entrer un nouveau mot de passe",
+            "passwordsMustMatch": "Les mots de passe doivent correspondre"
+        },
+        "forgotPassword": {
+            "title": "Mot de passe oublié?",
+            "description": "Veuillez entrer votre e-mail pour recevoir un lien de réinitialisation.",
+            "emailLabel": "Adresse e-mail",
+            "emailPlaceholder": "Entrez votre e-mail",
+            "forgotPasswordButton": "Envoyer le lien",
+            "loading": "Envoi en cours...",
+            "alreadyHaveAccount": "Vous avez déjà un compte?",
+            "signIn": "Se connecter"
+        },
+        "activatedAccount": {
+            "title": "Activation de compte",
+            "verifying": "Vérification...",
+            "activationSuccess": "Votre compte a été activé avec succès.",
+            "activationError": "Une erreur est survenue lors de l'activation de votre compte.",
+            "redirecting": "Redirection vers la page de connexion...",
+            "alreadyHaveAccount": "Vous avez déjà un compte?",
+            "signIn": "Se connecter"
+        },
+        "logout": {
+            "title": "Se déconnecter",
+            "heading": "À bientôt!",
+            "description": "Vous avez été déconnecté avec succès.",
+            "alreadyAccount": "Vous avez déjà un compte?",
+            "login": "Se connecter"
+        }
+    },
+    "FAQContent": {
+        "title": "Questions fréquemment posées",
+        "description": "Trouvez des réponses aux questions courantes sur AuthenticPage"
+    },
+    "faqItems": [{
+            "title": "Comment puis-je authentifier mon diplôme ?",
+            "description": "Pour authentifier votre diplôme, créez un compte sur notre plateforme et soumettez une demande d'authentification. Des frais de 50 $ seront facturés pour chaque demande."
+        },
+        {
+            "title": "Quelles institutions peuvent utiliser AuthenticPage ?",
+            "description": "AuthenticPage peut être utilisé par diverses institutions, notamment les universités, les écoles académiques, les ambassades, les institutions financières et les entreprises. Toute organisation ou entité qui a besoin de vérifier des documents académiques ou officiels peut bénéficier de l'utilisation d'AuthenticPage."
+        },
+        {
+            "title": "Quel est le coût d'abonnement pour les institutions ?",
+            "description": "Les institutions peuvent s'abonner à AuthenticPage pour 100 $ par mois, ce qui leur donne un accès illimité aux services de vérification de documents. Cet abonnement permet aux institutions de soumettre des demandes d'authentification illimitées pour divers types de documents."
+        },
+        {
+            "title": "Que dois-je faire si j'ai des problèmes avec ma demande d'authentification ?",
+            "description": "Si vous rencontrez des problèmes avec votre demande d'authentification, veuillez contacter notre équipe de support client via la page de contact sur notre site web. Notre équipe de support est prête à vous aider et à résoudre tout problème ou question que vous pourriez avoir concernant le processus d'authentification."
+        }
+    ],
+    "footerContent": {
+        "title": "Contactez-nous",
+        "description": "AuthenticPage se consacre à fournir une solution sécurisée et efficace pour l'authentification des diplômes et certificats académiques.",
+        "email": "Email",
+        "termsLink": "Conditions d'utilisation et politique",
+        "footerLinks": {
+            "0": {
+                "title": "Liens utiles",
+                "items": {
+                    "0": {
+                        "name": "À propos",
+                        "link": "À propos"
+                    },
+                    "1": {
+                        "name": "Services",
+                        "link": "Services"
+                    },
+                    "2": {
+                        "name": "Tarification",
+                        "link": "Tarification"
+                    },
+                    "3": {
+                        "name": "Contact",
+                        "link": "Contact"
+                    }
+                }
+            },
+            "1": {
+                "title": "Réseaux sociaux",
+                "items": {
+                    "0": {
+                        "name": "Facebook"
+                    },
+                    "1": {
+                        "name": "Instagram"
+                    },
+                    "2": {
+                        "name": "Twitter"
+                    },
+                    "3": {
+                        "name": "LinkedIn"
+                    }
+                }
+            },
+            "2": {
+                "title": "Mentions légales",
+                "items": {
+                    "0": {
+                        "name": "Politique de confidentialité",
+                        "link": "/privacy-policy"
+                    },
+                    "1": {
+                        "name": "Conditions générales",
+                        "link": "/terms-and-conditions"
+                    }
+                }
+            }
+        }
+    },
+    "validation": {
+        "emailValid": "Veuillez entrer une adresse email valide",
+        "emailRequired": "L'email est requis"
+    },
+    "alt": {
+        "logo": "Logo ApplyOns"
+    },
+    "pricing": {
+        "title": "Tarification",
+        "subtitle": "Des plans flexibles adaptés à tous les besoins",
+        "popular": "Populaire",
+        "plans": {
+            "institution": {
+                "title": "Institution",
+                "description": "Pour les établissements d'enseignement et les institutions",
+                "price": "99",
+                "period": "/année",
+                "features": [
+                    "Authentification illimitée des documents",
+                    "Tableau de bord complet",
+                    "Gestion des demandes",
+                    "Support prioritaire",
+                    "Accès multi-utilisateurs",
+                    "Rapports détaillés",
+                    "Sécurité renforcée"
+                ],
+                "cta": "Commencer"
+            },
+            "applicant": {
+                "title": "Demandeur",
+                "description": "Pour les étudiants et les candidats",
+                "price": "49",
+                "period": "/demande",
+                "features": [
+                    "49$ par demande d'authentification",
+                    "Suivi des demandes en temps réel",
+                    "Téléchargement sécurisé des documents",
+                    "Notifications automatiques",
+                    "Support par email",
+                    "Interface intuitive",
+                    "Paiement sécurisé"
+                ],
+                "cta": "Commencer"
+            }
+        }
+    },
+    "privacy": {
+        "title": "Politique de confidentialité",
+        "subtitle": "Comment nous protégeons et utilisons vos données personnelles.",
+        "lastUpdated": "Dernière mise à jour : 19 mai 2025",
+        "introduction": {
+            "title": "Introduction",
+            "description": "Chez Applysons, la confidentialité de vos données est notre priorité. Cette politique explique comment nous collectons, utilisons et protégeons vos informations."
+        },
+        "dataCollection": {
+            "title": "Collecte des données",
+            "description": "Nous collectons différentes catégories de données afin de vous fournir un service optimal :",
+            "items": {
+                "personal": "Informations personnelles (nom, email, numéro de téléphone)",
+                "academic": "Données académiques (diplômes, certifications)",
+                "verification": "Documents de vérification (pièces d’identité, attestations)",
+                "usage": "Données d’usage de la plateforme"
+            }
+        },
+        "dataUse": {
+            "title": "Utilisation des données",
+            "description": "Les données collectées sont utilisées aux fins suivantes :",
+            "items": {
+                "verification": "Vérification de documents académiques",
+                "communication": "Communication avec les utilisateurs",
+                "improvement": "Amélioration continue de nos services",
+                "security": "Sécurisation de la plateforme"
+            }
+        },
+        "dataSecurity": {
+            "title": "Sécurité des données",
+            "description": "Nous mettons en œuvre des mesures techniques et organisationnelles pour sécuriser vos données, notamment :",
+            "items": {
+                "encryption": "Cryptage des données sensibles",
+                "access": "Contrôle strict des accès",
+                "monitoring": "Surveillance et alertes en cas d’accès non autorisé",
+                "compliance": "Conformité aux normes en vigueur"
+            }
+        },
+        "userRights": {
+            "title": "Droits des utilisateurs",
+            "description": "Vous disposez des droits suivants concernant vos données personnelles :",
+            "items": {
+                "access": "Droit d’accès à vos données",
+                "rectification": "Droit de rectification",
+                "deletion": "Droit à l’effacement",
+                "portability": "Droit à la portabilité"
+            }
+        },
+        "cookies": {
+            "title": "Cookies",
+            "description": "Nous utilisons des cookies pour améliorer votre expérience :",
+            "items": {
+                "essential": "Cookies essentiels au bon fonctionnement",
+                "preferences": "Cookies de préférences utilisateur",
+                "analytics": "Cookies d’analyse de performance",
+                "security": "Cookies de sécurité"
+            }
+        },
+        "contact": {
+            "title": "Nous contacter",
+            "description": "Pour toute question concernant cette politique, contactez-nous à privacy@applysons.com"
+        }
+    },
+    "terms": {
+        "title": "Conditions Générales d'Utilisation",
+        "subtitle": "Conditions d'utilisation de nos services.",
+        "acceptance": {
+            "title": "Acceptation des conditions",
+            "description": "En accédant à Applysons et en l'utilisant, vous acceptez les présentes conditions générales. Si vous n'acceptez pas ces conditions, vous ne devez pas utiliser la plateforme."
+        },
+        "services": {
+            "title": "Services offerts par Applysons",
+            "description": "Applysons fournit une plateforme pour l'authentification et le suivi des documents académiques. Nos principaux services incluent :",
+            "items": {
+                "applications": "Soumission de documents pour authentification",
+                "documents": "Gestion des documents académiques",
+                "communication": "Communication avec les établissements",
+                "tracking": "Suivi de l'état de l'authentification"
+            }
+        },
+        "userObligations": {
+            "title": "Obligations de l'utilisateur",
+            "description": "En tant qu'utilisateur, vous vous engagez à :",
+            "items": {
+                "accuracy": "Fournir des informations exactes et à jour",
+                "security": "Garantir la confidentialité de votre compte",
+                "compliance": "Respecter les lois et règlements en vigueur",
+                "responsibility": "Utiliser la plateforme uniquement à des fins légales"
+            }
+        },
+        "intellectualProperty": {
+            "title": "Propriété intellectuelle",
+            "description": "Tout le contenu d'Applysons (logos, textes, graphismes) est protégé par des droits de propriété intellectuelle. Toute utilisation non autorisée est interdite."
+        },
+        "liability": {
+            "title": "Limitation de responsabilité",
+            "description": "Applysons ne pourra être tenu responsable des dommages directs ou indirects résultant de l'utilisation de la plateforme. Nous ne garantissons pas l'authenticité des documents soumis."
+        },
+        "termination": {
+            "title": "Résiliation",
+            "description": "Nous nous réservons le droit de résilier votre compte à tout moment en cas de violation de ces conditions."
+        },
+        "modifications": {
+            "title": "Modification des conditions",
+            "description": "Applysons peut modifier ces conditions à tout moment. Les utilisateurs seront informés et doivent consulter régulièrement les mises à jour."
+        },
+        "contact": {
+            "title": "Contact",
+            "description": "Pour toute question concernant ces conditions, veuillez nous contacter à support@applysons.com."
+        }
+    },
+    "institutSuperviseur": {
+        "status": "Statut",
+        "status_active": "Actif",
+        "status_inactive": "Inactif",
+        "inactive": "Inactif",
+        "activate_account": "Activer le compte",
+        "deactivate_account": "Désactiver le compte",
+        "activate_warning": "Le superviseur pourra se connecter et accéder au système.",
+        "deactivate_warning": "Le superviseur ne pourra plus se connecter au système.",
+        "account_activated": "Compte activé avec succès!",
+        "account_deactivated": "Compte désactivé avec succès!",
+        "error_updating_status": "Erreur lors de la mise à jour du statut",
+        "edit_role": "Modifier le rôle",
+        "edit_supervisor_role": "Modifier le rôle du superviseur",
+        "supervisor_name": "Nom du superviseur",
+        "current_role": "Rôle actuel",
+        "new_role": "Nouveau rôle",
+        "supervisor_updated_success": "Rôle du superviseur mis à jour avec succès!",
+        "error_updating_supervisor": "Erreur lors de la mise à jour du superviseur",
+        "error_fetching_superviseur": "Erreur lors de la récupération des superviseurs",
+        "supervisor_added_success": "Superviseur ajouté avec succès !",
+        "supervisor_deleted_success": "Superviseur supprimé avec succès !",
+        "confirm_delete_title": "Êtes-vous sûr de vouloir supprimer ce superviseur ?",
+        "confirm_delete_content": "Cette action est irréversible.",
+        "role_write": "Écriture",
+        "role_read": "Lecture",
+        "copy_email": "Copier l'email",
+        "copy_phone": "Copier le téléphone",
+        "copy_password": "Copier le mot de passe",
+        "show_password": "Afficher",
+        "hide_password": "Cacher",
+        "edit_functionality_todo": "Fonctionnalité de modification à implémenter",
+        "search_supervisors": "Rechercher des superviseurs...",
+        "addNewSupervisor": "Ajouter un superviseur",
+        "addSupervisor": "Ajouter un nouveau superviseur",
+        "name": "Nom",
+        "email": "Email",
+        "phone": "Téléphone",
+        "address": "Adresse",
+        "role": "Rôle",
+        "password": "Mot de passe",
+        "actions": "Actions",
+        "total": "Total",
+        "supervisors": "superviseurs",
+        "name_required": "Veuillez saisir le nom du superviseur !",
+        "email_required": "Veuillez saisir l'email !",
+        "phone_required": "Veuillez saisir le numéro de téléphone !",
+        "address_required": "Veuillez saisir l'adresse !",
+        "role_required": "Veuillez sélectionner un rôle !",
+        "name_placeholder": "Nom complet du superviseur",
+        "email_placeholder": "email@exemple.com",
+        "phone_placeholder": "77 900 00 11",
+        "address_placeholder": "Adresse complète",
+        "email_invalid": "Veuillez saisir un email valide !",
+        "role_placeholder": "Sélectionner un rôle",
+        "role_read_only": "Lecture seule",
+        "role_write_full": "Lecture et écriture",
+        "role_read_description": "Peut consulter les données",
+        "role_write_description": "Peut consulter et modifier les données",
+        "password_optional": "Mot de passe (optionnel)",
+        "password_placeholder": "Mot de passe personnalisé",
+        "password_default_info": "Laisser vide pour utiliser le mot de passe par défaut : password123"
+    },
+    "application": {
+        "resetForm": "Réinitialiser le formulaire",
+        "title": "Formulaire de Candidature Universitaire",
+        "saving": "Sauvegarde...",
+        "lastSaved": "Dernière sauvegarde",
+        "autoSaveEnabled": "Sauvegarde automatique activée",
+        "saveAndContinue": "Sauvegarder et Continuer",
+        "formRestored": "Données du formulaire restaurées de la session précédente",
+        "formSaved": "Formulaire sauvegardé avec succès",
+        "loading": "Chargement...",
+        "progress": "Progression",
+        "basicInformation": "Informations de Base",
+        "personalInformation": "Informations Personnelles",
+        "englishProficiency": "Maîtrise de l'Anglais",
+        "academicBackground": "Parcours Académique",
+        "intendedProgramOfStudy": "Programme d'Études Souhaité",
+        "preferredStartPeriod": "Période de Début Préférée",
+        "preferredStartPeriodShort": "Période",
+        "activitiesAndAchievements": "Activités et Réalisations",
+        "familyInformation": "Informations Familiales",
+        "financialInformation": "Informations Financières",
+        "visaInformation": "Informations Visa",
+        "essays": "Essais",
+        "institutSelection": "Sélection d'Institutions",
+        "institutSelectionDescription": "L'institut auquel vous voulez faire une demande d'admission par exemple",
+        "paymentSubmission": "Paiement et Soumission",
+        "tabs": {
+            "basicInfo": "Informations de Base",
+            "basicInfoShort": "Base",
+            "personalInfo": "Informations Personnelles",
+            "personalInfoShort": "Personnel",
+            "englishProficiency": "Maîtrise de l'Anglais",
+            "englishProficiencyShort": "Anglais",
+            "academicBackground": "Parcours Académique",
+            "academicBackgroundShort": "Académique",
+            "programStudy": "Programme d'Études",
+            "programStudyShort": "Programme",
+            "preferredStartPeriod": "Période de Début Préférée",
+            "preferredStartPeriodShort": "Période",
+            "activities": "Activités",
+            "activitiesShort": "Activités",
+            "familyInfo": "Informations Familiales",
+            "familyInfoShort": "Famille",
+            "financialInfo": "Informations Financières",
+            "financialInfoShort": "Financier",
+            "visaInfo": "Informations Visa",
+            "visaInfoShort": "Visa",
+            "essays": "Essais",
+            "essaysShort": "Essais",
+            "institutSelection": "Sélection d'Institutions",
+            "institutSelectionShort": "Institutions",
+            "paymentSubmission": "Paiement et Soumission",
+            "paymentSubmissionShort": "Paiement"
+        },
+        "fields": {
+            "institut_traducteur": "Sélectionner l'institut de traduction",
+            "parentOccupation": "Occupation du Parent",
+            "parentOccupationPlaceholder": "Entrez l'occupation du parent",
+            "fullLegalName": "Nom Légal Complet",
+            "fullNamePlaceholder": "Entrez votre nom légal complet",
+            "gender": "Genre",
+            "genderPlaceholder": "-- Sélectionner --",
+            "genderMale": "Masculin",
+            "genderFemale": "Féminin",
+            "genderNonBinary": "Non-binaire",
+            "genderPreferNotToSay": "Préfère ne pas dire",
+            "genderSelfDescribe": "Auto-description",
+            "email": "Email",
+            "emailPlaceholder": "Entrez votre adresse email",
+            "phone": "Téléphone (avec indicatif pays)",
+            "phonePlaceholder": "Entrez votre numéro de téléphone avec l'indicatif pays",
+            "permanentAddress": "Adresse Permanente",
+            "permanentAddressPlaceholder": "Entrez votre adresse permanente complète",
+            "academicYear": "Année Académique",
+            "selectInstitut": "Sélectionner un Institut",
+            "selectInstitutPlaceholder": "Choisissez un institut dans la liste",
+            "requestDescription": "Description de la Demande",
+            "requestDescriptionPlaceholder": "Décrivez votre demande de candidature...",
+            "period": "Période",
+            "selectPeriod": "Sélectionnez une période",
+            "year": "Année",
+            "selectYear": "Sélectionnez une année",
+            "selectedPeriod": "Période sélectionnée",
+            "institute": "Institut",
+            "selectInstitute": "Sélectionnez un institut",
+            "instituteDescription": "L'institut auquel vous voulez faire une demande d'admission par exemple",
+            "studyLevel": "Niveau d'Études",
+            "selectStudyLevel": "Sélectionnez le niveau d'études",
+            "fieldOfStudy": "Domaine d'Études",
+            "selectFieldOfStudy": "Sélectionnez le domaine d'études",
+            "dateOfBirth": "Date de Naissance",
+            "countryOfCitizenship": "Pays de Citoyenneté",
+            "citizenshipPlaceholder": "Sélectionnez votre pays de citoyenneté",
+            "passportNumber": "Numéro de Passeport",
+            "passportPlaceholder": "Entrez votre numéro de passeport",
+            "isEnglishFirstLanguage": "L'anglais est-il votre langue maternelle ?",
+            "englishProficiencyTests": "Tests de Maîtrise de l'Anglais",
+            "testScores": "Scores des Tests",
+            "testScoresPlaceholder": "Entrez vos scores de tests",
+            "secondarySchoolName": "Nom de l'École Secondaire",
+            "secondarySchoolPlaceholder": "Entrez le nom de votre école secondaire",
+            "countryOfSchool": "Pays de l'École",
+            "countryOfSchoolPlaceholder": "Sélectionnez le pays de votre école",
+            "graduationDate": "Date de Diplôme",
+            "gradingScale": "Échelle de Notation",
+            "gradingScalePlaceholder": "ex: échelle 4.0, échelle 100 points",
+            "gpaOrAverage": "GPA ou Moyenne",
+            "gpaPlaceholder": "Entrez votre GPA ou note moyenne",
+            "examsTaken": "Examens Passés",
+            "intendedMajor": "Spécialisation Souhaitée",
+            "intendedMajorPlaceholder": "Sélectionnez votre spécialisation souhaitée",
+            "preferredStartPeriod": "Période de Début Préférée",
+            "extracurricularActivities": "Activités Extrascolaires",
+            "extracurricularPlaceholder": "Décrivez vos activités extrascolaires...",
+            "honorsOrAwards": "Distinctions ou Prix",
+            "honorsPlaceholder": "Listez les distinctions ou prix reçus...",
+            "parentGuardianName": "Nom du Parent/Tuteur",
+            "parentGuardianPlaceholder": "Entrez le nom du parent ou tuteur",
+            "educationLevel": "Niveau d'Éducation",
+            "selectEducationLevel": "Sélectionnez le niveau d'éducation",
+            "willApplyForFinancialAid": "Demanderez-vous une aide financière ?",
+            "hasExternalSponsorship": "Avez-vous un parrainage externe ?",
+            "visaType": "Type de Visa",
+            "selectVisaType": "Sélectionnez le type de visa",
+            "hasPreviouslyStudiedInUS": "Avez-vous déjà étudié aux États-Unis ?",
+            "personalStatement": "Déclaration Personnelle",
+            "personalStatementPlaceholder": "Rédigez votre déclaration personnelle...",
+            "optionalEssay": "Essai Optionnel",
+            "optionalEssayPlaceholder": "Rédigez votre essai optionnel...",
+            "applicationRound": "Tour de Candidature",
+            "selectApplicationRound": "Sélectionnez le tour de candidature",
+            "howDidYouHearAboutUs": "Comment avez-vous entendu parler de nous ?",
+            "howDidYouHearPlaceholder": "Dites-nous comment vous avez découvert notre service",
+            "paymentMethod": "Méthode de Paiement",
+            "selectPaymentMethod": "Sélectionnez la méthode de paiement",
+            "fall": "Automne",
+            "spring": "Printemps",
+            "summer": "Été"
+        },
+        "options": {
+            "select": "Sélectionner",
+            "periods": {
+                "spring": "Printemps",
+                "summer": "Été",
+                "fall": "Automne",
+                "winter": "Hiver",
+                "other": "Autre"
+            },
+            "studyLevels": {
+                "bachelor": "Licence",
+                "master": "Master",
+                "phd": "Doctorat",
+                "other": "Autre"
+            },
+            "yesNo": {
+                "yes": "Oui",
+                "no": "Non",
+                "notSure": "Pas sûr"
+            },
+            "englishTests": {
+                "toefl": "TOEFL",
+                "ielts": "IELTS",
+                "duolingo": "Test d'Anglais Duolingo",
+                "pte": "PTE Academic",
+                "none": "Aucun"
+            },
+            "exams": {
+                "alevels": "A-Levels",
+                "ib": "Diplôme IB",
+                "waec": "WAEC/NECO",
+                "baccalaureat": "Baccalauréat Français",
+                "national": "Examens Nationaux"
+            },
+            "educationLevels": {
+                "noFormal": "Aucune éducation formelle",
+                "secondary": "Secondaire",
+                "bachelors": "Licence",
+                "graduate": "Diplômé"
+            },
+            "visaTypes": {
+                "none": "Aucun",
+                "f1": "Visa Étudiant F-1",
+                "j1": "Échange J-1",
+                "other": "Autre"
+            },
+            "applicationRounds": {
+                "regularDecision": "Décision Régulière",
+                "earlyAction": "Action Précoce",
+                "earlyDecision": "Décision Précoce"
+            },
+            "paymentMethods": {
+                "paypal": "PayPal",
+                "stripe": "Carte de Crédit (Stripe)"
+            }
+        },
+        "buttons": {
+            "previous": "Précédent",
+            "next": "Suivant",
+            "validateForm": "Valider le Formulaire",
+            "pleaseWait": "Veuillez patienter...",
+            "cancel": "Annuler"
+        },
+        "validation": {
+            "fillRequiredFields": "Veuillez remplir tous les champs obligatoires",
+            "formValidated": "Formulaire validé avec succès"
+        },
+        "payment": {
+            "proceedToPayment": "Procéder au Paiement",
+            "paymentAmount": "Montant du Paiement",
+            "paymentCompleted": "Paiement effectué avec succès",
+            "paymentFailed": "Échec du paiement",
+            "paymentError": "Erreur de paiement survenue",
+            "paymentSuccess": "Paiement réussi !",
+            "requestCreatedSuccess": "Demande créée avec succès",
+            "pleaseRetry": "Veuillez réessayer"
+        },
+        "selectInstitutionsDescription": "Sélectionnez les institutions auxquelles vous souhaitez envoyer la demande:",
+        "addCustomInstitut": "Ajouter une Institution Personnalisée",
+        "addCustomInstitutDescription": "Vous ne trouvez pas votre institution ? Ajoutez-la manuellement :",
+        "institutName": "Nom de l'Institution",
+        "institutNamePlaceholder": "Entrez le nom de l'institution",
+        "institutEmail": "Email de l'Institution",
+        "institutEmailPlaceholder": "Entrez l'email de l'institution",
+        "addInstitut": "Ajouter l'Institution",
+        "customInstitutAdded": "Institution personnalisée ajoutée avec succès",
+        "fillAllFields": "Veuillez remplir tous les champs",
+        "customInstituts": "Institutions Personnalisées",
+        "customInstitutNote": "Institution personnalisée",
+        "remove": "Supprimer",
+        "selectedInstitutions": "Institutions Sélectionnées",
+        "custom": "Personnalisé",
+        "totalApplicationFee": "Frais de candidature total",
+        "applicationSummary": "Résumé de la Candidature",
+        "totalAmount": "Montant Total"
+    },
+
+    "institutTraducteurDetails": {
+
+        "total_documents": "Total des documents",
+        "translated_documents": "Documents traduits",
+        "pending_documents": "Documents en attente",
+        "institutes_count": "Instituts",
+        "upload_translated_document": "Télécharger un document traduit",
+        "upload": "Télécharger",
+        "upload_instruction": "Sélectionnez le document traduit à télécharger (PDF uniquement, max 10 Mo)",
+        "drag_drop_text": "Cliquez ou glissez-déposez le fichier ici pour le télécharger",
+        "file_format_hint": "Seuls les fichiers PDF sont acceptés",
+        "translated": "Traduit",
+        "download_original": "Télécharger l'original",
+        "download_translated": "Télécharger la traduction",
+        "upload_translation": "Télécharger la traduction",
+        "view_translated": "Voir la traduction",
+        "title": "Intitulé",
+        "type": "Type",
+        "institute_information": "Informations Institut",
+        "year_obtained": "Année d'obtention",
+        "view_document": "Voir document",
+        "pdf_document": "Document PDF",
+        "loading_document": "Chargement du document...",
+        "pdf_viewer": "Visionneuse PDF",
+        "no_document_to_display": "Aucun document à afficher",
+        "error_loading_document": "Erreur lors du chargement du document",
+        "error_fetching_details": "Erreur lors de la récupération des détails",
+        "document_details": "Détails du document",
+        "document_title": "Intitulé",
+        "document_type": "Type",
+        "institut_info": "Informations Institut",
+        "request_info": "Informations Demande",
+        "period": "Période",
+        "description": "Description",
+        "requester_info": "Informations Demandeur",
+        "request_date": "Date de demande",
+        "status": "Statut",
+        "dna_code": "Code ADN",
+        "date_obtained": "Date d'obtention"
+    },
+    "institutTraducteur": {
+        "applicant_information": "Informations Candidat(e)",
+        "applications": "Candidatures",
+        "applican": "Candidat(e)",
+        "view_translation": "Voir la traduction",
+        "institute_information_traducteur": "Informations Institut Traducteur",
+        "demande_de_traduction": "Demande de Traduction",
+        "download": "Télécharger",
+        "upload": "Téléverser",
+        "showing": "Affichage",
+        "of": "sur",
+        "institut_details": "Détails de l'institut",
+        "website": "Site web",
+        "dossierAtraiter": "Dossiers à traiter",
+        "address": "Adresse",
+        "pdf_document": "Document PDF",
+        "no_document_to_display": "Aucun document à afficher.",
+        "view_document": "Voir le document",
+        "title": "Titre",
+        "type": "Type",
+        "institute_information": "Informations sur l'institut",
+        "name": "Nom",
+        "country": "Pays",
+        "dossierATraiter": "Dossiers à traiter",
+        "institute": "Institut",
+        "requester": "Demandeur",
+        "code": "Code",
+        "request_date": "Date de demande",
+        "documents": "Documents",
+        "actions": "Actions",
+        "details": "Détails",
+        "email": "Email",
+        "phone": "Téléphone",
+        "dna_code": "Code ADN",
+        "request_details": "Détails de la demande",
+        "assigned_requests_list": "Liste des demandes assignées",
+        "search_placeholder": "Rechercher par code ou nom du demandeur...",
+        "total": "Total",
+        "requests": "demandes",
+        "error_fetching_requests": "Erreur lors de la récupération des demandes",
+        "periode": "Période",
+        "periode_1": "Printemps",
+        "periode_2": "Été",
+        "periode_3": "Automne",
+        "periode_4": "Hiver",
+        "periode_5": "Autre",
+        "select_periode": "Sélectionner période",
+        "select_year": "Sélectionner année",
+        "document_details": "Détails du document",
+        "document_title": "Intitulé",
+        "document_type": "Type",
+        "institut_info": "Informations Institut",
+        "request_info": "Informations Demande",
+        "period": "Période",
+        "description": "Description",
+        "year_obtained": "Année",
+        "detailsDemandeur": "Détails du demandeur",
+        "my_requests": "Mes demandes",
+        "view_request_details": "Voir les détails de la demande",
+        "document_count": "document(s)",
+        "status": {
+            "accepted": "Accepté",
+            "processing": "En cours",
+            "pending": "En attente",
+            "rejected": "Rejeté"
+        }
+    }
+}

@@ -1,0 +1,125 @@
+{
+  "specialisations": [
+    {
+      "domaine": "Arts et Sciences Humaines",
+      "specialisations": [
+        "Littérature",
+        "Histoire",
+        "Philosophie",
+        "Beaux-arts",
+        "Musique",
+        "Théâtre"
+      ]
+    },
+    {
+      "domaine": "Sciences Sociales",
+      "specialisations": [
+        "Psychologie",
+        "Sociologie",
+        "Anthropologie",
+        "Sciences politiques",
+        "Économie",
+        "Géographie"
+      ]
+    },
+    {
+      "domaine": "Sciences Naturelles et Mathématiques",
+      "specialisations": [
+        "Biologie",
+        "Chimie",
+        "Physique",
+        "Mathématiques",
+        "Sciences de la Terre",
+        "Astronomie"
+      ]
+    },
+    {
+      "domaine": "Ingénierie et Technologie",
+      "specialisations": [
+        "Génie civil",
+        "Génie mécanique",
+        "Génie électrique",
+        "Génie informatique",
+        "Génie chimique",
+        "Technologie de l'information"
+      ]
+    },
+    {
+      "domaine": "Sciences de la Santé",
+      "specialisations": [
+        "Médecine",
+        "Sciences infirmières",
+        "Pharmacologie",
+        "Kinésithérapie",
+        "Santé publique",
+        "Nutrition"
+      ]
+    },
+    {
+      "domaine": "Affaires et Commerce",
+      "specialisations": [
+        "Administration des affaires",
+        "Comptabilité",
+        "Finance",
+        "Marketing",
+        "Gestion des ressources humaines",
+        "Entrepreneuriat"
+      ]
+    },
+    {
+      "domaine": "Éducation",
+      "specialisations": [
+        "Enseignement primaire",
+        "Enseignement secondaire",
+        "Éducation spéciale",
+        "Conseil scolaire",
+        "Administration de l'éducation"
+      ]
+    },
+    {
+      "domaine": "Droit et Justice Pénale",
+      "specialisations": [
+        "Droit",
+        "Justice pénale",
+        "Criminologie",
+        "Sécurité intérieure"
+      ]
+    },
+    {
+      "domaine": "Architecture et Design",
+      "specialisations": [
+        "Architecture",
+        "Design d'intérieur",
+        "Design graphique",
+        "Urbanisme"
+      ]
+    },
+    {
+      "domaine": "Agriculture et Sciences de l'Environnement",
+      "specialisations": [
+        "Agriculture",
+        "Sciences de l'environnement",
+        "Gestion des ressources naturelles",
+        "Biologie marine"
+      ]
+    },
+    {
+      "domaine": "Communication et Journalisme",
+      "specialisations": [
+        "Journalisme",
+        "Relations publiques",
+        "Communication de masse",
+        "Cinéma et télévision"
+      ]
+    },
+    {
+      "domaine": "Informatique et Technologie de l'Information",
+      "specialisations": [
+        "Science informatique",
+        "Systèmes d'information",
+        "Cybersécurité",
+        "Intelligence artificielle"
+      ]
+    }
+  ]
+}
