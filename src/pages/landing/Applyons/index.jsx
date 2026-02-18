@@ -4,7 +4,7 @@ import { CheckCircleOutlined, FileTextOutlined, FormOutlined, ClockCircleOutline
 import { Link } from "react-router-dom"
 
 import { ConfigProvider } from 'antd';
-import HeaderApplyons from "./components/header"
+import HeaderApplyons from "./components/Header"
 import FooterAppyons from "./components/Footer"
 import HeroApplayons from "./components/Hero"
 import FeaturesApplayons from "./components/Features"
