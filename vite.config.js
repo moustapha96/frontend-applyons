@@ -15,6 +15,7 @@ const pwaConfig = {
         "favicon.svg",
         "apple-touch-icon.png",
         "robots.txt",
+        "sitemap.xml",
         "logo-color.svg",
         "logo.png"
     ],
