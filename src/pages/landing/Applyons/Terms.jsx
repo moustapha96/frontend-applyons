@@ -24,7 +24,7 @@ const Terms = () => {
     return (
 
         <LandingLayout>
-            <PageMetaData title="terms.title" />
+            <PageMetaData title={t("terms.title")} description={t("terms.subtitle")} canonicalPath="/terms-and-conditions" />
 
             <Layout className="min-h-screen">
                 <HeaderApplyons menuItems={menuItems} />

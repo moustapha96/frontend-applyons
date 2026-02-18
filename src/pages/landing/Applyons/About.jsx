@@ -24,7 +24,7 @@ const About = () => {
 
     return (
         <LandingLayout>
-            <PageMetaData title={t('applyons.about.title')} />
+            <PageMetaData title={t('applyons.about.title')} description={t('applyons.about.subtitle')} canonicalPath="/about" />
 
             <Layout className="min-h-screen">
                 <HeaderApplyons menuItems={menuItems} />

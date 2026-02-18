@@ -23,7 +23,7 @@ const Privacy = () => {
 
     return (
         <LandingLayout>
-            <PageMetaData title="privacy.title" />
+            <PageMetaData title={t("privacy.title")} description={t("privacy.subtitle")} canonicalPath="/privacy-policy" />
 
             <Layout className="min-h-screen">
                 <HeaderApplyons menuItems={menuItems} />

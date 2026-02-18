@@ -91,7 +91,7 @@ const Contact = () => {
     return <>
 
         <LandingLayout>
-            <PageMetaData title={`${t("contact.title")}`} />
+            <PageMetaData title={t("contact.title")} description={t("contact.subtitle")} canonicalPath="/contact" />
 
             <Layout className="min-h-screen">
 
