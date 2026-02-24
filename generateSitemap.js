@@ -9,41 +9,39 @@ const BASE_URL = 'https://www.applyons.com';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-/** Routes publiques à inclure dans le sitemap (SEO / Google) */
 function getRoutes() {
+  // Define your static routes here
   return [
-    { path: '/', priority: '1.0', changefreq: 'weekly' },
-    { path: '/about', priority: '0.9', changefreq: 'monthly' },
-    { path: '/contact', priority: '0.9', changefreq: 'monthly' },
-    { path: '/terms-and-conditions', priority: '0.7', changefreq: 'yearly' },
-    { path: '/privacy-policy', priority: '0.7', changefreq: 'yearly' },
-    { path: '/auth/sign-in', priority: '0.6', changefreq: 'monthly' },
-    { path: '/auth/demandeur', priority: '0.6', changefreq: 'monthly' },
-    { path: '/auth/institut', priority: '0.6', changefreq: 'monthly' },
+    '', '/privacy-policy', '/terms-and-conditions',
+    '/#Home', '/#concuPour',
+    '/#features',  '/about',
+    '/contact', '#faq', '/auth/sign-in', '/auth/demandeur',
+    '/auth/institut'
   ];
 }
 
 
 async function generateSitemap() {
   const routes = getRoutes();
-  const lastmod = new Date().toISOString().split('T')[0];
 
   const root = create({ version: '1.0', encoding: 'UTF-8' })
     .ele('urlset', { xmlns: 'http://www.sitemaps.org/schemas/sitemap/0.9' });
 
-  routes.forEach(({ path: routePath, priority, changefreq }) => {
-    const loc = routePath === '/' ? BASE_URL : `${BASE_URL}${routePath}`;
+  // Add static routes
+  routes.forEach((route) => {
     root.ele('url')
-      .ele('loc').txt(loc).up()
-      .ele('lastmod').txt(lastmod).up()
-      .ele('changefreq').txt(changefreq).up()
-      .ele('priority').txt(priority).up();
+      .ele('loc').txt(`${BASE_URL}${route}`).up()
+      .ele('lastmod').txt(new Date().toISOString()).up()
+      .ele('changefreq').txt('weekly').up()
+      .ele('priority').txt('0.8').up();
   });
 
   const xml = root.end({ prettyPrint: true });
 
+  // Write to file
   const sitemapPath = path.join(__dirname, 'public', 'sitemap.xml');
   fs.writeFileSync(sitemapPath, xml);
+  // //console.log('Sitemap generated successfully at', sitemapPath);
 }
 
 generateSitemap().catch((error) => {

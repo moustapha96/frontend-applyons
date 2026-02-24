@@ -3,14 +3,12 @@
 "use client"
 
 import { useState } from "react"
-import { Row, Col, Typography, Card, Button, List } from "antd"
-import { BuildFilled, BuildOutlined, CheckOutlined, GroupOutlined, ScheduleOutlined, UserOutlined } from "@ant-design/icons"
-import { Link, useNavigate } from "react-router-dom"
+import { Row, Col, Typography, Card, Button, List, Modal } from "antd"
+import { CheckOutlined, GroupOutlined, UserOutlined } from "@ant-design/icons"
 import { useTranslation } from "react-i18next"
 import { Building, LoaderCircleIcon, MoveRight, Send } from "lucide-react"
-import { FaCheckCircle } from "react-icons/fa"
-import { LuMoveRight } from "react-icons/lu"
-import * as yup from "yup";
+import { InfoCircleOutlined } from "@ant-design/icons"
+import * as yup from "yup"
 import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import { TextFormInput } from "@/components"
@@ -20,11 +18,13 @@ import { useSettingsContext } from "@/context"
 
 const { Title, Paragraph, Text } = Typography
 
+const HIDE_PRICE = true
+
 export default function PricingApplyons() {
   const { t } = useTranslation()
-  const navigate = useNavigate()
   const [showContact, setShowContact] = useState(false)
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false)
+  const [popupPlanIndex, setPopupPlanIndex] = useState(null)
   const { paymentSettings } = useSettingsContext()
 
   const currencyCode = paymentSettings?.currency || "USD"
@@ -113,7 +113,7 @@ export default function PricingApplyons() {
 
 
   return (
-    <div style={{ padding: "60px 0", background: "#f5f7fa", minHeight: "100vh" }}>
+    <div id="pricing" style={{ padding: "60px 0", background: "#f5f7fa", minHeight: "100vh" }}>
       <div style={{ maxWidth: "1000px", margin: "0 auto", padding: "0 20px" }}>
         <div style={{ textAlign: "center", marginBottom: "50px" }}>
           <Title
@@ -145,18 +145,19 @@ export default function PricingApplyons() {
           {plans.map((plan, index) => (
             <Col xs={24} md={plan.fullWidth ? 24 : 12} key={index}>
               <Card
+                hoverable
+                role="button"
+                tabIndex={0}
+                onClick={() => setPopupPlanIndex(index)}
+                onKeyDown={(e) => e.key === "Enter" && setPopupPlanIndex(index)}
                 style={{
                   borderRadius: "16px",
                   background: "white",
                   boxShadow: "0 10px 20px rgba(0, 0, 0, 0.08)",
                   overflow: "hidden",
                   transition: "transform 0.3s, box-shadow 0.3s",
-                  transform: "translateY(0)",
-                  ":hover": {
-                    transform: "translateY(-5px)",
-                    boxShadow: "0 15px 30px rgba(0, 0, 0, 0.12)",
-                  },
-                  padding: 0
+                  cursor: "pointer",
+                  padding: 0,
                 }}
               >
                 <div
@@ -213,19 +214,19 @@ export default function PricingApplyons() {
                   ) : (
                     <div style={{ textAlign: "center", marginBottom: "24px" }}>
                       <div style={{ display: "flex", alignItems: "baseline", justifyContent: "center", gap: "4px" }}>
-                        {!plan.price && (
+                        {(!plan.price || HIDE_PRICE) && (
                           <Title
                             level={2}
                             style={{
                               marginBottom: "0",
-                              fontSize: "2rem",
+                              fontSize: "1.5rem",
                               color: "#1a202c",
                             }}
                           >
-                            {t("applyons.pricing.contactUs")}
+                            {t("applyons.pricing.priceOnRequest")}
                           </Title>
                         )}
-                        {plan.price && (
+                        {plan.price && !HIDE_PRICE && (
                           <>
                             <Text style={{ fontSize: "1rem", color: "#718096" }}>
                               {currencySymbol}
@@ -243,7 +244,7 @@ export default function PricingApplyons() {
                           </>
                         )}
                       </div>
-                      <Text style={{ fontSize: "0.9rem", color: "#718096" }}>{plan.period}</Text>
+                      {!HIDE_PRICE && <Text style={{ fontSize: "0.9rem", color: "#718096" }}>{plan.period}</Text>}
                     </div>
                   )}
 
@@ -286,6 +287,11 @@ export default function PricingApplyons() {
                     </Paragraph>
                   )}
 
+                  <div style={{ marginBottom: "12px", display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", color: "#254c6b", fontSize: "0.8rem" }}>
+                    <InfoCircleOutlined />
+                    <span>{t("applyons.pricing.clickForMore")}</span>
+                  </div>
+
                   <Button
                     type="primary"
                     block
@@ -300,15 +306,16 @@ export default function PricingApplyons() {
                       alignItems: "center",
                       justifyContent: "center",
                     }}
-                    {...(plan.link && plan.link.startsWith("http")
-                      ? {
-                          href: plan.link,
-                          target: "_blank",
-                          rel: "noopener noreferrer",
-                        }
-                      : {
-                          onClick: () => setShowContact(!showContact),
-                        })}
+                    onClick={(e) => {
+                      e.stopPropagation()
+                      if (plan.link && plan.link.startsWith("http")) {
+                        window.open(plan.link, "_blank", "noopener,noreferrer")
+                      } else if (plan.link && plan.link.startsWith("mailto")) {
+                        window.location.href = plan.link
+                      } else {
+                        setShowContact(!showContact)
+                      }
+                    }}
                   >
                     {plan.buttonText || t("applyons.pricing.plans.cta")}
                     {plan.buttonText && <MoveRight style={{ marginLeft: "8px", width: "16px", height: "16px" }} />}
@@ -318,6 +325,53 @@ export default function PricingApplyons() {
             </Col>
           ))}
         </Row>
+
+        <Modal
+          open={popupPlanIndex !== null}
+          onCancel={() => setPopupPlanIndex(null)}
+          footer={null}
+          width={560}
+          centered
+          styles={{ body: { padding: "24px 0" } }}
+        >
+          {popupPlanIndex !== null && (() => {
+            const plan = plans[popupPlanIndex]
+            const planKey = ["institution", "applicant", "universities"][popupPlanIndex]
+            const moreKey = `applyons.pricing.plans.${planKey}.more`
+            const moreText = t(moreKey)
+            return (
+              <>
+                <div style={{ marginBottom: "16px", display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span style={{ color: plan.color, fontSize: "1.5rem" }}>{plan.icon}</span>
+                  <Title level={4} style={{ margin: 0, color: plan.color }}>
+                    {plan.name}
+                  </Title>
+                </div>
+                <Paragraph style={{ color: "#4a5568", marginBottom: "16px" }}>
+                  {plan.description}
+                </Paragraph>
+                <List
+                  size="small"
+                  dataSource={plan.features}
+                  renderItem={(item) => (
+                    <List.Item style={{ borderBottom: "none", padding: "4px 0" }}>
+                      <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                        <CheckOutlined style={{ color: plan.color }} />
+                        <Text style={{ fontSize: "0.9rem" }}>{item}</Text>
+                      </div>
+                    </List.Item>
+                  )}
+                  style={{ marginBottom: "16px" }}
+                />
+                {moreText && moreText !== moreKey && (
+                  <Paragraph style={{ fontSize: "0.9rem", color: "#718096", marginBottom: 0 }}>
+                    {moreText}
+                  </Paragraph>
+                )}
+              </>
+            )
+          })()}
+        </Modal>
 
         {showContact && (
           <div style={{ marginTop: "24px" }} className="bg-[#254c6b] dark:bg-gray-800 p-8 rounded-lg shadow-lg">

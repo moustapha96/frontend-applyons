@@ -101,7 +101,38 @@
         },
         "features": {
             "title": "Funzionalità",
-            "subtitle": "Potenti strumenti per semplificare i tuoi processi",
+            "subtitle": "Una piattaforma completa per l'autenticazione dei documenti accademici, dalla richiesta alla consegna da parte dell'istituzione.",
+            "clickForMore": "Clicca per saperne di più",
+            "authRequest": {
+                "title": "Richieste di autenticazione e codice ADN",
+                "description": "Il richiedente crea una richiesta (oggetto, tipo di documento), ottiene un codice ADN univoco, paga online e assegna un'istituzione o ne invita una tramite email.",
+                "more": "Il codice ADN identifica in modo univoco la richiesta. L'istituzione invitata può registrarsi tramite il link ricevuto, attivare l'account via email ed essere automaticamente collegata alla richiesta per caricare il documento attestato."
+            },
+            "documentDeposit": {
+                "title": "Caricamento documenti da parte dell'istituzione",
+                "description": "Università, college e istituti (con abbonamento attivo) accedono alla richiesta tramite il codice ADN e caricano il documento attestato (PDF) in pochi clic.",
+                "more": "Tipi di documenti supportati: diplomi, trascrizioni, attestati, ecc. L'istituzione può consultare la richiesta, caricare il PDF e indicare tipo e menzione. Il richiedente e l'istituto possono poi vedere il documento e lo stato (documenti ricevuti, elaborata)."
+            },
+            "subscriptions": {
+                "title": "Abbonamenti per gli istituti",
+                "description": "Le istituzioni sottoscrivono un abbonamento attivo per sbloccare l'accesso tramite codice ADN e caricare documenti sulle richieste loro assegnate.",
+                "more": "Senza abbonamento attivo, l'istituto non può inserire un codice ADN né caricare documenti. La gestione degli abbonamenti (sottoscrizione, rinnovo, cronologia) è disponibile nello spazio organizzazione."
+            },
+            "workflowNotifications": {
+                "title": "Workflow e notifiche",
+                "description": "Stati della richiesta (in attesa, documenti ricevuti, elaborata), notifiche per nuove assegnazioni e aggiornamenti, monitoraggio in tempo reale per richiedenti e istituzioni.",
+                "more": "Ogni attore riceve avvisi adeguati: nuovo documento caricato, richiesta assegnata, invito a registrarsi. Il percorso è tracciato dalla creazione della richiesta fino alla consultazione del documento da parte del richiedente."
+            },
+            "securityTraceability": {
+                "title": "Sicurezza e tracciabilità",
+                "description": "Codice ADN univoco per richiesta, tracciabilità delle azioni, protezione dei dati e conformità alle buone pratiche per documenti sensibili.",
+                "more": "L'accesso è controllato per ruolo e permessi. I documenti sono archiviati in modo sicuro; solo le parti autorizzate (richiedente, istituzione assegnata, admin) possono consultarli. Un registro di controllo registra le azioni importanti."
+            },
+            "dashboards": {
+                "title": "Dashboard per profilo",
+                "description": "Spazi dedicati in base al ruolo: richiedente (le mie richieste, richieste di autenticazione), istituto (richieste assegnate, codice ADN, abbonamenti), traduttore, amministratore.",
+                "more": "Ogni profilo dispone di menu e viste adattati: elenchi filtrati, dettaglio richieste, statistiche (abbonamenti attivi, pagamenti), gestione utenti e organizzazioni per gli admin."
+            },
             "customForms": {
                 "title": "Moduli personalizzati",
                 "description": "Crea moduli su misura per le tue esigenze specifiche"
@@ -129,7 +160,8 @@
             "collaboration": {
                 "title": "Collaborazione di squadra",
                 "description": "Collabora senza problemi con il tuo team"
-            }
+            },
+            "discoverApp": "Scopri l'intera applicazione"
         },
         "pricing": {
             "title": "Prezzi",
@@ -199,6 +231,9 @@
             "legal": "Legale",
             "privacy": "Privacy",
             "terms": "Termini di utilizzo",
+            "cookies": "Cookie",
+            "legalNotice": "Note legali",
+            "security": "Sicurezza e fiducia",
             "copyright": "Tutti i diritti riservati",
             "rights": "Tutti i diritti riservati."
         },
@@ -232,6 +267,7 @@
                     "description": "Rendiamo la verifica dei diplomi accessibile a tutti, ovunque nel mondo."
                 }
             },
+            "ctaText": "Hai una domanda o un progetto? Il nostro team è qui per aiutarti.",
             "team": {
                 "title": "Il Nostro Team",
                 "description": "Un team appassionato dedicato a trasformare la verifica dei diplomi.",
@@ -306,14 +342,24 @@
                 "q2": "Quanto tempo richiede il processo di verifica?",
                 "q3": "Quali tipi di documenti posso verificare?",
                 "q4": "Come viene garantita la sicurezza dei miei dati?",
-                "q5": "Quali sono i costi associati all'utilizzo di ApplyOns?"
+                "q5": "Quali sono i costi associati all'utilizzo di ApplyOns?",
+                "q6": "Cos'è il codice ADN su ApplyOns?",
+                "q7": "Chi può usare ApplyOns (candidati, università, traduttori)?",
+                "q8": "Come invito un istituto a attestare il mio documento?",
+                "q9": "Posso seguire lo stato della mia richiesta in tempo reale?",
+                "q10": "Come contatto il supporto o richiedo una demo?"
             },
             "answers": {
                 "a1": "ApplyOns utilizza tecnologia avanzata per verificare l'autenticità dei diplomi direttamente con gli istituti di istruzione. Garantiamo una verifica completa delle informazioni e delle firme per assicurare la validità dei documenti.",
                 "a2": "Il tempo di verifica varia in base al tipo di documento e all'istituzione. In media, il processo richiede da 24 a 72 ore. Per le verifiche urgenti, offriamo un servizio express con tempi ridotti.",
                 "a3": "Verifichiamo tutti i tipi di credenziali accademiche: diplomi universitari, certificati professionali, transcript e altri documenti educativi. Ogni documento viene elaborato con lo stesso livello di rigore.",
                 "a4": "Utilizziamo la crittografia end-to-end e protocolli di sicurezza avanzati per proteggere i tuoi dati. La nostra piattaforma è conforme al GDPR e i nostri server sono ospitati in centri dati sicuri.",
-                "a5": "Le nostre tariffe variano in base al tipo di servizio e al livello di verifica richiesto. Offriamo pacchetti su misura per le esigenze individuali e soluzioni aziendali personalizzate. Consulta la nostra pagina dei prezzi per maggiori dettagli."
+                "a5": "Le nostre tariffe variano in base al tipo di servizio e al livello di verifica richiesto. Offriamo pacchetti su misura per le esigenze individuali e soluzioni aziendali personalizzate. Consulta la nostra pagina dei prezzi per maggiori dettagli.",
+                "a6": "Il codice ADN è un identificatore univoco assegnato a ogni documento autenticato. Consente agli istituti (università, college, istituti) di inviare in modo sicuro l'attestazione ufficiale e ai terzi autorizzati di verificarne l'autenticità in qualsiasi momento.",
+                "a7": "ApplyOns è pensato per candidati (studenti, richiedenti), istituzioni (università, ambasciate, grandi organizzazioni), traduttori e agenzie, e amministratori. Ogni profilo ha uno spazio e permessi adatti al proprio ruolo.",
+                "a8": "Come candidato crei una richiesta di autenticazione, paghi online e poi assegni o inviti l'istituto competente. L'istituto riceve una notifica e può caricare il documento attestato tramite il codice ADN (con abbonamento attivo).",
+                "a9": "Sì. Puoi seguire lo stato di candidature e richieste di autenticazione dalla tua dashboard: richieste in corso, documenti caricati, notifiche e cronologia sono disponibili in tempo reale.",
+                "a10": "Puoi contattarci via email (contact@applyons.com), tramite il modulo di contatto sul sito o richiedendo una demo dalla pagina prezzi. Il nostro team commerciale e il supporto sono a disposizione."
             }
         }
     },
@@ -922,12 +968,14 @@
         "home": "Home",
         "about": "Chi siamo",
         "features": "Servizi",
+        "app": "L'applicazione",
         "solutions": "Soluzioni",
         "pricing": "Prezzi",
         "contact": "Contatto",
         "faq": "FAQ",
         "pricings": "Prezzi",
-        "concuPour": "Progettato per"
+        "concuPour": "Progettato per",
+        "menu": "Menu"
     },
     "loading_message": "Caricamento in corso...",
     "error_message": "Si è verificato un errore: {{error}}",

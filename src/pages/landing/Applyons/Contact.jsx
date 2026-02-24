@@ -10,6 +10,7 @@ import { TextFormInput } from "@/components"
 import { LoaderCircle } from "lucide-react"
 import { Layout } from "antd"
 import HeaderApplyons from "./components/Header"
+import { getApplyonsMenuItems } from "./navConfig"
 import { LandingLayout } from "@/layouts"
 import { useSettingsContext } from "@/context"
 import { createContact } from "@/services/contactService"
@@ -49,12 +50,7 @@ const Contact = () => {
         window.scrollTo(0, 0)
     }, [])
 
-    const menuItems = [
-        { key: "home", label: <a href="/">{t("nav.home")} </a> },
-        { key: "features", label: <a href="/#features">{t("nav.features")}</a> },
-        { key: "pricing", label: <a href="/#pricing">{t("nav.pricings")}</a> },
-        { key: "concuPour", label: <a href="/#concuPour">{t("nav.concuPour")}</a> }
-    ];
+    const menuItems = getApplyonsMenuItems(t)
 
     const { control, handleSubmit, reset, register } = useForm({
         resolver: yupResolver(contactSchema),
@@ -91,7 +87,7 @@ const Contact = () => {
     return <>
 
         <LandingLayout>
-            <PageMetaData title={t("contact.title")} description={t("contact.subtitle")} canonicalPath="/contact" />
+            <PageMetaData title={`${t("contact.title")}`} />
 
             <Layout className="min-h-screen">
 

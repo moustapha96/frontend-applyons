@@ -101,7 +101,38 @@
         },
         "features": {
             "title": "Features",
-            "subtitle": "Powerful tools to simplify your processes",
+            "subtitle": "A complete platform for authenticating academic documents, from the request to delivery by the institution.",
+            "clickForMore": "Click for more details",
+            "authRequest": {
+                "title": "Authentication requests & ADN code",
+                "description": "The applicant creates a request (subject, document type), receives a unique ADN code, pays online, then assigns an institution or invites one by email.",
+                "more": "The ADN code uniquely identifies the request. The invited institution can register via the link received, activate its account by email, then be automatically linked to the request to upload the attested document."
+            },
+            "documentDeposit": {
+                "title": "Document upload by the institution",
+                "description": "Universities, colleges, and institutes (with an active subscription) access the request via the ADN code and upload the attested document (PDF) in a few clicks.",
+                "more": "Supported document types: diplomas, transcripts, certificates, etc. The institution can view the request, upload the PDF, and specify type and mention. The applicant and institution can then view the document and status (documents received, processed)."
+            },
+            "subscriptions": {
+                "title": "Subscriptions for institutions",
+                "description": "Institutions subscribe to an active subscription to unlock access by ADN code and upload documents on requests assigned to them.",
+                "more": "Without an active subscription, the institution cannot enter an ADN code or upload documents. Subscription management (sign-up, renewal, history) is available in the organization space."
+            },
+            "workflowNotifications": {
+                "title": "Workflow & notifications",
+                "description": "Request statuses (pending, documents received, processed), notifications for new assignments and updates, real-time tracking for applicants and institutions.",
+                "more": "Each actor receives relevant alerts: new document uploaded, request assigned, invitation to register. The journey is tracked from request creation to the applicant viewing the document."
+            },
+            "securityTraceability": {
+                "title": "Security & traceability",
+                "description": "Unique ADN code per request, action traceability, data protection, and compliance with best practices for sensitive documents.",
+                "more": "Access is controlled by role and permissions. Documents are stored securely; only authorized parties (applicant, assigned institution, admin) can view them. An audit log records important actions."
+            },
+            "dashboards": {
+                "title": "Dashboards by profile",
+                "description": "Dedicated spaces by role: applicant (my requests, authentication requests), institution (assigned requests, ADN code, subscriptions), translator, administrator.",
+                "more": "Each profile has tailored menus and views: filtered lists, request details, statistics (active subscriptions, payments), user and organization management for admins."
+            },
             "customForms": {
                 "title": "Custom Forms",
                 "description": "Create forms tailored to your specific needs"
@@ -129,12 +160,16 @@
             "collaboration": {
                 "title": "Team Collaboration",
                 "description": "Collaborate seamlessly with your team"
-            }
+            },
+            "discoverApp": "Discover the full application"
         },
         "pricing": {
             "title": "Pricing",
             "subtitle": "Flexible plans for all needs",
             "popular": "Popular",
+            "priceOnRequest": "On quote",
+            "contactUs": "Contact us",
+            "clickForMore": "Click for more details",
             "plans": {
                 "cta": "Get Started Now",
                 "institution": {
@@ -151,7 +186,8 @@
                         "Detailed reports",
                         "Enhanced security"
                     ],
-                    "cta": "Get Started"
+                    "cta": "Get Started",
+                    "more": "Pricing and terms tailored to your organization's size. Contact us for a custom quote and demo."
                 },
                 "applicant": {
                     "title": "Application",
@@ -167,7 +203,8 @@
                         "Intuitive interface",
                         "Secure payment"
                     ],
-                    "cta": "Get Started"
+                    "cta": "Get Started",
+                    "more": "Pay-per-request. Ideal for applicants who need to authenticate one or more documents for their applications."
                 },
                 "universities": {
                     "title": "Universities, Embassies and Large Organizations",
@@ -182,7 +219,8 @@
                         "Integration with existing systems",
                         "Dedicated training and support",
                         "Customized solutions"
-                    ]
+                    ],
+                    "more": "We offer tailored packages for universities, embassies, and large organizations, with integration and dedicated support."
                 }
             }
         },
@@ -199,29 +237,37 @@
             "legal": "Legal",
             "privacy": "Privacy",
             "terms": "Terms of Use",
+            "cookies": "Cookies",
+            "legalNotice": "Legal Notice",
+            "security": "Security & Trust",
             "copyright": "All rights reserved",
             "rights": "All rights reserved."
         },
         "about": {
             "title": "About ApplyOns",
             "subtitle": "Revolutionizing Diploma Verification for a Secure Future",
+            "clickForMore": "Click for more details",
             "mission": {
                 "title": "Our Mission",
-                "description": "ApplyOns is committed to simplifying and securing the academic credential verification process. We create a digital bridge between educational institutions, students, and employers, ensuring the authenticity and integrity of qualifications."
+                "description": "ApplyOns is committed to simplifying and securing the academic credential verification process. We create a digital bridge between educational institutions, students, and employers, ensuring the authenticity and integrity of qualifications.",
+                "more": "Our platform enables institutions to certify documents in a few clicks, students to share verifiable proof with employers, and organizations to reduce fraud risk. We work with academic and professional partners to advance industry standards."
             },
             "vision": {
                 "title": "Our Vision",
-                "description": "We aspire to become the global reference in diploma verification, creating an ecosystem where trust and transparency are at the heart of education and recruitment."
+                "description": "We aspire to become the global reference in diploma verification, creating an ecosystem where trust and transparency are at the heart of education and recruitment.",
+                "more": "In the long term, we aim for international adoption of our ADN code and authentication system, so that every diploma can be verified instantly and securely worldwide, for the benefit of learners, institutions, and recruiters."
             },
             "values": {
                 "title": "Our Values",
                 "trust": {
                     "title": "Trust",
-                    "description": "We build lasting relationships based on transparency and integrity."
+                    "description": "We build lasting relationships based on transparency and integrity.",
+                    "more": "Each authenticated document carries a unique identifier (ADN code) and can be verified by authorized third parties. We are committed to never altering data without traceability and to protecting user privacy."
                 },
                 "innovation": {
                     "title": "Innovation",
-                    "description": "We constantly push technological boundaries to improve our services."
+                    "description": "We constantly push technological boundaries to improve our services.",
+                    "more": "We invest in fraud detection tools, automated workflows, and dashboards tailored to different profiles (applicants, institutions, translators, administrators) to make verification faster and more reliable."
                 },
                 "security": {
                     "title": "Security",
@@ -229,9 +275,11 @@
                 },
                 "accessibility": {
                     "title": "Accessibility",
-                    "description": "We make diploma verification accessible to everyone, everywhere in the world."
+                    "description": "We make diploma verification accessible to everyone, everywhere in the world.",
+                    "more": "Our interface is designed to be used by institutions of all sizes, from universities to colleges and institutes, as well as by applicants and translation agencies. We offer clear flows and support to ease adoption."
                 }
             },
+            "ctaText": "Have a question or a project? Our team is here to help.",
             "team": {
                 "title": "Our Team",
                 "description": "A passionate team dedicated to transforming diploma verification.",
@@ -258,11 +306,13 @@
             "title": "Designed for your needs",
             "subtitle": "Tailored solutions for every sector to optimize your verification and management processes.",
             "keyFeatures": "Key Features",
+            "clickForMore": "Click for more details",
             "whyChoose": "Why choose Applyons?",
             "business": {
                 "title": "Business Solutions",
                 "subtitle": "For organizations",
                 "description": "Optimize your verification and application management processes with our dedicated business platform.",
+                "more": "Our platform lets you create authentication requests, assign institutions, and track documents in real time. Businesses and organizations can manage multiple users, view payment statistics, and rely on dedicated support for a smooth rollout.",
                 "action": "Discover business solutions",
                 "features": {
                     "automation": "Automated application management",
@@ -275,6 +325,7 @@
                 "title": "Education Solutions",
                 "subtitle": "For institutions",
                 "description": "Simplify diploma verification and academic application management with our specialized tools.",
+                "more": "Universities, colleges, and institutes can subscribe, access requests by ADN code, and upload attested documents (transcripts, diplomas). Department, program, and user management is built in, with notifications for each new assigned request.",
                 "action": "Explore education solutions",
                 "features": {
                     "verification": "Diploma verification",
@@ -286,15 +337,18 @@
             "benefits": {
                 "verification": {
                     "title": "Fast Verification",
-                    "description": "Automatic and secure document verification"
+                    "description": "Automatic and secure document verification",
+                    "more": "Each document is linked to a unique ADN code. Institutions and applicants can verify authenticity in a few clicks, with full traceability and compliance with data security best practices."
                 },
                 "workflow": {
                     "title": "Optimized Workflow",
-                    "description": "Simplified and efficient processing"
+                    "description": "Simplified and efficient processing",
+                    "more": "From submitting the request to payment, then assigning or inviting an institution and uploading the document, the entire journey is guided. Statuses (pending, documents received, processed) provide clear tracking for all parties."
                 },
                 "reports": {
                     "title": "Advanced Reports",
-                    "description": "Detailed analytics and custom dashboards"
+                    "description": "Detailed analytics and custom dashboards",
+                    "more": "Dashboards by profile (applicant, institution, translator, admin) offer summary views: ongoing requests, active subscriptions, payment statistics, and action history for informed decision-making."
                 }
             }
         },
@@ -306,15 +360,113 @@
                 "q2": "How long does the verification process take?",
                 "q3": "What types of documents can I verify?",
                 "q4": "How is my data security ensured?",
-                "q5": "What are the costs associated with using ApplyOns?"
+                "q5": "What are the costs associated with using ApplyOns?",
+                "q6": "What is the ADN code on ApplyOns?",
+                "q7": "Who can use ApplyOns (applicants, universities, translators)?",
+                "q8": "How do I invite an institution to attest my document?",
+                "q9": "Can I track my request status in real time?",
+                "q10": "How do I contact support or request a demo?"
             },
             "answers": {
                 "a1": "ApplyOns uses advanced technology to verify diploma authenticity directly with educational institutions. We ensure complete verification of information and signatures to guarantee document validity.",
                 "a2": "Verification time varies depending on the document type and institution. On average, the process takes 24 to 72 hours. For urgent verifications, we offer an express service with reduced timeframes.",
                 "a3": "We verify all types of academic credentials: university degrees, professional certificates, transcripts, and other educational documents. Each document is processed with the same level of rigor.",
                 "a4": "We use end-to-end encryption and advanced security protocols to protect your data. Our platform is GDPR compliant and our servers are hosted in secure data centers.",
-                "a5": "Our rates vary according to the type of service and level of verification required. We offer packages tailored to individual needs and customized enterprise solutions. Check our pricing page for more details."
+                "a5": "Our rates vary according to the type of service and level of verification required. We offer packages tailored to individual needs and customized enterprise solutions. Check our pricing page for more details.",
+                "a6": "The ADN code is a unique identifier assigned to each authenticated document. It allows institutions (universities, colleges, institutes) to securely submit the official attestation and enables authorized third parties to verify the document's authenticity at any time.",
+                "a7": "ApplyOns is for applicants (students, candidates), educational institutions (universities, embassies, large organizations), translators and agencies, as well as administrators. Each profile has a dedicated space and permissions suited to their role.",
+                "a8": "As an applicant, you create an authentication request, pay online, then assign or invite the relevant institution. The institution receives a notification and can submit the attested document via the ADN code (subject to an active subscription).",
+                "a9": "Yes. You can track the status of your applications and authentication requests from your dashboard: pending requests, submitted documents, notifications, and history are available in real time.",
+                "a10": "You can reach us by email (contact@applyons.com), via the contact form on the website, or by requesting a demo from our pricing page. Our sales team and support are available to assist you."
             }
+        },
+        "app": {
+            "metaTitle": "ApplyOns Application - Features and Workflows",
+            "title": "The ApplyOns Application",
+            "subtitle": "A complete platform for managing applications, authenticating academic documents, and collaboration between applicants, institutions (universities, colleges, institutes), translators, and administrators.",
+            "rolesTitle": "Roles and Profiles",
+            "rolesIntro": "ApplyOns offers four account types, each with a dedicated space and appropriate permissions.",
+            "roles": {
+                "demandeur": {
+                    "title": "Applicant",
+                    "description": "Students, candidates, or individuals who submit requests and have their documents authenticated.",
+                    "features": {
+                        "f1": "Create and track applications (requests)",
+                        "f2": "Create document authentication requests (diplomas, transcripts, etc.)",
+                        "f3": "Pay online and invite an institution to attest the document",
+                        "f4": "View status and documents uploaded by the institution"
+                    }
+                },
+                "institut": {
+                    "title": "Institute / University / College",
+                    "description": "Institutions that attest and upload documents (transcripts, diplomas) for authentication requests.",
+                    "features": {
+                        "f1": "View authentication requests assigned to them",
+                        "f2": "Access by ADN code to upload a document (with active subscription)",
+                        "f3": "Manage departments, programs, users, and subscriptions",
+                        "f4": "Receive notifications and manage standard requests (dossiers)"
+                    }
+                },
+                "traducteur": {
+                    "title": "Translator / Agency",
+                    "description": "Translation agencies that process application dossiers and documents to be translated.",
+                    "features": {
+                        "f1": "Access dossiers to process and requests",
+                        "f2": "Upload translations and track dossier status",
+                        "f3": "Manage users and notifications",
+                        "f4": "Collaborate with applicants and institutions"
+                    }
+                },
+                "admin": {
+                    "title": "Administrator",
+                    "description": "Global oversight: users, organizations, requests, payments, subscriptions, and settings.",
+                    "features": {
+                        "f1": "Manage users, organizations, departments, and programs",
+                        "f2": "Authentication requests and standard requests, documents",
+                        "f3": "Payments, subscriptions, and statistics",
+                        "f4": "Configuration, permissions, audit logs, and support"
+                    }
+                }
+            },
+            "modulesTitle": "Main Modules",
+            "modulesIntro": "The main functional blocks available in the application.",
+            "modules": {
+                "demandes": {
+                    "title": "Requests (applications)",
+                    "desc": "Create, track, and process application dossiers (requests) with workflow and statuses."
+                },
+                "authDoc": {
+                    "title": "Document authentication",
+                    "desc": "Authentication requests with ADN code: applicant creates a request, pays, assigns or invites an institution that uploads the attested document."
+                },
+                "abonnements": {
+                    "title": "Subscriptions",
+                    "desc": "Institutions subscribe to an active subscription to access upload by ADN code and advanced features."
+                },
+                "paiements": {
+                    "title": "Payments",
+                    "desc": "Payment for authentication requests and transaction management on the admin side."
+                },
+                "organisations": {
+                    "title": "Organizations",
+                    "desc": "Management of institutions (universities, institutes, colleges), departments, programs, and invitations."
+                },
+                "notifications": {
+                    "title": "Notifications",
+                    "desc": "Alerts and messages for new requests, uploaded documents, and status updates."
+                }
+            },
+            "workflowTitle": "Typical workflow (document authentication)",
+            "workflowIntro": "From submitting the request to receiving the document attested by the institution.",
+            "workflow": {
+                "step1": "The applicant creates an authentication request (subject, document type) and receives a unique ADN code.",
+                "step2": "The applicant pays online then selects an existing institution or invites one by email.",
+                "step3": "The invited institution registers if needed, activates its account by email, then is linked to the request.",
+                "step4": "The institution (with active subscription) accesses the request via the ADN code and uploads the document (PDF).",
+                "step5": "The applicant and institution can view the document and status (documents received, processed, etc.)."
+            },
+            "ctaText": "Ready to simplify your process? Create an account and access the dashboard.",
+            "ctaButton": "Create an account"
         }
     },
     "Accueil": "Home",
@@ -852,12 +1004,14 @@
         "home": "Home",
         "about": "About",
         "features": "Services",
+        "app": "The Application",
         "solutions": "Solutions",
         "pricing": "Pricing",
         "contact": "Contact",
         "faq": "FAQ",
         "pricings": "Pricing",
-        "concuPour": "Designed for"
+        "concuPour": "Designed for",
+        "menu": "Menu"
     },
     "loading_message": "Loading...",
     "error_message": "An error occurred: {{error}}",
@@ -2385,6 +2539,106 @@
         "contact": {
             "title": "Contact",
             "description": "For any questions regarding these Terms and Conditions, please contact us at support@applysons.com."
+        }
+    },
+    "cookies": {
+        "title": "Cookie Policy",
+        "subtitle": "How ApplyOns uses cookies and similar technologies.",
+        "lastUpdated": "Last updated: February 2025",
+        "intro": {
+            "title": "Introduction",
+            "description": "ApplyOns uses cookies and similar technologies to ensure the proper functioning of the platform, improve your experience, and comply with legal requirements. This policy applies to all our services."
+        },
+        "what": {
+            "title": "What is a cookie?",
+            "description": "A cookie is a small text file placed on your device when you visit a website. It allows us to:",
+            "items": {
+                "definition": "Remember your preferences (language, session)",
+                "usage": "Secure access and analyze site usage in an aggregated manner"
+            }
+        },
+        "types": {
+            "title": "Types of cookies we use",
+            "description": "We use the following categories:",
+            "items": {
+                "essential": "Strictly necessary cookies: login, security, load balancing",
+                "preferences": "Preference cookies: language, display settings",
+                "analytics": "Analytics cookies: audience measurement (anonymized or with consent)",
+                "security": "Security cookies: protection against fraud and abuse"
+            }
+        },
+        "consent": {
+            "title": "Consent",
+            "description": "In accordance with GDPR and ePrivacy rules, non-essential cookies are only placed with your consent. You can change your choices at any time via settings or our consent banner."
+        },
+        "manage": {
+            "title": "Managing cookies",
+            "description": "You can control or delete cookies through your browser settings. Note: disabling certain cookies may limit site functionality.",
+            "items": {
+                "browser": "Browser settings (Chrome, Firefox, Safari, Edge, etc.)",
+                "preferences": "Our site preferences when available"
+            }
+        },
+        "contact": {
+            "title": "Contact us",
+            "description": "For any questions about this cookie policy: contact@applyons.com or via our contact form."
+        }
+    },
+    "legal": {
+        "title": "Legal Notice",
+        "subtitle": "Legal information about the site and the publisher.",
+        "publisher": {
+            "title": "Site publisher",
+            "content": "ApplyOns\nDiploma verification and authentication platform\nFor full company name, registered office, and identification number (e.g. SIRET, VAT), please contact us at contact@applyons.com. This information is also available on request for partners and institutions."
+        },
+        "host": {
+            "title": "Hosting",
+            "content": "The ApplyOns site and services are hosted by recognized providers in secure data centers compliant with international standards (availability, redundancy, physical and logical security). Data is processed in accordance with GDPR and applicable laws."
+        },
+        "contact": {
+            "title": "Contact",
+            "content": "For any legal or administrative questions: contact@applyons.com. For applicants and institutions: you can also use the contact form or in-app support."
+        },
+        "intellectual": {
+            "title": "Intellectual property",
+            "content": "All site content (texts, logos, graphics, software) is protected by copyright and trademark laws. Any unauthorized reproduction or use may be subject to legal action."
+        },
+        "compliance": {
+            "title": "Compliance and personal data",
+            "content": "The processing of personal data is described in our Privacy Policy and Cookie Policy. We are committed to complying with the GDPR and applicable regulations in the countries where we operate."
+        },
+        "governing": {
+            "title": "Governing law",
+            "content": "These legal notices are governed by the law applicable at the publisher's registered office. The Terms of Use and Privacy Policy specify the rules applicable to the services."
+        }
+    },
+    "security": {
+        "title": "Security & Trust",
+        "subtitle": "ApplyOns' commitments to protect your data and ensure platform reliability at an international level.",
+        "encryption": {
+            "title": "Encryption and data protection",
+            "description": "All sensitive data is encrypted in transit (TLS) and at rest. Documents and personal information are only accessible to authorized persons according to their role. We do not use your data for purposes other than providing the service and meeting legal obligations."
+        },
+        "infrastructure": {
+            "title": "Infrastructure and availability",
+            "description": "Our services are hosted in secure data centers, with regular backups and business continuity plans. We aim for high availability for users and institutions worldwide."
+        },
+        "compliance": {
+            "title": "Compliance and international standards",
+            "description": "We comply with GDPR for EU residents' data and rely on international best practices for data protection and information security. Our processes are designed to evolve with local regulations."
+        },
+        "international": {
+            "title": "International platform",
+            "description": "ApplyOns is designed for users and institutions in multiple countries. Data flows and processing are documented and controlled to ensure compliance and trust wherever the platform is used."
+        },
+        "commitment": {
+            "title": "Ongoing commitment",
+            "description": "We are committed to maintaining a high level of security, training our teams, and evolving our measures in line with threats and regulatory requirements. The trust of our users and partners is at the heart of our approach."
+        },
+        "summary": {
+            "title": "In summary",
+            "description": "ApplyOns places security and compliance at the center of its offering. Whether you are an applicant, institution, or partner, we strive to provide a reliable and transparent environment suited to the requirements of an international platform.",
+            "contact": "For any questions: contact@applyons.com or via the Contact page."
         }
     },
     "institutSuperviseur": {

@@ -3,6 +3,7 @@
 import { useTranslation } from "react-i18next"
 import { PageMetaData } from "@/components"
 import HeaderApplyons from "./components/Header"
+import { getApplyonsMenuItems } from "./navConfig"
 import { LandingLayout } from "@/layouts"
 import { Layout } from "antd"
 import { useEffect } from "react"
@@ -14,17 +15,12 @@ const Terms = () => {
         window.scrollTo(0, 0)
     }, [])
 
-    const menuItems = [
-        { key: "home", label: <a href="/">{t("nav.home")} </a> },
-        { key: "features", label: <a href="/#features">{t("nav.features")}</a> },
-        { key: "pricing", label: <a href="/#pricing">{t("nav.pricings")}</a> },
-        { key: "concuPour", label: <a href="/#concuPour">{t("nav.concuPour")}</a> }
-    ];
+    const menuItems = getApplyonsMenuItems(t)
 
     return (
 
         <LandingLayout>
-            <PageMetaData title={t("terms.title")} description={t("terms.subtitle")} canonicalPath="/terms-and-conditions" />
+            <PageMetaData title="terms.title" />
 
             <Layout className="min-h-screen">
                 <HeaderApplyons menuItems={menuItems} />

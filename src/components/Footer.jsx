@@ -127,6 +127,21 @@ const Footer = () => {
                   {t("applyons.footer.terms")}
                 </Link>
               </li>
+              <li>
+                <Link to="/cookie-policy" className="text-[#4b5563] hover:text-[#24377A]">
+                  {t("applyons.footer.cookies")}
+                </Link>
+              </li>
+              <li>
+                <Link to="/legal-notice" className="text-[#4b5563] hover:text-[#24377A]">
+                  {t("applyons.footer.legalNotice")}
+                </Link>
+              </li>
+              <li>
+                <Link to="/security-trust" className="text-[#4b5563] hover:text-[#24377A]">
+                  {t("applyons.footer.security")}
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

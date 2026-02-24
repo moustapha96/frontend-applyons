@@ -152,7 +152,38 @@
         },
         "features": {
             "title": "Funktionen",
-            "subtitle": "Potente Werkzeuge zur Vereinfachung Ihrer Prozesse",
+            "subtitle": "Eine vollständige Plattform für die Authentifizierung akademischer Dokumente – von der Anfrage bis zur Ausstellung durch die Einrichtung.",
+            "clickForMore": "Klicken Sie für mehr Details",
+            "authRequest": {
+                "title": "Authentifizierungsanfragen & ADN-Code",
+                "description": "Der Antragsteller erstellt eine Anfrage (Betreff, Dokumenttyp), erhält einen eindeutigen ADN-Code, zahlt online und weist dann eine Einrichtung zu oder lädt eine per E-Mail ein.",
+                "more": "Der ADN-Code identifiziert die Anfrage eindeutig. Die eingeladene Einrichtung kann sich über den erhaltenen Link registrieren, ihr Konto per E-Mail aktivieren und wird automatisch der Anfrage zugeordnet, um das beglaubigte Dokument hochzuladen."
+            },
+            "documentDeposit": {
+                "title": "Dokumenten-Upload durch die Einrichtung",
+                "description": "Universitäten, Hochschulen und Institute (mit aktivem Abonnement) greifen über den ADN-Code auf die Anfrage zu und laden das beglaubigte Dokument (PDF) mit wenigen Klicks hoch.",
+                "more": "Unterstützte Dokumenttypen: Abschlüsse, Zeugnisse, Bescheinigungen usw. Die Einrichtung kann die Anfrage einsehen, die PDF hochladen sowie Typ und Erwähnung angeben. Antragsteller und Institut können anschließend Dokument und Status (Dokumente erhalten, bearbeitet) einsehen."
+            },
+            "subscriptions": {
+                "title": "Abonnements für Institute",
+                "description": "Einrichtungen schließen ein aktives Abonnement ab, um den Zugang per ADN-Code freizuschalten und Dokumente zu den ihnen zugewiesenen Anfragen hochzuladen.",
+                "more": "Ohne aktives Abonnement kann die Einrichtung keinen ADN-Code eingeben oder Dokumente hochladen. Die Abonnementverwaltung (Abschluss, Verlängerung, Verlauf) ist im Organisationsbereich verfügbar."
+            },
+            "workflowNotifications": {
+                "title": "Workflow & Benachrichtigungen",
+                "description": "Anfragestatus (ausstehend, Dokumente erhalten, bearbeitet), Benachrichtigungen bei neuen Zuweisungen und Aktualisierungen, Echtzeit-Verfolgung für Antragsteller und Einrichtungen.",
+                "more": "Jeder Beteiligte erhält passende Hinweise: neues Dokument hochgeladen, Anfrage zugewiesen, Einladung zur Registrierung. Der Ablauf wird von der Erstellung der Anfrage bis zur Einsicht des Dokuments durch den Antragsteller nachverfolgt."
+            },
+            "securityTraceability": {
+                "title": "Sicherheit & Nachverfolgbarkeit",
+                "description": "Eindeutiger ADN-Code pro Anfrage, Nachverfolgbarkeit der Aktionen, Datenschutz und Einhaltung bewährter Praktiken für sensible Dokumente.",
+                "more": "Der Zugriff wird über Rollen und Berechtigungen gesteuert. Dokumente werden sicher gespeichert; nur berechtigte Parteien (Antragsteller, zugewiesene Einrichtung, Admin) können sie einsehen. Ein Prüfprotokoll zeichnet wichtige Aktionen auf."
+            },
+            "dashboards": {
+                "title": "Dashboards nach Profil",
+                "description": "Eigene Bereiche je nach Rolle: Antragsteller (meine Anfragen, Authentifizierungsanfragen), Institut (zugewiesene Anfragen, ADN-Code, Abonnements), Übersetzer, Administrator.",
+                "more": "Jedes Profil hat angepasste Menüs und Ansichten: gefilterte Listen, Anfragedetails, Statistiken (aktive Abonnements, Zahlungen), Benutzer- und Organisationsverwaltung für Admins."
+            },
             "customForms": {
                 "title": "Individuelle Formulare",
                 "description": "Erstellen Sie Formulare, die auf Ihre spezifischen Bedürfnisse zugeschnitten sind"
@@ -180,7 +211,8 @@
             "collaboration": {
                 "title": "Teamzusammenarbeit",
                 "description": "Arbeiten Sie nahtlos mit Ihrem Team zusammen"
-            }
+            },
+            "discoverApp": "Die gesamte Anwendung entdecken"
         },
         "pricing": {
             "title": "Preise",
@@ -250,6 +282,9 @@
             "legal": "Rechtliches",
             "privacy": "Datenschutz",
             "terms": "Nutzungsbedingungen",
+            "cookies": "Cookies",
+            "legalNotice": "Impressum",
+            "security": "Sicherheit & Vertrauen",
             "copyright": "Alle Rechte vorbehalten"
         },
         "about": {
@@ -282,6 +317,7 @@
                     "description": "Wir machen die Diplomüberprüfung für jeden, überall auf der Welt, zugänglich."
                 }
             },
+            "ctaText": "Eine Frage oder ein Projekt? Unser Team ist für Sie da.",
             "team": {
                 "title": "Unser Team",
                 "description": "Ein leidenschaftliches Team, das sich der Transformation der Diplomüberprüfung widmet.",
@@ -356,14 +392,24 @@
                 "q2": "Wie lange dauert der Überprüfungsprozess?",
                 "q3": "Welche Arten von Dokumenten kann ich überprüfen lassen?",
                 "q4": "Wie wird die Sicherheit meiner Daten gewährleistet?",
-                "q5": "Welche Kosten entstehen bei der Nutzung von ApplyOns?"
+                "q5": "Welche Kosten entstehen bei der Nutzung von ApplyOns?",
+                "q6": "Was ist der ADN-Code bei ApplyOns?",
+                "q7": "Wer kann ApplyOns nutzen (Bewerber, Universitäten, Übersetzer)?",
+                "q8": "Wie lade ich eine Einrichtung ein, mein Dokument zu bestätigen?",
+                "q9": "Kann ich den Status meiner Anfrage in Echtzeit verfolgen?",
+                "q10": "Wie kontaktiere ich den Support oder fordere eine Demo an?"
             },
             "answers": {
                 "a1": "ApplyOns verwendet fortschrittliche Technologie, um die Echtheit von Diplomen direkt bei Bildungseinrichtungen zu überprüfen. Wir stellen eine vollständige Überprüfung der Informationen und Unterschriften sicher, um die Gültigkeit der Dokumente zu garantieren.",
                 "a2": "Die Überprüfungsdauer variiert je nach Dokumententyp und Institution. Durchschnittlich dauert der Prozess 24 bis 72 Stunden. Für dringende Überprüfungen bieten wir einen Express-Service mit verkürzten Fristen an.",
                 "a3": "Wir überprüfen alle Arten von akademischen Zeugnissen: Universitätsabschlüsse, Berufszertifikate, Zeugnisse und andere Bildungsdokumente. Jedes Dokument wird mit der gleichen Sorgfalt bearbeitet.",
                 "a4": "Wir verwenden Ende-zu-Ende-Verschlüsselung und fortschrittliche Sicherheitsprotokolle zum Schutz Ihrer Daten. Unsere Plattform ist DSGVO-konform und unsere Server befinden sich in sicheren Rechenzentren.",
-                "a5": "Unsere Preise variieren je nach Art des Services und erforderlichem Überprüfungsniveau. Wir bieten maßgeschneiderte Pakete für individuelle Bedürfnisse und personalisierte Unternehmenslösungen. Details finden Sie auf unserer Preisseite."
+                "a5": "Unsere Preise variieren je nach Art des Services und erforderlichem Überprüfungsniveau. Wir bieten maßgeschneiderte Pakete für individuelle Bedürfnisse und personalisierte Unternehmenslösungen. Details finden Sie auf unserer Preisseite.",
+                "a6": "Der ADN-Code ist eine eindeutige Kennung für jedes verifizierte Dokument. Er ermöglicht es Einrichtungen (Universitäten, Hochschulen, Institute), die offizielle Bestätigung sicher einzureichen, und autorisierten Dritten, die Echtheit jederzeit zu prüfen.",
+                "a7": "ApplyOns richtet sich an Bewerber (Studierende, Kandidaten), Bildungseinrichtungen (Universitäten, Botschaften, große Organisationen), Übersetzer und Agenturen sowie Administratoren. Jedes Profil hat einen eigenen Bereich und passende Berechtigungen.",
+                "a8": "Als Bewerber erstellen Sie eine Authentifizierungsanfrage, zahlen online und weisen dann die zuständige Einrichtung zu oder laden sie ein. Die Einrichtung erhält eine Benachrichtigung und kann die bestätigte Urkunde über den ADN-Code einreichen (bei aktivem Abonnement).",
+                "a9": "Ja. Sie können den Status Ihrer Bewerbungen und Authentifizierungsanfragen im Dashboard verfolgen: laufende Anfragen, eingereichte Dokumente, Benachrichtigungen und Verlauf sind in Echtzeit einsehbar.",
+                "a10": "Sie erreichen uns per E-Mail (contact@applyons.com), über das Kontaktformular auf der Website oder durch eine Demo-Anfrage auf unserer Preisseite. Vertrieb und Support stehen Ihnen zur Verfügung."
             }
         }
     },
@@ -865,12 +911,14 @@
         "home": "Startseite",
         "about": "Über uns",
         "features": "Dienstleistungen",
+        "app": "Die Anwendung",
         "solutions": "Lösungen",
         "pricing": "Preise",
         "contact": "Kontakt",
         "faq": "FAQ",
         "pricings": "Preise",
-        "concuPour": "Entworfen für"
+        "concuPour": "Entworfen für",
+        "menu": "Menü"
     },
     "loading_message": "Wird geladen...",
     "error_message": "Ein Fehler ist aufgetreten: {{error}}",

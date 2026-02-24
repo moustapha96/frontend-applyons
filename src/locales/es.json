@@ -152,7 +152,38 @@
         },
         "features": {
             "title": "Características",
-            "subtitle": "Potentes herramientas para simplificar sus procesos",
+            "subtitle": "Una plataforma completa para la autenticación de documentos académicos, desde la solicitud hasta la entrega por la institución.",
+            "clickForMore": "Haga clic para más información",
+            "authRequest": {
+                "title": "Solicitudes de autenticación y código ADN",
+                "description": "El solicitante crea una solicitud (asunto, tipo de documento), obtiene un código ADN único, paga en línea y luego asigna una institución o invita a una por correo electrónico.",
+                "more": "El código ADN identifica de forma única la solicitud. La institución invitada puede registrarse mediante el enlace recibido, activar su cuenta por correo y quedar automáticamente vinculada a la solicitud para subir el documento attestado."
+            },
+            "documentDeposit": {
+                "title": "Carga de documentos por la institución",
+                "description": "Universidades, colegios e institutos (con suscripción activa) acceden a la solicitud mediante el código ADN y suben el documento attestado (PDF) en unos clics.",
+                "more": "Tipos de documentos admitidos: diplomas, expedientes académicos, certificados, etc. La institución puede consultar la solicitud, subir el PDF e indicar el tipo y la mención. El solicitante y el instituto pueden ver después el documento y el estado (documentos recibidos, tramitada)."
+            },
+            "subscriptions": {
+                "title": "Suscripciones para institutos",
+                "description": "Las instituciones contratan una suscripción activa para desbloquear el acceso por código ADN y subir documentos en las solicitudes que se les asignan.",
+                "more": "Sin suscripción activa, el instituto no puede introducir un código ADN ni subir documentos. La gestión de suscripciones (contratación, renovación, historial) está disponible en el espacio de la organización."
+            },
+            "workflowNotifications": {
+                "title": "Flujo de trabajo y notificaciones",
+                "description": "Estados de solicitud (pendiente, documentos recibidos, tramitada), notificaciones por nuevas asignaciones y actualizaciones, seguimiento en tiempo real para solicitantes e instituciones.",
+                "more": "Cada actor recibe alertas adaptadas: nuevo documento subido, solicitud asignada, invitación a registrarse. El recorrido se rastrea desde la creación de la solicitud hasta la consulta del documento por el solicitante."
+            },
+            "securityTraceability": {
+                "title": "Seguridad y trazabilidad",
+                "description": "Código ADN único por solicitud, trazabilidad de las acciones, protección de datos y cumplimiento de buenas prácticas para documentos sensibles.",
+                "more": "El acceso se controla por rol y permisos. Los documentos se almacenan de forma segura; solo los actores autorizados (solicitante, instituto asignado, administrador) pueden consultarlos. Un registro de auditoría registra las acciones importantes."
+            },
+            "dashboards": {
+                "title": "Paneles por perfil",
+                "description": "Espacios dedicados según el rol: solicitante (mis solicitudes, solicitudes de autenticación), instituto (solicitudes asignadas, código ADN, suscripciones), traductor, administrador.",
+                "more": "Cada perfil dispone de menús y vistas adaptados: listas filtradas, detalle de solicitudes, estadísticas (suscripciones activas, pagos), gestión de usuarios y organizaciones para los administradores."
+            },
             "customForms": {
                 "title": "Formularios personalizados",
                 "description": "Cree formularios adaptados a sus necesidades específicas"
@@ -180,7 +211,8 @@
             "collaboration": {
                 "title": "Colaboración en equipo",
                 "description": "Colabore sin problemas con su equipo"
-            }
+            },
+            "discoverApp": "Descubrir toda la aplicación"
         },
         "pricing": {
             "title": "Precios",
@@ -250,6 +282,9 @@
             "legal": "Legal",
             "privacy": "Privacidad",
             "terms": "Términos de uso",
+            "cookies": "Cookies",
+            "legalNotice": "Aviso legal",
+            "security": "Seguridad y confianza",
             "copyright": "Todos los derechos reservados",
             "rights": "Todos los derechos reservados."
         },
@@ -283,6 +318,7 @@
                     "description": "Hacemos que la verificación de diplomas sea accesible para todos, en cualquier lugar del mundo."
                 }
             },
+            "ctaText": "¿Tiene una pregunta o un proyecto? Nuestro equipo está aquí para ayudarle.",
             "team": {
                 "title": "Nuestro Equipo",
                 "description": "Un equipo apasionado dedicado a transformar la verificación de diplomas.",
@@ -357,14 +393,24 @@
                 "q2": "¿Cuánto tiempo toma el proceso de verificación?",
                 "q3": "¿Qué tipos de documentos puedo verificar?",
                 "q4": "¿Cómo se garantiza la seguridad de mis datos?",
-                "q5": "¿Cuáles son los costos asociados con el uso de ApplyOns?"
+                "q5": "¿Cuáles son los costos asociados con el uso de ApplyOns?",
+                "q6": "¿Qué es el código ADN en ApplyOns?",
+                "q7": "¿Quién puede usar ApplyOns (solicitantes, universidades, traductores)?",
+                "q8": "¿Cómo invito a una institución a certificar mi documento?",
+                "q9": "¿Puedo seguir el estado de mi solicitud en tiempo real?",
+                "q10": "¿Cómo contacto al soporte o solicito una demo?"
             },
             "answers": {
                 "a1": "ApplyOns utiliza tecnología avanzada para verificar la autenticidad de los diplomas directamente con las instituciones educativas. Aseguramos una verificación completa de la información y las firmas para garantizar la validez de los documentos.",
                 "a2": "El tiempo de verificación varía según el tipo de documento y la institución. En promedio, el proceso toma de 24 a 72 horas. Para verificaciones urgentes, ofrecemos un servicio express con tiempos reducidos.",
                 "a3": "Verificamos todo tipo de credenciales académicas: títulos universitarios, certificados profesionales, expedientes académicos y otros documentos educativos. Cada documento se procesa con el mismo nivel de rigor.",
                 "a4": "Utilizamos cifrado de extremo a extremo y protocolos de seguridad avanzados para proteger tus datos. Nuestra plataforma cumple con GDPR y nuestros servidores están alojados en centros de datos seguros.",
-                "a5": "Nuestras tarifas varían según el tipo de servicio y el nivel de verificación requerido. Ofrecemos paquetes adaptados a necesidades individuales y soluciones empresariales personalizadas. Consulta nuestra página de precios para más detalles."
+                "a5": "Nuestras tarifas varían según el tipo de servicio y el nivel de verificación requerido. Ofrecemos paquetes adaptados a necesidades individuales y soluciones empresariales personalizadas. Consulta nuestra página de precios para más detalles.",
+                "a6": "El código ADN es un identificador único asignado a cada documento autenticado. Permite a las instituciones (universidades, colegios, institutos) enviar de forma segura la attestación oficial y a terceros autorizados verificar la autenticidad en cualquier momento.",
+                "a7": "ApplyOns está dirigido a solicitantes (estudiantes, candidatos), instituciones educativas (universidades, embajadas, grandes organizaciones), traductores y agencias, y administradores. Cada perfil tiene un espacio y permisos adaptados a su rol.",
+                "a8": "Como solicitante, creas una solicitud de autenticación, pagas en línea y luego asignas o invitas a la institución correspondiente. La institución recibe una notificación y puede enviar el documento attestado mediante el código ADN (con suscripción activa).",
+                "a9": "Sí. Puedes seguir el estado de tus candidaturas y solicitudes de autenticación desde tu panel: solicitudes en curso, documentos enviados, notificaciones e historial están disponibles en tiempo real.",
+                "a10": "Puedes contactarnos por email (contact@applyons.com), por el formulario de contacto del sitio o solicitando una demo en la página de precios. Nuestro equipo comercial y soporte están disponibles para ayudarte."
             }
         }
     },
@@ -862,12 +908,14 @@
         "home": "Inicio",
         "about": "Acerca de",
         "features": "Servicios",
+        "app": "La aplicación",
         "solutions": "Soluciones",
         "pricing": "Precios",
         "contact": "Contacto",
         "faq": "FAQ",
         "pricings": "Precios",
-        "concuPour": "Diseñado para"
+        "concuPour": "Diseñado para",
+        "menu": "Menú"
     },
     "loading_message": "Cargando...",
     "error_message": "Ocurrió un error: {{error}}",

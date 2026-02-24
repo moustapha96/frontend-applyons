@@ -43,14 +43,10 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.applyons.com/">
-  <meta property="og:site_name" content="ApplyOns">
-  <meta property="og:locale" content="en_US">
   <meta property="og:title" content="ApplyOns - Instant Document Authentication">
   <meta property="og:description"
     content="Get original documents from issuers in seconds. Verify IDs, diplomas, bank statements without third-party fees.">
   <meta property="og:image" content="https://www.applyons.com/logo.png">
-  <meta property="og:image:width" content="512">
-  <meta property="og:image:height" content="512">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -82,28 +78,7 @@
     }
   </style>
 
-  <!-- Structured Data (Google, Bing, réseaux sociaux) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "ApplyOns",
-    "url": "https://www.applyons.com",
-    "logo": "https://www.applyons.com/logo.png",
-    "description": "Instant document authentication and verification. Get original documents from issuers in seconds.",
-    "sameAs": [
-      "https://www.facebook.com/applyons",
-      "https://www.instagram.com/applyons/",
-      "https://x.com/applyons",
-      "https://www.linkedin.com/company/applyons/"
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "url": "https://www.applyons.com/contact",
-      "contactType": "customer service"
-    }
-  }
-  </script>
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -111,11 +86,23 @@
     "name": "ApplyOns",
     "description": "A non-AI ID and Document Authentication and Verification Company that enables you to get any type of documents from the issuer.",
     "url": "https://www.applyons.com",
+    "logo": "https://www.applyons.com/logo.png",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "https://www.applyons.com/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
-    }
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Al Hussein Khouma",
+      "url": "https://www.linkedin.com/in/al-hussein-khouma-019337217/" 
+    },
+    "sameAs": [
+      "https://www.facebook.com/applyons",
+      "https://www.instagram.com/applyons/",
+      "https://x.com/i/flow/login?redirect_after_login=%2Fapplyons",
+      "https://www.linkedin.com/in/applyons/"
+    ]
   }
   </script>
 
@@ -132,7 +119,7 @@
 <body>
   <div id="root"></div>
   <div id="splash-screen" aria-hidden="true">
-    <img alt="ApplyOns" src="/logo.png" style="height: 30%;" />
+    <img alt="ApplyOns" src="/public/logo.png" style="height: 30%;" />
   </div>
 
   <script type="module" src="/src/main"></script>

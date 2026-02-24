@@ -10,8 +10,6 @@ import logo from "@/assets/logo.png"
 import logo_blanc from "@/assets/logo_blanc.png"
 import { useSettingsContext } from "@/context"
 
-import { CheckSquare } from "lucide-react"
-
 const { Footer } = Layout
 const { Title, Text, Link: AntLink } = Typography
 
@@ -90,22 +88,22 @@ export default function FooterAppyons() {
                         </Title>
                         <ul style={{ listStyle: "none", padding: 0 }}>
                             <li style={{ marginBottom: "12px" }}>
-                                <Link to="#features" style={{ color: "#fff", }}>
+                                <Link to={{ pathname: "/", hash: "features" }} style={{ color: "#fff" }}>
                                     {t('applyons.footer.features')}
                                 </Link>
                             </li>
                             <li style={{ marginBottom: "12px" }}>
-                                <Link to="#pricing" style={{ color: "#fff", }}>
+                                <Link to={{ pathname: "/", hash: "pricing" }} style={{ color: "#fff" }}>
                                     {t('applyons.footer.pricing')}
                                 </Link>
                             </li>
                             <li style={{ marginBottom: "12px" }}>
-                                <Link to="#faq" style={{ color: "#fff", }}>
+                                <Link to={{ pathname: "/", hash: "faq" }} style={{ color: "#fff" }}>
                                     {t('applyons.footer.faq')}
                                 </Link>
                             </li>
                             <li style={{ marginBottom: "12px" }}>
-                                <Link to="#testimonials" style={{ color: "#fff", }}>
+                                <Link to={{ pathname: "/", hash: "testimonials" }} style={{ color: "#fff" }}>
                                     {t('applyons.footer.testimonials')}
                                 </Link>
                             </li>
@@ -118,12 +116,12 @@ export default function FooterAppyons() {
                         </Title>
                         <ul style={{ listStyle: "none", padding: 0 }}>
                             <li style={{ marginBottom: "12px" }}>
-                                <Link to="/about" style={{ color: "#fff", }}>
+                                <Link to="/about" style={{ color: "#fff" }}>
                                     {t('applyons.footer.about')}
                                 </Link>
                             </li>
                             <li style={{ marginBottom: "12px" }}>
-                                <Link to="/contact" style={{ color: "#fff", }}>
+                                <Link to="/contact" style={{ color: "#fff" }}>
                                     {t('applyons.footer.contact')}
                                 </Link>
                             </li>
@@ -136,13 +134,28 @@ export default function FooterAppyons() {
                         </Title>
                         <ul style={{ listStyle: "none", padding: 0 }}>
                             <li style={{ marginBottom: "12px" }}>
-                                <Link to="/privacy-policy" style={{ color: "#fff", }}>
+                                <Link to="/privacy-policy" style={{ color: "#fff" }}>
                                     {t('applyons.footer.privacy')}
                                 </Link>
                             </li>
                             <li style={{ marginBottom: "12px" }}>
-                                <Link to="/terms-and-conditions" style={{ color: "#fff", }}>
+                                <Link to="/terms-and-conditions" style={{ color: "#fff" }}>
                                     {t('applyons.footer.terms')}
+                                </Link>
+                            </li>
+                            <li style={{ marginBottom: "12px" }}>
+                                <Link to="/cookie-policy" style={{ color: "#fff" }}>
+                                    {t('applyons.footer.cookies')}
+                                </Link>
+                            </li>
+                            <li style={{ marginBottom: "12px" }}>
+                                <Link to="/legal-notice" style={{ color: "#fff" }}>
+                                    {t('applyons.footer.legalNotice')}
+                                </Link>
+                            </li>
+                            <li style={{ marginBottom: "12px" }}>
+                                <Link to="/security-trust" style={{ color: "#fff" }}>
+                                    {t('applyons.footer.security')}
                                 </Link>
                             </li>
                         </ul>

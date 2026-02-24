@@ -653,60 +653,76 @@
 
 "use client"
 
-import { Row, Col, Typography, Card, List } from "antd"
-import { BuildOutlined, BankOutlined, CheckOutlined, StarFilled } from "@ant-design/icons"
+import { useState } from "react"
+import { Row, Col, Typography, Card, List, Modal } from "antd"
+import { BuildOutlined, BankOutlined, CheckOutlined, StarFilled, InfoCircleOutlined } from "@ant-design/icons"
 import { useTranslation } from "react-i18next"
 
 const { Title, Paragraph, Text } = Typography
 
 export default function ConcuPourApplyons() {
     const { t } = useTranslation()
+    const [popup, setPopup] = useState(null) // { type: 'solution' | 'benefit', index: number } | null
+
+    const hasMoreKey = (key) => {
+        try {
+            const v = t(key)
+            return v && typeof v === "string" && v !== key
+        } catch {
+            return false
+        }
+    }
 
     const solutions = [
         {
             icon: <BuildOutlined style={{ fontSize: 24 }} />,
-            title: t("applyons.designedFor.business.title"),
-            description: t("applyons.designedFor.business.description"),
-            features: [
-                t("applyons.designedFor.business.features.automation"),
-                t("applyons.designedFor.business.features.analytics"),
+            titleKey: "applyons.designedFor.business.title",
+            descriptionKey: "applyons.designedFor.business.description",
+            moreKey: "applyons.designedFor.business.more",
+            featuresKeys: [
+                "applyons.designedFor.business.features.automation",
+                "applyons.designedFor.business.features.analytics",
+                "applyons.designedFor.business.features.api",
+                "applyons.designedFor.business.features.support",
             ],
         },
         {
             icon: <BankOutlined style={{ fontSize: 24 }} />,
-            title: t("applyons.designedFor.education.title"),
-            description: t("applyons.designedFor.education.description"),
-            features: [
-                t("applyons.designedFor.education.features.verification"),
-                t("applyons.designedFor.education.features.workflow"),
+            titleKey: "applyons.designedFor.education.title",
+            descriptionKey: "applyons.designedFor.education.description",
+            moreKey: "applyons.designedFor.education.more",
+            featuresKeys: [
+                "applyons.designedFor.education.features.verification",
+                "applyons.designedFor.education.features.workflow",
+                "applyons.designedFor.education.features.reports",
+                "applyons.designedFor.education.features.security",
             ],
         },
     ]
 
-
     const globalBenefits = [
         {
-            title: t("applyons.designedFor.benefits.verification.title"),
-            description: t(
-                "applyons.designedFor.benefits.verification.description"
-            ),
+            titleKey: "applyons.designedFor.benefits.verification.title",
+            descriptionKey: "applyons.designedFor.benefits.verification.description",
+            moreKey: "applyons.designedFor.benefits.verification.more",
         },
         {
-            title: t("applyons.designedFor.benefits.workflow.title"),
-            description: t(
-                "applyons.designedFor.benefits.workflow.description"
-            ),
+            titleKey: "applyons.designedFor.benefits.workflow.title",
+            descriptionKey: "applyons.designedFor.benefits.workflow.description",
+            moreKey: "applyons.designedFor.benefits.workflow.more",
         },
         {
-            title: t("applyons.designedFor.benefits.reports.title"),
-            description: t(
-                "applyons.designedFor.benefits.reports.description"
-            ),
+            titleKey: "applyons.designedFor.benefits.reports.title",
+            descriptionKey: "applyons.designedFor.benefits.reports.description",
+            moreKey: "applyons.designedFor.benefits.reports.more",
         },
     ]
 
+    const currentSolution = popup?.type === "solution" ? solutions[popup.index] : null
+    const currentBenefit = popup?.type === "benefit" ? globalBenefits[popup.index] : null
+
     return (
-        <div style={{ padding: "40px 0", background: "#f8fafc" }}>
+        <div id="concuPour" style={{ padding: "40px 0", background: "#f8fafc" }}>
             <div style={{ maxWidth: "1000px", margin: "0 auto", padding: "0 20px" }}>
                 <div style={{ textAlign: "center", marginBottom: "40px" }}>
                     <div style={{
@@ -745,11 +761,20 @@ export default function ConcuPourApplyons() {
                 <Row gutter={[24, 24]} style={{ marginBottom: "40px" }}>
                     {solutions.map((solution, index) => (
                         <Col xs={24} sm={12} key={index}>
-                            <Card style={{
-                                height: "100%",
-                                borderRadius: "12px",
-                                border: "1px solid #e2e8f0", padding: "16px"
-                            }} >
+                            <Card
+                                hoverable
+                                role="button"
+                                tabIndex={0}
+                                onClick={() => setPopup({ type: "solution", index })}
+                                onKeyDown={(e) => e.key === "Enter" && setPopup({ type: "solution", index })}
+                                style={{
+                                    height: "100%",
+                                    borderRadius: "12px",
+                                    border: "1px solid #e2e8f0",
+                                    padding: "16px",
+                                    cursor: "pointer",
+                                }}
+                            >
                                 <div style={{
                                     display: "flex",
                                     alignItems: "center",
@@ -768,7 +793,7 @@ export default function ConcuPourApplyons() {
                                         {solution.icon}
                                     </div>
                                     <Title level={4} style={{ margin: 0 }}>
-                                        {solution.title}
+                                        {t(solution.titleKey)}
                                     </Title>
                                 </div>
 
@@ -777,14 +802,14 @@ export default function ConcuPourApplyons() {
                                     fontSize: "0.9rem",
                                     color: "#4a5568"
                                 }}>
-                                    {solution.description}
+                                    {t(solution.descriptionKey)}
                                 </Paragraph>
 
                                 <List
                                     size="small"
-                                    dataSource={solution.features}
+                                    dataSource={solution.featuresKeys.slice(0, 2).map((k) => t(k))}
                                     renderItem={(item) => (
-                                        <List.Item>
+                                        <List.Item style={{ padding: "2px 0" }}>
                                             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                                                 <CheckOutlined style={{ color: "#38a169", fontSize: "12px" }} />
                                                 <Text style={{ fontSize: "0.8rem" }}>{item}</Text>
@@ -792,6 +817,10 @@ export default function ConcuPourApplyons() {
                                         </List.Item>
                                     )}
                                 />
+                                <div style={{ marginTop: "12px", display: "flex", alignItems: "center", gap: "6px", color: "#254c6b", fontSize: "0.8rem" }}>
+                                    <InfoCircleOutlined />
+                                    <span>{t("applyons.designedFor.clickForMore")}</span>
+                                </div>
                             </Card>
                         </Col>
                     ))}
@@ -814,12 +843,22 @@ export default function ConcuPourApplyons() {
                     <Row gutter={[16, 16]}>
                         {globalBenefits.map((benefit, index) => (
                             <Col xs={24} sm={8} key={index}>
-                                <div style={{
-                                    padding: "12px",
-                                    background: "rgba(255, 255, 255, 0.1)",
-                                    borderRadius: "8px",
-                                    height: "100%"
-                                }}>
+                                <div
+                                    role="button"
+                                    tabIndex={0}
+                                    onClick={() => setPopup({ type: "benefit", index })}
+                                    onKeyDown={(e) => e.key === "Enter" && setPopup({ type: "benefit", index })}
+                                    style={{
+                                        padding: "12px",
+                                        background: "rgba(255, 255, 255, 0.1)",
+                                        borderRadius: "8px",
+                                        height: "100%",
+                                        cursor: "pointer",
+                                        transition: "background 0.2s",
+                                    }}
+                                    onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(255, 255, 255, 0.18)" }}
+                                    onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(255, 255, 255, 0.1)" }}
+                                >
                                     <div style={{
                                         width: "24px",
                                         height: "24px",
@@ -833,17 +872,90 @@ export default function ConcuPourApplyons() {
                                         <CheckOutlined style={{ color: "white", fontSize: "12px" }} />
                                     </div>
                                     <Title level={5} style={{ color: "white", marginBottom: "4px" }}>
-                                        {benefit.title}
+                                        {t(benefit.titleKey)}
                                     </Title>
                                     <Text style={{ fontSize: "0.8rem", color: "rgba(255, 255, 255, 0.8)" }}>
-                                        {benefit.description}
+                                        {t(benefit.descriptionKey)}
                                     </Text>
+                                    <div style={{ marginTop: "8px", display: "flex", alignItems: "center", gap: "4px", fontSize: "0.75rem", opacity: 0.9 }}>
+                                        <InfoCircleOutlined /> {t("applyons.designedFor.clickForMore")}
+                                    </div>
                                 </div>
                             </Col>
                         ))}
                     </Row>
                 </div>
             </div>
+
+            {/* Popup Solution */}
+            <Modal
+                open={!!currentSolution}
+                onCancel={() => setPopup(null)}
+                footer={null}
+                width={520}
+                centered
+                title={
+                    <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                        {currentSolution && (
+                            <>
+                                <span style={{ color: "#254c6b" }}>{currentSolution.icon}</span>
+                                {t(currentSolution.titleKey)}
+                            </>
+                        )}
+                    </span>
+                }
+            >
+                {currentSolution && (
+                    <>
+                        <Paragraph style={{ fontSize: "1rem", color: "#4b5563", marginBottom: 16 }}>
+                            {t(currentSolution.descriptionKey)}
+                        </Paragraph>
+                        <Title level={5} style={{ color: "#254c6b", marginBottom: 12 }}>
+                            {t("applyons.designedFor.keyFeatures")}
+                        </Title>
+                        <List
+                            size="small"
+                            dataSource={currentSolution.featuresKeys.map((k) => t(k))}
+                            renderItem={(item) => (
+                                <List.Item style={{ borderBottom: "none", padding: "4px 0" }}>
+                                    <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                                        <CheckOutlined style={{ color: "#38a169" }} />
+                                        <Text>{item}</Text>
+                                    </div>
+                                </List.Item>
+                            )}
+                        />
+                        {currentSolution.moreKey && hasMoreKey(currentSolution.moreKey) && (
+                            <Paragraph style={{ fontSize: "1rem", color: "#4b5563", marginTop: 16, marginBottom: 0 }}>
+                                {t(currentSolution.moreKey)}
+                            </Paragraph>
+                        )}
+                    </>
+                )}
+            </Modal>
+
+            {/* Popup Benefit */}
+            <Modal
+                open={!!currentBenefit}
+                onCancel={() => setPopup(null)}
+                footer={null}
+                width={480}
+                centered
+                title={currentBenefit ? t(currentBenefit.titleKey) : ""}
+            >
+                {currentBenefit && (
+                    <>
+                        <Paragraph style={{ fontSize: "1rem", color: "#4b5563", marginBottom: currentBenefit.moreKey && hasMoreKey(currentBenefit.moreKey) ? 16 : 0 }}>
+                            {t(currentBenefit.descriptionKey)}
+                        </Paragraph>
+                        {currentBenefit.moreKey && hasMoreKey(currentBenefit.moreKey) && (
+                            <Paragraph style={{ fontSize: "1rem", color: "#4b5563", marginBottom: 0 }}>
+                                {t(currentBenefit.moreKey)}
+                            </Paragraph>
+                        )}
+                    </>
+                )}
+            </Modal>
         </div>
     )
 }

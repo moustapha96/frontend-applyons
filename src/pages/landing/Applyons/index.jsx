@@ -1,11 +1,12 @@
 "use client"
+import { useEffect } from "react"
+import { useLocation } from "react-router-dom"
 import { Layout, Button, Tabs, Form, Input, Card, Typography, Row, Col, Divider, Menu } from "antd"
 import { CheckCircleOutlined, FileTextOutlined, FormOutlined, ClockCircleOutlined } from "@ant-design/icons"
 import { Link } from "react-router-dom"
 
 import { ConfigProvider } from 'antd';
 import HeaderApplyons from "./components/Header"
-import FooterAppyons from "./components/Footer"
 import HeroApplayons from "./components/Hero"
 import FeaturesApplayons from "./components/Features"
 import PricingApplyons from "./components/Pricing"
@@ -19,7 +20,6 @@ import Hero from './New/Hero';
 import Features from './New/Features';
 import TargetAudience from './New/TargetAudience';
 import Testimonials from './New/Testimonials';
-import AppFooter from './New/Footer';
 import { PageMetaData } from "@/components";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
@@ -37,14 +37,21 @@ const theme = {
 };
 
 
+import { getApplyonsMenuItems } from "./navConfig"
+
 export default function ApplyOnsPage() {
     const { t } = useTranslation()
-    const menuItems = [
-        { key: "home", label: <a href="#home">{t("nav.home")} </a> },
-        { key: "features", label: <a href="#features">{t("nav.features")}</a> },
-        { key: "pricing", label: <a href="#pricing">{t("nav.pricings")}</a> },
-        { key: "concuPour", label: <a href="#concuPour">{t("nav.concuPour")}</a> }
-    ];
+    const location = useLocation()
+    const menuItems = getApplyonsMenuItems(t)
+
+    useEffect(() => {
+        const hash = location.hash || window.location.hash
+        if (hash) {
+            const id = hash.replace("#", "")
+            const el = document.getElementById(id)
+            if (el) setTimeout(() => el.scrollIntoView({ behavior: "smooth", block: "start" }), 100)
+        }
+    }, [location.pathname, location.hash])
 
     return <>
 
@@ -63,6 +70,11 @@ export default function ApplyOnsPage() {
                     <section id="features" className="overflow-hidden">
                         <AnimateOnScroll direction="up" delay={100}>
                             <FeaturesApplayons />
+                            <div className="container mx-auto px-4 text-center" style={{ paddingTop: 24, paddingBottom: 16 }}>
+                                <Link to="/app" className="font-semibold" style={{ color: "#254c6b", fontSize: "1.05rem" }}>
+                                    {t("applyons.features.discoverApp")} →
+                                </Link>
+                            </div>
                         </AnimateOnScroll>
                     </section>
                     <section id="pricing" className="overflow-hidden">
@@ -80,9 +92,12 @@ export default function ApplyOnsPage() {
                             <Faq />
                         </AnimateOnScroll>
                     </section>
+                    <section id="testimonials" className="overflow-hidden">
+                        <AnimateOnScroll direction="up" delay={100}>
+                            <Testimonials />
+                        </AnimateOnScroll>
+                    </section>
                 </Content>
-                {/* <AppFooter /> */}
-                {/* <FooterAppyons /> */}
             </Layout>
         </LandingLayout>
     </>

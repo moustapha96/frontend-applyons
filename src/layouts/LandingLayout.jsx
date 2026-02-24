@@ -2,7 +2,8 @@ import { Preloader } from "@/components";
 import AdvertisementPopup from "@/components/Popup";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Suspense, lazy } from "react";
-const Footer = lazy(() => import("@/components/Footer"));
+
+const FooterAppyons = lazy(() => import("@/pages/landing/Applyons/components/Footer"));
 
 const loading = () => <div />;
 
@@ -12,7 +13,7 @@ const LandingLayout = ({ children }) => {
       <Suspense fallback={<Preloader />}>{children}</Suspense>
 
       <Suspense fallback={loading()}>
-        <Footer />
+        <FooterAppyons />
       </Suspense>
       <WhatsAppButton phoneNumber="+19179439275" />
       {/* <AdvertisementPopup /> */}

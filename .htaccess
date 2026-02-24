@@ -1,0 +1,30 @@
+# Empêche l’indexation du répertoire
+Options -Indexes
+
+# Activer le moteur de réécriture
+RewriteEngine On
+RewriteBase /
+
+# Laisser passer les fichiers et dossiers physiques (assets, API, etc.)
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Rediriger toutes les autres requêtes vers index.html (SPA React/Vite)
+RewriteRule . /index.html [L]
+
+# Caching agressif pour les assets statiques versionnés
+<FilesMatch "\.(js|mjs|css|png|jpe?g|gif|svg|ico|webp|woff2?|ttf|eot)$">
+  FileETag None
+  Header unset ETag
+  Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+
+# Pas de cache pour les pages HTML (toujours récupérer la dernière version)
+<FilesMatch "\.(html)$">
+  FileETag None
+  Header set Cache-Control "no-cache, no-store, must-revalidate"
+  Header set Pragma "no-cache"
+  Header set Expires 0
+</FilesMatch>
+

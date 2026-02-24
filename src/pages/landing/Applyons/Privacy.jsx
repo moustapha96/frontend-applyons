@@ -5,6 +5,7 @@ import { PageMetaData } from "@/components"
 import { LandingLayout } from "@/layouts"
 import { Layout } from "antd"
 import HeaderApplyons from "./components/Header"
+import { getApplyonsMenuItems } from "./navConfig"
 import { useEffect } from "react"
 
 const Privacy = () => {
@@ -14,16 +15,11 @@ const Privacy = () => {
         window.scrollTo(0, 0)
     }, [])
 
-    const menuItems = [
-        { key: "home", label: <a href="/">{t("nav.home")} </a> },
-        { key: "features", label: <a href="/#features">{t("nav.features")}</a> },
-        { key: "pricing", label: <a href="/#pricing">{t("nav.pricings")}</a> },
-        { key: "concuPour", label: <a href="/#concuPour">{t("nav.concuPour")}</a> }
-    ];
+    const menuItems = getApplyonsMenuItems(t)
 
     return (
         <LandingLayout>
-            <PageMetaData title={t("privacy.title")} description={t("privacy.subtitle")} canonicalPath="/privacy-policy" />
+            <PageMetaData title="privacy.title" />
 
             <Layout className="min-h-screen">
                 <HeaderApplyons menuItems={menuItems} />
