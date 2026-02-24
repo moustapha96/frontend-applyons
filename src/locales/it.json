@@ -2804,5 +2804,43 @@
             "pending": "In Attesa",
             "rejected": "Rifiutato"
         }
+    },
+    "applyons_newFeatures": {
+        "title": "Funzionalità principali",
+        "items": [
+            {
+                "title": "Aggiornamenti in tempo reale",
+                "description": "Controlli di documenti e moduli basati su IA, in tempo reale."
+            },
+            {
+                "title": "Verifica istantanea",
+                "description": "Verifiche e convalide automatiche."
+            },
+            {
+                "title": "Approvazione",
+                "description": "Un processo di approvazione fluido e completamente tracciabile."
+            }
+        ]
+    },
+    "applyons_targetAudience": {
+        "title": "Progettato per",
+        "items": [
+            {
+                "title": "Scuole e università"
+            },
+            {
+                "title": "Servizi finanziari"
+            },
+            {
+                "title": "Grandi aziende"
+            }
+        ]
+    },
+    "applyons_landingTestimonials": {
+        "title": "Testimonianze",
+        "quotes": [
+            "ApplyOns ha ridotto del 60% i nostri tempi di elaborazione.",
+            "I nostri utenti adorano la semplicità del processo di invio."
+        ]
     }
 }

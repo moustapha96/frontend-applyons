@@ -1,6 +1,7 @@
 import React from 'react';
 import { Typography, Row, Col, Card } from 'antd';
 import { GraduationCap, Building2, Building } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const { Title } = Typography;
 
@@ -20,18 +21,22 @@ const AudienceCard = ({ icon, title }) => (
 );
 
 const TargetAudience = () => {
+    const { t } = useTranslation();
+
+    const translatedAudiences = t('applyons_targetAudience.items', { returnObjects: true });
+
     const audiences = [
         {
             icon: <GraduationCap size={40} />,
-            title: "Ecoles et universités"
+            ...(translatedAudiences?.[0] || {})
         },
         {
             icon: <Building2 size={40} />,
-            title: "Services financiers"
+            ...(translatedAudiences?.[1] || {})
         },
         {
             icon: <Building size={40} />,
-            title: "Grandes entreprises"
+            ...(translatedAudiences?.[2] || {})
         }
     ];
 
@@ -39,7 +44,7 @@ const TargetAudience = () => {
         <div className="py-16 px-4 md:px-8 bg-[#f8fafc]">
             <div className="max-w-5xl mx-auto">
                 <Title level={2} className="text-3xl font-bold text-center text-[#0d2b45] mb-12">
-                    Conçu pour
+                    {t('applyons_targetAudience.title')}
                 </Title>
                 <Row gutter={[24, 24]}>
                     {audiences.map((audience, index) => (

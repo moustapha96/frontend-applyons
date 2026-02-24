@@ -1,5 +1,6 @@
 import React from 'react';
 import { Typography, Row, Col, Card } from 'antd';
+import { useTranslation } from 'react-i18next';
 
 const { Title, Paragraph } = Typography;
 
@@ -16,26 +17,21 @@ const TestimonialCard = ({ quote }) => (
 );
 
 const Testimonials = () => {
-    const testimonials = [
-        {
-            quote: "Applyons a réduit notre temps de traitement de 60%."
-        },
-        {
-            quote: "Nos utillisateurs adorent la simplicité du processus de depot."
-        }
-    ];
+    const { t } = useTranslation();
+
+    const quotes = t('applyons_landingTestimonials.quotes', { returnObjects: true }) || [];
 
     return (
         <div className="py-16 px-4 md:px-8 bg-white">
             <div className="max-w-5xl mx-auto">
                 <Title level={2} className="text-3xl font-bold text-center text-[#0d2b45] mb-12">
-                    Témoignages
+                    {t('applyons_landingTestimonials.title')}
                 </Title>
                 <Row gutter={[24, 24]}>
-                    {testimonials.map((testimonial, index) => (
+                    {quotes.map((quote, index) => (
                         <Col xs={24} md={12} key={index}>
                             <TestimonialCard
-                                quote={testimonial.quote}
+                                quote={quote}
                             />
                         </Col>
                     ))}

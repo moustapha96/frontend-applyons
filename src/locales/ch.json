@@ -2742,5 +2742,43 @@
         "my_requests": "我的申请",
         "view_request_details": "查看申请详情",
         "document_count": "文档"
+    },
+    "applyons_newFeatures": {
+        "title": "关键功能",
+        "items": [
+            {
+                "title": "实时更新",
+                "description": "基于人工智能的文档和表单实时检查。"
+            },
+            {
+                "title": "即时验证",
+                "description": "自动验证和校验。"
+            },
+            {
+                "title": "审批流程",
+                "description": "流畅且可完全追踪的审批流程。"
+            }
+        ]
+    },
+    "applyons_targetAudience": {
+        "title": "适用于",
+        "items": [
+            {
+                "title": "学校和大学"
+            },
+            {
+                "title": "金融服务机构"
+            },
+            {
+                "title": "大型企业"
+            }
+        ]
+    },
+    "applyons_landingTestimonials": {
+        "title": "用户评价",
+        "quotes": [
+            "ApplyOns 将我们的处理时间缩短了 60%。",
+            "我们的用户非常喜欢简洁的提交流程。"
+        ]
     }
 }

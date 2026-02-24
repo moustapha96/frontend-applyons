@@ -1,6 +1,7 @@
 import React from 'react';
 import { Typography, Row, Col, Card } from 'antd';
 import { Zap, CheckCircle, ThumbsUp } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const { Title, Paragraph } = Typography;
 
@@ -22,21 +23,22 @@ const FeatureCard = ({ icon, title, description }) => (
 );
 
 const Features = () => {
+    const { t } = useTranslation();
+
+    const translatedFeatures = t('applyons_newFeatures.items', { returnObjects: true });
+
     const features = [
         {
             icon: <Zap size={40} />,
-            title: "Mises à jour en temps réel",
-            description: "Vérifications de documents par IA formulaires"
+            ...(translatedFeatures?.[0] || {})
         },
         {
             icon: <CheckCircle size={40} />,
-            title: "Vérification instantanée",
-            description: "Verifications et validations automatiques"
+            ...(translatedFeatures?.[1] || {})
         },
         {
             icon: <ThumbsUp size={40} />,
-            title: "Approbation",
-            description: "Processus d'aprobation fluide et traçable"
+            ...(translatedFeatures?.[2] || {})
         }
     ];
 
@@ -58,7 +60,7 @@ const Features = () => {
 
             <div className="max-w-5xl mx-auto">
                 <Title level={2} className="text-3xl font-bold text-center text-[#0d2b45] mb-12">
-                    Fonctionnalités
+                    {t('applyons_newFeatures.title')}
                 </Title>
                 <Row gutter={[24, 24]}>
                     {features.map((feature, index) => (

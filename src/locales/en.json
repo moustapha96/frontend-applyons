@@ -3101,5 +3101,43 @@
             "pending": "Pending",
             "rejected": "Rejected"
         }
+    },
+    "applyons_newFeatures": {
+        "title": "Key features",
+        "items": [
+            {
+                "title": "Real-time updates",
+                "description": "AI-powered document and form checks in real time."
+            },
+            {
+                "title": "Instant verification",
+                "description": "Automated checks and validations."
+            },
+            {
+                "title": "Approval",
+                "description": "A smooth, fully traceable approval process."
+            }
+        ]
+    },
+    "applyons_targetAudience": {
+        "title": "Designed for",
+        "items": [
+            {
+                "title": "Schools and universities"
+            },
+            {
+                "title": "Financial services"
+            },
+            {
+                "title": "Large enterprises"
+            }
+        ]
+    },
+    "applyons_landingTestimonials": {
+        "title": "Testimonials",
+        "quotes": [
+            "ApplyOns has reduced our processing time by 60%.",
+            "Our users love how simple the submission process is."
+        ]
     }
 }

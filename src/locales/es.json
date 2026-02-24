@@ -2754,5 +2754,43 @@
             "pending": "Pendiente",
             "rejected": "Rechazado"
         }
+    },
+    "applyons_newFeatures": {
+        "title": "Funciones clave",
+        "items": [
+            {
+                "title": "Actualizaciones en tiempo real",
+                "description": "Comprobaciones de documentos y formularios con IA, en tiempo real."
+            },
+            {
+                "title": "Verificación instantánea",
+                "description": "Verificaciones y validaciones automáticas."
+            },
+            {
+                "title": "Aprobación",
+                "description": "Proceso de aprobación fluido y totalmente trazable."
+            }
+        ]
+    },
+    "applyons_targetAudience": {
+        "title": "Diseñado para",
+        "items": [
+            {
+                "title": "Escuelas y universidades"
+            },
+            {
+                "title": "Servicios financieros"
+            },
+            {
+                "title": "Grandes empresas"
+            }
+        ]
+    },
+    "applyons_landingTestimonials": {
+        "title": "Testimonios",
+        "quotes": [
+            "ApplyOns ha reducido nuestro tiempo de tramitación en un 60%.",
+            "A nuestros usuarios les encanta la sencillez del proceso de envío."
+        ]
     }
 }

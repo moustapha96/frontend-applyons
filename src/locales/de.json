@@ -2757,5 +2757,43 @@
             "pending": "Ausstehend",
             "rejected": "Abgelehnt"
         }
+    },
+    "applyons_newFeatures": {
+        "title": "Wichtige Funktionen",
+        "items": [
+            {
+                "title": "Echtzeit-Updates",
+                "description": "KI-gestützte Prüfungen von Dokumenten und Formularen in Echtzeit."
+            },
+            {
+                "title": "Sofortige Verifizierung",
+                "description": "Automatisierte Prüfungen und Validierungen."
+            },
+            {
+                "title": "Genehmigung",
+                "description": "Ein reibungsloser, vollständig nachverfolgbarer Genehmigungsprozess."
+            }
+        ]
+    },
+    "applyons_targetAudience": {
+        "title": "Konzipiert für",
+        "items": [
+            {
+                "title": "Schulen und Universitäten"
+            },
+            {
+                "title": "Finanzdienstleister"
+            },
+            {
+                "title": "Großunternehmen"
+            }
+        ]
+    },
+    "applyons_landingTestimonials": {
+        "title": "Referenzen",
+        "quotes": [
+            "ApplyOns hat unsere Bearbeitungszeit um 60 % reduziert.",
+            "Unsere Nutzer lieben die Einfachheit des Einreichungsprozesses."
+        ]
     }
 }
