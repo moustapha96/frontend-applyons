@@ -70,11 +70,7 @@ export default function ApplyOnsPage() {
                     <section id="features" className="overflow-hidden">
                         <AnimateOnScroll direction="up" delay={100}>
                             <FeaturesApplayons />
-                            <div className="container mx-auto px-4 text-center" style={{ paddingTop: 24, paddingBottom: 16 }}>
-                                <Link to="/app" className="font-semibold" style={{ color: "#254c6b", fontSize: "1.05rem" }}>
-                                    {t("applyons.features.discoverApp")} →
-                                </Link>
-                            </div>
+                           
                         </AnimateOnScroll>
                     </section>
                     <section id="pricing" className="overflow-hidden">
