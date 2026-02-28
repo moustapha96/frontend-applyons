@@ -235,7 +235,7 @@
             "legalNotice": "Note legali",
             "security": "Sicurezza e fiducia",
             "copyright": "Tutti i diritti riservati",
-            "rights": "Tutti i diritti riservati."
+            "rights": "2026 APPLYONS © 2026 -"
         },
         "about": {
             "title": "Chi Siamo",
@@ -962,13 +962,13 @@
         "legal": "Legale",
         "privacy": "Informativa sulla privacy",
         "terms": "Termini e condizioni",
-        "rights": "Tutti i diritti riservati."
+        "rights": "2026 APPLYONS © 2026 -"
     },
     "nav": {
         "home": "Home",
         "about": "Chi siamo",
         "features": "Servizi",
-        "app": "L'applicazione",
+        "app": "Applicazione",
         "solutions": "Soluzioni",
         "pricing": "Prezzi",
         "contact": "Contatto",
@@ -1705,7 +1705,7 @@
         "messageRequired": "Il messaggio è obbligatorio"
     },
     "footer": {
-        "copyright": "Tutti i diritti riservati.",
+        "copyright": "2026 APPLYONS © 2026 -",
         "version": "Versione {version}",
         "conditions": "Termini e condizioni",
         "confidentialite": "Politica sulla privacy",
@@ -2199,7 +2199,7 @@
     "privacy": {
         "title": "Informativa sulla privacy",
         "subtitle": "Come proteggiamo e utilizziamo i tuoi dati personali.",
-        "lastUpdated": "Ultimo aggiornamento: 19 maggio 2025",
+        "lastUpdated": "Ultimo aggiornamento: 19 maggio 2026",
         "introduction": {
             "title": "Introduzione",
             "description": "In Applysons, la privacy dei tuoi dati è la nostra priorità. Questa politica spiega come raccogliamo, utilizziamo e proteggiamo le tue informazioni."
@@ -2807,8 +2807,7 @@
     },
     "applyons_newFeatures": {
         "title": "Funzionalità principali",
-        "items": [
-            {
+        "items": [{
                 "title": "Aggiornamenti in tempo reale",
                 "description": "Controlli di documenti e moduli basati su IA, in tempo reale."
             },
@@ -2824,8 +2823,7 @@
     },
     "applyons_targetAudience": {
         "title": "Progettato per",
-        "items": [
-            {
+        "items": [{
                 "title": "Scuole e università"
             },
             {

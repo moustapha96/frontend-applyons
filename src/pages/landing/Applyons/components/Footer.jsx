@@ -17,6 +17,7 @@ export default function FooterAppyons() {
     const { t } = useTranslation()
     const { settings } = useSettingsContext()
     const currentYear = new Date().getFullYear()
+    console.log(currentYear)
 
     const siteName = settings?.siteName || "Applyons"
     const social = settings?.socialMedia || {}

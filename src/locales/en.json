@@ -241,7 +241,7 @@
             "legalNotice": "Legal Notice",
             "security": "Security & Trust",
             "copyright": "All rights reserved",
-            "rights": "All rights reserved."
+            "rights": "2026 APPLYONS © 2026 -"
         },
         "about": {
             "title": "About ApplyOns",
@@ -992,7 +992,7 @@
         "legal": "Legal",
         "privacy": "Privacy Policy",
         "terms": "Terms & Conditions",
-        "rights": "All rights reserved.",
+        "rights": "2026 APPLYONS © 2026 -",
         "social": {
             "facebook": "Follow us on Facebook",
             "twitter": "Follow us on Twitter",
@@ -1004,7 +1004,7 @@
         "home": "Home",
         "about": "About",
         "features": "Services",
-        "app": "The Application",
+        "app": "Application",
         "solutions": "Solutions",
         "pricing": "Pricing",
         "contact": "Contact",
@@ -2418,7 +2418,6 @@
                 "price": "49",
                 "period": "/request",
                 "features": [
-                    "$49 per authentication request",
                     "Real-time request tracking",
                     "Secure document download",
                     "Automatic notifications",
@@ -2433,7 +2432,7 @@
     "privacy": {
         "title": "Privacy Policy",
         "subtitle": "How we protect and use your personal data.",
-        "lastUpdated": "Last updated: May 19, 2025",
+        "lastUpdated": "Last updated: May 19, 2026",
         "introduction": {
             "title": "Introduction",
             "description": "At Applysons, the privacy of your data is our priority. This policy explains how we collect, use, and protect your information."
@@ -2544,7 +2543,7 @@
     "cookies": {
         "title": "Cookie Policy",
         "subtitle": "How ApplyOns uses cookies and similar technologies.",
-        "lastUpdated": "Last updated: February 2025",
+        "lastUpdated": "Last updated: February 2026",
         "intro": {
             "title": "Introduction",
             "description": "ApplyOns uses cookies and similar technologies to ensure the proper functioning of the platform, improve your experience, and comply with legal requirements. This policy applies to all our services."
@@ -3104,8 +3103,7 @@
     },
     "applyons_newFeatures": {
         "title": "Key features",
-        "items": [
-            {
+        "items": [{
                 "title": "Real-time updates",
                 "description": "AI-powered document and form checks in real time."
             },
@@ -3121,8 +3119,7 @@
     },
     "applyons_targetAudience": {
         "title": "Designed for",
-        "items": [
-            {
+        "items": [{
                 "title": "Schools and universities"
             },
             {

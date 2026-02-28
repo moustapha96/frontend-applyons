@@ -102,7 +102,7 @@ export default function PricingApplyons() {
       features: t("applyons.pricing.plans.universities.features", { returnObjects: true }),
       note: t("applyons.pricing.plans.universities.note"),
       contactText: t("applyons.pricing.plans.universities.contact"),
-      link: "mailto:contact@applyons.com",
+      link: null,
       buttonText: t("applyons.pricing.plans.universities.contactSale"),
       icon: <Building />,
       color: "#012C4E",
@@ -250,7 +250,7 @@ export default function PricingApplyons() {
 
                   <List
                     itemLayout="horizontal"
-                    dataSource={plan.features}
+                    dataSource={plan.features.filter((_, idx) => idx !== 0 || popupPlanIndex === index)}
                     renderItem={(item) => (
                       <List.Item style={{ borderBottom: "none", padding: "8px 0" }}>
                         <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>

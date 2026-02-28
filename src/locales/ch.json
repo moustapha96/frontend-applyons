@@ -285,7 +285,8 @@
             "cookies": "Cookie",
             "legalNotice": "法律声明",
             "security": "安全与信任",
-            "copyright": "版权所有"
+            "copyright": "版权所有",
+            "rights": "2026 APPLYONS © 2026 -"
         },
         "about": {
             "title": "关于ApplyOns",
@@ -880,13 +881,13 @@
         "legal": "法律声明",
         "privacy": "隐私政策",
         "terms": "使用条款",
-        "rights": "版权所有。"
+        "rights": "2026 APPLYONS © 2026 -"
     },
     "nav": {
         "home": "首页",
         "about": "关于我们",
         "features": "服务",
-        "app": "应用程序",
+        "app": "应用",
         "solutions": "解决方案",
         "pricing": "价格",
         "contact": "联系",
@@ -1624,7 +1625,7 @@
         "messageRequired": "消息是必填项"
     },
     "footer": {
-        "copyright": "版权所有。",
+        "copyright": "2026 APPLYONS © 2026 -",
         "version": "版本 {version}",
         "conditions": "一般条款",
         "confidentialite": "隐私政策",
@@ -2238,7 +2239,7 @@
     "privacy": {
         "title": "隐私政策",
         "subtitle": "我们如何保护和使用您的个人数据。",
-        "lastUpdated": "最后更新：2025年5月19日",
+        "lastUpdated": "最后更新：2026年5月19日",
         "introduction": {
             "title": "简介",
             "description": "在 Applysons，我们非常重视您的数据隐私。本政策解释了我们如何收集、使用和保护您的信息。"
@@ -2745,8 +2746,7 @@
     },
     "applyons_newFeatures": {
         "title": "关键功能",
-        "items": [
-            {
+        "items": [{
                 "title": "实时更新",
                 "description": "基于人工智能的文档和表单实时检查。"
             },
@@ -2762,8 +2762,7 @@
     },
     "applyons_targetAudience": {
         "title": "适用于",
-        "items": [
-            {
+        "items": [{
                 "title": "学校和大学"
             },
             {

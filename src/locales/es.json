@@ -286,7 +286,7 @@
             "legalNotice": "Aviso legal",
             "security": "Seguridad y confianza",
             "copyright": "Todos los derechos reservados",
-            "rights": "Todos los derechos reservados."
+            "rights": "2026 APPLYONS © 2026 -"
         },
         "about": {
             "title": "Acerca de ApplyOns",
@@ -881,7 +881,7 @@
         "legal": "Legal",
         "privacy": "Política de privacidad",
         "terms": "Términos y condiciones",
-        "rights": "Todos los derechos reservados."
+        "rights": "2026 APPLYONS © 2026 -"
     },
     "footer": {
         "description": "Simplifica la verificación de tu diploma con nuestra plataforma segura e innovadora.",
@@ -896,7 +896,7 @@
         "legal": "Legal",
         "privacy": "Política de privacidad",
         "terms": "Términos y condiciones",
-        "rights": "Todos los derechos reservados.",
+        "rights": "2026 APPLYONS © 2026 -",
         "social": {
             "facebook": "Síguenos en Facebook",
             "twitter": "Síguenos en Twitter",
@@ -908,7 +908,7 @@
         "home": "Inicio",
         "about": "Acerca de",
         "features": "Servicios",
-        "app": "La aplicación",
+        "app": "Aplicación",
         "solutions": "Soluciones",
         "pricing": "Precios",
         "contact": "Contacto",
@@ -2312,7 +2312,7 @@
     "privacy": {
         "title": "Política de privacidad",
         "subtitle": "Cómo protegemos y utilizamos tus datos personales.",
-        "lastUpdated": "Última actualización: 19 de mayo de 2025",
+        "lastUpdated": "Última actualización: 19 de mayo de 2026",
         "introduction": {
             "title": "Introducción",
             "description": "En Applysons, la privacidad de tus datos es nuestra prioridad. Esta política explica cómo recopilamos, utilizamos y protegemos tu información."
@@ -2757,8 +2757,7 @@
     },
     "applyons_newFeatures": {
         "title": "Funciones clave",
-        "items": [
-            {
+        "items": [{
                 "title": "Actualizaciones en tiempo real",
                 "description": "Comprobaciones de documentos y formularios con IA, en tiempo real."
             },
@@ -2774,8 +2773,7 @@
     },
     "applyons_targetAudience": {
         "title": "Diseñado para",
-        "items": [
-            {
+        "items": [{
                 "title": "Escuelas y universidades"
             },
             {

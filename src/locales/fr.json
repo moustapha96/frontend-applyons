@@ -348,7 +348,7 @@
             "legalNotice": "Mentions légales",
             "security": "Sécurité & confiance",
             "copyright": "Tous droits réservés",
-            "rights": "Tous droits réservés."
+            "rights": "2026 APPLYONS © 2026 -"
         },
         "about": {
             "title": "À propos d'ApplyOns",
@@ -580,7 +580,7 @@
         "home": "Accueil",
         "about": "À propos",
         "features": "Services",
-        "app": "L'application",
+        "app": "Application",
         "solutions": "Solutions",
         "pricing": "Tarification",
         "contact": "Contact",
@@ -869,7 +869,7 @@
             "privacy": {
                 "title": "Politique de Confidentialité",
                 "subtitle": "Votre confidentialité est notre priorité",
-                "lastUpdated": "Dernière mise à jour : 12 mai 2025",
+                "lastUpdated": "Dernière mise à jour : 12 mai 2026",
                 "introduction": {
                     "title": "Introduction",
                     "description": "ApplyOns s'engage à protéger votre vie privée et vos données personnelles. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations."
@@ -978,7 +978,7 @@
                 }
             },
             "social": "Réseaux sociaux",
-            "rights": "Tous droits réservés.",
+            "rights": "2026 APPLYONS © 2026 -",
             "newsletter": {
                 "title": "Newsletter",
                 "subtitle": "Inscrivez-vous pour recevoir nos actualités",
@@ -1204,7 +1204,7 @@
             "legal": "Mentions légales",
             "privacy": "Politique de confidentialité",
             "terms": "Conditions d'utilisation",
-            "rights": "Tous droits réservés.",
+            "rights": "2026 APPLYONS © 2026 -",
             "social": {
                 "facebook": "Suivez-nous sur Facebook",
                 "twitter": "Suivez-nous sur Twitter",
@@ -2729,7 +2729,7 @@
     "privacy": {
         "title": "Politique de confidentialité",
         "subtitle": "Comment nous protégeons et utilisons vos données personnelles.",
-        "lastUpdated": "Dernière mise à jour : 19 mai 2025",
+        "lastUpdated": "Dernière mise à jour : 19 mai 2026",
         "introduction": {
             "title": "Introduction",
             "description": "Chez Applysons, la confidentialité de vos données est notre priorité. Cette politique explique comment nous collectons, utilisons et protégeons vos informations."
@@ -2840,7 +2840,7 @@
     "cookies": {
         "title": "Politique des cookies",
         "subtitle": "Comment ApplyOns utilise les cookies et technologies similaires.",
-        "lastUpdated": "Dernière mise à jour : février 2025",
+        "lastUpdated": "Dernière mise à jour : février 2026",
         "intro": {
             "title": "Introduction",
             "description": "ApplyOns utilise des cookies et des technologies similaires pour assurer le bon fonctionnement de la plateforme, améliorer votre expérience et respecter les exigences légales. Cette politique s'applique à l'ensemble de nos services."
@@ -3345,8 +3345,7 @@
     },
     "applyons_newFeatures": {
         "title": "Fonctionnalités clés",
-        "items": [
-            {
+        "items": [{
                 "title": "Mises à jour en temps réel",
                 "description": "Vérifications de documents et formulaires par IA, en temps réel."
             },
@@ -3362,8 +3361,7 @@
     },
     "applyons_targetAudience": {
         "title": "Conçu pour",
-        "items": [
-            {
+        "items": [{
                 "title": "Écoles et universités"
             },
             {

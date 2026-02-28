@@ -285,7 +285,8 @@
             "cookies": "Cookies",
             "legalNotice": "Impressum",
             "security": "Sicherheit & Vertrauen",
-            "copyright": "Alle Rechte vorbehalten"
+            "copyright": "Alle Rechte vorbehalten",
+            "rights": "2026 APPLYONS © 2026 -"
         },
         "about": {
             "title": "Über ApplyOns",
@@ -884,7 +885,7 @@
         "legal": "Rechtliches",
         "privacy": "Datenschutzerklärung",
         "terms": "Nutzungsbedingungen",
-        "rights": "Alle Rechte vorbehalten."
+        "rights": "2026 APPLYONS © 2026 -"
     },
     "footer": {
         "description": "Vereinfachen Sie die Überprüfung Ihres Diploms mit unserer sicheren und innovativen Plattform.",
@@ -899,7 +900,7 @@
         "legal": "Rechtliches",
         "privacy": "Datenschutzerklärung",
         "terms": "Nutzungsbedingungen",
-        "rights": "Alle Rechte vorbehalten.",
+        "rights": "2026 APPLYONS © 2026 -",
         "social": {
             "facebook": "Folgen Sie uns auf Facebook",
             "twitter": "Folgen Sie uns auf Twitter",
@@ -911,7 +912,7 @@
         "home": "Startseite",
         "about": "Über uns",
         "features": "Dienstleistungen",
-        "app": "Die Anwendung",
+        "app": "Anwendung",
         "solutions": "Lösungen",
         "pricing": "Preise",
         "contact": "Kontakt",
@@ -2253,7 +2254,7 @@
     "privacy": {
         "title": "Datenschutzrichtlinie",
         "subtitle": "Wie wir Ihre persönlichen Daten schützen und verwenden.",
-        "lastUpdated": "Letzte Aktualisierung: 19. Mai 2025",
+        "lastUpdated": "Letzte Aktualisierung: 19. Mai 2026",
         "introduction": {
             "title": "Einleitung",
             "description": "Bei Applysons hat der Schutz Ihrer Daten höchste Priorität. Diese Richtlinie erklärt, wie wir Ihre Informationen sammeln, verwenden und schützen."
@@ -2760,8 +2761,7 @@
     },
     "applyons_newFeatures": {
         "title": "Wichtige Funktionen",
-        "items": [
-            {
+        "items": [{
                 "title": "Echtzeit-Updates",
                 "description": "KI-gestützte Prüfungen von Dokumenten und Formularen in Echtzeit."
             },
@@ -2777,8 +2777,7 @@
     },
     "applyons_targetAudience": {
         "title": "Konzipiert für",
-        "items": [
-            {
+        "items": [{
                 "title": "Schulen und Universitäten"
             },
             {
