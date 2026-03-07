@@ -194,12 +194,22 @@ export default function AppDescription() {
             </Paragraph>
             <Card style={{ borderRadius: 12, background: "#fff", border: "1px solid #e2e8f0" }} bodyStyle={{ padding: 24 }}>
               <List
+                style={{ textAlign: "left" }}
                 dataSource={[1, 2, 3, 4, 5].map((i) => ({
                   step: i,
                   text: t(`applyons.app.workflow.step${i}`),
                 }))}
                 renderItem={({ step, text }) => (
-                  <List.Item style={{ borderBottom: "none", padding: "12px 0", alignItems: "flex-start" }}>
+                  <List.Item
+                    style={{
+                      borderBottom: "none",
+                      padding: "12px 0",
+                      display: "flex",
+                      alignItems: "flex-start",
+                      flexDirection: "row",
+                      justifyContent: "flex-start",
+                    }}
+                  >
                     <div
                       style={{
                         width: 32,
@@ -217,7 +227,7 @@ export default function AppDescription() {
                     >
                       {step}
                     </div>
-                    <Text style={{ fontSize: "1rem" }}>{text}</Text>
+                    <Text style={{ fontSize: "1rem", flex: 1, textAlign: "left" }}>{text}</Text>
                   </List.Item>
                 )}
               />
