@@ -5,11 +5,7 @@ import App from "./App";
 import { AppProvider } from "./AppContext";
 import './utils/i18n';
 
-
 import "@/assets/css/style.css";
-
-// import "./assets/css/style.css";
-
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
