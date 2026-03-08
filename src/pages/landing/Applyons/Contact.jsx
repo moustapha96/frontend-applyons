@@ -17,9 +17,14 @@ import { createContact } from "@/services/contactService"
 import { toast } from "sonner"
 
 const Contact = () => {
-    const { t } = useTranslation()
+    const { t, i18n } = useTranslation()
     const [loading, setLoading] = useState(false)
-    const { settings } = useSettingsContext()
+    const { settings, pageContent } = useSettingsContext()
+    const lang = (i18n.language || "fr").split("-")[0]
+    const contactCms = pageContent?.contact?.[lang]
+    const hasContactBody = contactCms?.body && String(contactCms.body).trim().length > 0
+    const contactTitle = contactCms?.title ?? t("contact.title")
+    const contactSubtitle = contactCms?.subtitle ?? t("contact.subtitle")
     const contactEmail = settings?.contactEmail || "support@applyons.com"
     const contactPhone = settings?.contactPhone || settings?.contactMobile || "+1(917) 943-9275"
     const contactAddress = settings?.contactAddress || "123 Street, New York, USA"
@@ -95,13 +100,22 @@ const Contact = () => {
                 <HeaderApplyons menuItems={menuItems} />
 
 
-                <div className="bg-gray-50 pb-16 pt-24">
+                <div className="bg-gray-50 dark:bg-slate-900 pb-16 pt-24">
                     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                         <div className="max-w-3xl mx-auto">
                             <div className="text-center mb-12">
-                                <h1 className="text-4xl font-bold text-gray-900 mb-4">{t("contact.title")}</h1>
-                                <p className="text-lg text-gray-600">{t("contact.subtitle")}</p>
+                                <h1 className="text-4xl font-bold text-gray-900 mb-4">{contactTitle}</h1>
+                                <p className="text-lg text-gray-600">{contactSubtitle}</p>
                             </div>
+
+                            {hasContactBody && (
+                                <div className="bg-white shadow-xl rounded-xl p-8 mb-8">
+                                    <div
+                                        className="page-content-html text-gray-600 prose prose-gray max-w-none prose-headings:text-gray-900 prose-p:text-gray-600 prose-li:text-gray-600 prose-a:text-[#254c6b] prose-a:no-underline hover:prose-a:underline"
+                                        dangerouslySetInnerHTML={{ __html: contactCms.body }}
+                                    />
+                                </div>
+                            )}
 
                             <div className="bg-white shadow-xl rounded-xl p-8">
                                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">

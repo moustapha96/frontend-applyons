@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
-import { fetchSettings, fetchPaymentSettings } from "@/services/settingsService";
+import { fetchSettings, fetchPaymentSettings, fetchPageContent } from "@/services/settingsService";
 
 const SettingsContext = createContext(undefined);
 
@@ -11,9 +11,24 @@ export function useSettingsContext() {
   return context;
 }
 
+const PAGE_KEYS = [
+  "landing",
+  "about",
+  "contact",
+  "privacy-policy",
+  "terms-and-conditions",
+  "cookie-policy",
+  "legal-notice",
+  "security-trust",
+];
+
+/** Contenu par page et par langue : { "landing": { fr: {...}, en: {...} }, "privacy-policy": {...}, ... } */
+const initialPageContent = Object.fromEntries(PAGE_KEYS.map((k) => [k, null]));
+
 export function SettingsProvider({ children }) {
   const [settings, setSettings] = useState(null);
   const [paymentSettings, setPaymentSettings] = useState(null);
+  const [pageContent, setPageContent] = useState(initialPageContent);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -24,17 +39,29 @@ export function SettingsProvider({ children }) {
       try {
         setLoading(true);
 
-        const [settingsRes, paymentRes] = await Promise.all([
+        const [settingsRes, paymentRes, ...pageContentResList] = await Promise.all([
           fetchSettings(),
           fetchPaymentSettings(),
+          ...PAGE_KEYS.map((key) => fetchPageContent(key)),
         ]);
 
         const settingsData = settingsRes?.data ?? settingsRes;
         const paymentData = paymentRes?.data ?? paymentRes;
+        const nextPageContent = { ...initialPageContent };
+        pageContentResList.forEach((res, i) => {
+          const key = PAGE_KEYS[i];
+          const content =
+            res?.data?.data?.content ??
+            res?.data?.content ??
+            res?.content ??
+            null;
+          nextPageContent[key] = content && typeof content === "object" ? content : {};
+        });
 
         if (isMounted) {
           setSettings(settingsData);
           setPaymentSettings(paymentData);
+          setPageContent(nextPageContent);
           setError(null);
         }
       } catch (err) {
@@ -63,10 +90,11 @@ export function SettingsProvider({ children }) {
     () => ({
       settings,
       paymentSettings,
+      pageContent,
       loading,
       error,
     }),
-    [settings, paymentSettings, loading, error]
+    [settings, paymentSettings, pageContent, loading, error]
   );
 
   return (

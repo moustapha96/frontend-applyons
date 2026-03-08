@@ -14,8 +14,11 @@ import { useSettingsContext } from "@/context"
 const { Title, Paragraph, Text } = Typography
 
 const About = () => {
-  const { t } = useTranslation()
-  const { settings } = useSettingsContext()
+  const { t, i18n } = useTranslation()
+  const { settings, pageContent } = useSettingsContext()
+  const lang = (i18n.language || "fr").split("-")[0]
+  const aboutContent = pageContent?.about?.[lang]
+  const hasAboutBody = aboutContent?.body && String(aboutContent.body).trim().length > 0
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -53,11 +56,12 @@ const About = () => {
     <LandingLayout>
       <PageMetaData title={t("applyons.about.title")} />
 
-      <Layout style={{ minHeight: "100vh", background: "#fff" }}>
+      <Layout className="min-h-screen bg-white dark:bg-slate-900" style={{ minHeight: "100vh" }}>
         <HeaderApplyons menuItems={menuItems} />
 
         {/* Hero */}
         <div
+          className="dark:!bg-gradient-to-b dark:!from-slate-900 dark:!to-slate-800"
           style={{
             padding: "100px 24px 64px",
             background: "linear-gradient(165deg, #f0f4f8 0%, #e8eef5 40%, #f5f7fa 100%)",
@@ -93,6 +97,7 @@ const About = () => {
             </div>
             <Title
               level={1}
+              className="dark:!text-gray-100"
               style={{
                 color: "#0f172a",
                 marginBottom: "16px",
@@ -105,6 +110,7 @@ const About = () => {
               {t("applyons.about.title")}
             </Title>
             <Paragraph
+              className="dark:!text-gray-300"
               style={{
                 fontSize: "1.125rem",
                 color: "#64748b",
@@ -119,7 +125,25 @@ const About = () => {
         </div>
 
         {/* Content */}
-        <div style={{ maxWidth: "900px", margin: "0 auto", padding: "48px 24px 64px" }}>
+        <div className="dark:bg-slate-900" style={{ maxWidth: "900px", margin: "0 auto", padding: "48px 24px 64px" }}>
+          {hasAboutBody ? (
+            <Card
+              style={{
+                marginBottom: "24px",
+                borderRadius: "20px",
+                boxShadow: "0 4px 20px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(0, 0, 0, 0.04)",
+                border: "none",
+                overflow: "hidden",
+              }}
+              bodyStyle={{ padding: "32px 40px" }}
+            >
+              <div
+                className="page-content-html text-gray-600 dark:text-gray-300 prose prose-gray dark:prose-invert max-w-none prose-headings:text-gray-900 dark:prose-headings:text-gray-100 prose-p:text-gray-600 dark:prose-p:text-gray-300 prose-li:text-gray-600 dark:prose-li:text-gray-300 prose-a:text-[#254c6b] dark:prose-a:text-blue-300 prose-a:no-underline hover:prose-a:underline"
+                dangerouslySetInnerHTML={{ __html: aboutContent.body }}
+              />
+            </Card>
+          ) : (
+            <>
           {/* Mission */}
           <Card
             style={{
@@ -388,6 +412,8 @@ const About = () => {
               {t("applyons.footer.contact")}
             </Link>
           </div>
+            </>
+          )}
         </div>
 
       </Layout>

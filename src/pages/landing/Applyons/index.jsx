@@ -58,7 +58,7 @@ export default function ApplyOnsPage() {
 
         <LandingLayout>
             <PageMetaData title="Streamline any application process." />
-            <Layout className="min-h-screen">
+            <Layout className="min-h-screen bg-white dark:bg-slate-900">
                 {/* <AppHeader /> */}
                 <HeaderApplyons menuItems={menuItems} />
                 <Content>

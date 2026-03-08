@@ -7,15 +7,15 @@ const { Title, Paragraph } = Typography;
 
 
 const FeatureCard = ({ icon, title, description }) => (
-    <Card className="h-full border-none shadow-sm hover:shadow-md transition-shadow duration-300">
+    <Card className="h-full border-none shadow-sm hover:shadow-md transition-shadow duration-300 dark:!bg-slate-800 dark:!border-slate-700">
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <div className="text-[#1e5b8d] mb-4">
+            <div className="text-[#1e5b8d] dark:text-blue-300 mb-4">
                 {icon}
             </div>
-            <Title level={4} className="text-[#0d2b45] mb-2">
+            <Title level={4} className="text-[#0d2b45] dark:!text-gray-100 mb-2">
                 {title}
             </Title>
-            <Paragraph className="text-[#4a5568]">
+            <Paragraph className="text-[#4a5568] dark:!text-gray-300">
                 {description}
             </Paragraph>
         </div>
@@ -43,8 +43,8 @@ const Features = () => {
     ];
 
     return (
-        <div className="py-16 px-4 md:px-8 bg-white">
-            <div className="w-full overflow-hidden  bg-gradient-to-b from-[#aed3e7] to-white">
+        <div className="py-16 px-4 md:px-8 bg-white dark:bg-slate-900">
+            <div className="w-full overflow-hidden bg-gradient-to-b from-[#aed3e7] to-white dark:from-slate-800 dark:to-slate-900">
                 <svg
                     viewBox="0 0 1200 120"
                     preserveAspectRatio="none"
@@ -52,14 +52,14 @@ const Features = () => {
                 >
                     <path
                         d="M0,120 C600,0 600,0 1200,120 L1200,0 L0,0 Z"
-                        className="fill-white"
+                        className="fill-white dark:fill-slate-900"
                     />
                 </svg>
             </div>
 
 
             <div className="max-w-5xl mx-auto">
-                <Title level={2} className="text-3xl font-bold text-center text-[#0d2b45] mb-12">
+                <Title level={2} className="text-3xl font-bold text-center text-[#0d2b45] dark:text-gray-100 mb-12">
                     {t('applyons_newFeatures.title')}
                 </Title>
                 <Row gutter={[24, 24]}>

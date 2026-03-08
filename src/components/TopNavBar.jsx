@@ -90,12 +90,12 @@ const TopNavBar = ({ menuItems, position, hasDownloadButton }) => {
         <LuChevronDown className="w-4 h-4" />
       </button>
       {showLanguageDropdown && (
-        <div className={`absolute ${isMobile ? 'left-0' : 'right-0'} mt-2 py-2 w-32 bg-white rounded-md shadow-xl z-20`}>
+        <div className={`absolute ${isMobile ? 'left-0' : 'right-0'} mt-2 py-2 w-32 bg-white dark:bg-slate-800 rounded-md shadow-xl dark:border dark:border-slate-700 z-20`}>
           {Object.keys(flags).map((lang) => (
             <button
               key={lang}
               onClick={() => changeLanguage(lang)}
-              className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full"
+              className="flex items-center px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-slate-700 w-full"
             >
               <img src={flags[lang]} alt={lang} className="w-5 h-5 mr-2" />
               <span>{lang.toUpperCase()}</span>

@@ -8,12 +8,12 @@ const { Title } = Typography;
 
 
 const AudienceCard = ({ icon, title }) => (
-    <Card className="h-full border-none shadow-sm hover:shadow-md transition-shadow duration-300">
+    <Card className="h-full border-none shadow-sm hover:shadow-md transition-shadow duration-300 dark:!bg-slate-800 dark:!border-slate-700">
         <div className="flex flex-col items-center text-center">
-            <div className="text-[#1e5b8d] mb-4">
+            <div className="text-[#1e5b8d] dark:text-blue-300 mb-4">
                 {icon}
             </div>
-            <Title level={5} className="text-[#0d2b45] m-0">
+            <Title level={5} className="text-[#0d2b45] dark:!text-gray-100 m-0">
                 {title}
             </Title>
         </div>
@@ -41,9 +41,9 @@ const TargetAudience = () => {
     ];
 
     return (
-        <div className="py-16 px-4 md:px-8 bg-[#f8fafc]">
+        <div className="py-16 px-4 md:px-8 bg-[#f8fafc] dark:bg-slate-900">
             <div className="max-w-5xl mx-auto">
-                <Title level={2} className="text-3xl font-bold text-center text-[#0d2b45] mb-12">
+                <Title level={2} className="text-3xl font-bold text-center text-[#0d2b45] dark:text-gray-100 mb-12">
                     {t('applyons_targetAudience.title')}
                 </Title>
                 <Row gutter={[24, 24]}>

@@ -25,11 +25,11 @@ const AppHeader = () => {
     ];
 
     return (
-        <Header className="bg-white h-16 px-4 md:px-8 flex items-center justify-between fixed w-full z-10 shadow-sm">
+        <Header className="bg-white dark:bg-slate-900 h-16 px-4 md:px-8 flex items-center justify-between fixed w-full z-10 shadow-sm dark:border-b dark:border-slate-700">
             <div className="flex items-center">
                 <div className="flex items-center mr-4">
-                    <CheckSquare className="w-8 h-8 text-[#1e5b8d]" />
-                    <span className="ml-2 text-xl font-bold text-[#1e5b8d]">Applyons</span>
+                    <CheckSquare className="w-8 h-8 text-[#1e5b8d] dark:text-blue-300" />
+                    <span className="ml-2 text-xl font-bold text-[#1e5b8d] dark:text-blue-300">Applyons</span>
                 </div>
                 <div className="hidden md:block">
                     <Menu

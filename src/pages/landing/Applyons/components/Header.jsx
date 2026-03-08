@@ -29,6 +29,7 @@ export default function HeaderApplyons({ menuItems }) {
     return (
         <>
             <Header
+                className="!bg-white dark:!bg-slate-900 dark:!border-b dark:!border-slate-700"
                 style={{
                     position: "fixed",
                     zIndex: 100,

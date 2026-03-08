@@ -18,16 +18,6 @@ export async function fetchSettings() {
 
 /**
  * Récupère les paramètres de paiement.
- * Exemple de réponse:
- * {
- *   success: true,
- *   data: {
- *     currency: "USD",
- *     demandeAuthentification: 100,
- *     application: 49,
- *     abonnement: { ... }
- *   }
- * }
  * Endpoint backend: GET /settings/payment-settings/get-all
  */
 export async function fetchPaymentSettings() {
@@ -42,6 +32,24 @@ export async function fetchPaymentSettings() {
       error
     );
     throw error;
+  }
+}
+
+/**
+ * Récupère le contenu éditable d'une page du frontend (landing, about, contact, privacy-policy, terms-and-conditions, cookie-policy, legal-notice, security-trust).
+ * Réponse: { success, data: { pageKey, content: { fr: {...}, en: {...} } } }
+ * Endpoint backend: GET /settings/page-content/:pageKey
+ */
+export async function fetchPageContent(pageKey) {
+  try {
+    const response = await HttpClient.get(
+      `${urlApi}settings/page-content/${pageKey}`
+    );
+    console.log("response", response.data);
+    return response.data;
+  } catch (error) {
+    console.error("Erreur récupération contenu page:", error);
+    return { success: false, data: { pageKey, content: {} } };
   }
 }
 

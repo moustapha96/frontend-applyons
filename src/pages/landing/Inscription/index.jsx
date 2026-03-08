@@ -172,14 +172,14 @@ export default function InscriptionPage() {
                 <div className="mb-6">
                     <div className="flex border-b border-gray-200 justify-between w-full">
                         <button
-                            className={`py-2 px-4 font-medium ${activeTab === 'demandeur' ? 'text-blueLogo border-b-2 border-blueLogo' : 'text-gray-500 hover:text-gray-700'}`}
+                            className={`py-2 px-4 font-medium ${activeTab === 'demandeur' ? 'text-blueLogo border-b-2 border-blueLogo' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'}`}
                             onClick={() => setActiveTab('demandeur')}
                         >
                             {t('inscriptionPage.createApplicantAccount')}
                         </button>
 
                         <button
-                            className={`py-2 px-4 font-medium ${activeTab === 'institut' ? 'text-blueLogo border-b-2 border-blueLogo' : 'text-gray-500 hover:text-gray-700'}`}
+                            className={`py-2 px-4 font-medium ${activeTab === 'institut' ? 'text-blueLogo border-b-2 border-blueLogo' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'}`}
                             onClick={() => setActiveTab('institut')}
                         >
                             {t('inscriptionPage.createInstituteAccount')}
@@ -188,7 +188,7 @@ export default function InscriptionPage() {
                 </div>
 
                 {activeTab === 'demandeur' && (
-                    <div className="bg-white shadow-md rounded-lg p-6">
+                    <div className="bg-white dark:bg-slate-800 shadow-md rounded-lg p-6 dark:border dark:border-slate-700">
                         <h2 className="text-2xl font-semibold mb-4">{t('inscriptionPage.createApplicantAccount')}</h2>
                         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                             <div>
@@ -377,7 +377,7 @@ export default function InscriptionPage() {
                 )}
 
                 {activeTab === 'institut' && (
-                    <div className="bg-white shadow-md rounded-lg p-6">
+                    <div className="bg-white dark:bg-slate-800 shadow-md rounded-lg p-6 dark:border dark:border-slate-700">
                         <h2 className="text-2xl font-semibold mb-4">{t('inscriptionPage.createInstituteAccount')}</h2>
                         <form onSubmit={handleSubmit(onSubmitInstitut)} className="space-y-6">
                             <div>
@@ -475,7 +475,7 @@ export default function InscriptionPage() {
 
                             <div>
                                 <label htmlFor="siteWeb" className="block text-sm font-medium text-gray-700">
-                                    {t('inscriptionPage.website')} <span className="text-xs text-gray-500">(optional)</span>
+                                    {t('inscriptionPage.website')} <span className="text-xs text-gray-500 dark:text-gray-400">(optional)</span>
                                 </label>
                                 <TextFormInput
                                     containerClassName="mb-4"

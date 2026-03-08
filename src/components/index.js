@@ -7,6 +7,7 @@ export { default as ComponentContainerCard } from "./ComponentContainerCard";
 export { default as Footer } from "./Footer";
 export { default as GlightBox } from "./GlightBox";
 export { default as PageMetaData } from "./PageMetaData";
+export { default as PageContentBody } from "./PageContentBody";
 export { default as Preloader } from "./Preloader";
 export { default as ProjectSwiper } from "./ProjectSwiper";
 export { default as ScrollToTop } from "./ScrollToTop";

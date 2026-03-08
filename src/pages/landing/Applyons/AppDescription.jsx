@@ -78,7 +78,7 @@ export default function AppDescription() {
       <Layout className="min-h-screen">
         <HeaderApplyons menuItems={menuItems} />
 
-        <div className="bg-gray-50 pb-20 pt-24">
+        <div className="bg-gray-50 dark:bg-slate-900 pb-20 pt-24">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             {/* Intro */}
             <div className="text-center mb-16">
