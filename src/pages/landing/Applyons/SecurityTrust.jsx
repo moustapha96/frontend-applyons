@@ -7,11 +7,16 @@ import { getApplyonsMenuItems } from "./navConfig"
 import { LandingLayout } from "@/layouts"
 import { Layout } from "antd"
 import { useEffect } from "react"
-import { Shield, Lock, Server, FileCheck, Globe, Award } from "lucide-react"
+import { Lock, Server, FileCheck, Globe, Award } from "lucide-react"
 import PageContentBody from "@/components/PageContentBody"
+import { useSettingsContext } from "@/context"
 
 const SecurityTrust = () => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+  const { pageContent } = useSettingsContext()
+  const lang = (i18n.language || "fr").split("-")[0]
+  const content = pageContent?.["security-trust"]?.[lang]
+  const pageTitle = content?.title ?? t("security.title")
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -29,7 +34,7 @@ const SecurityTrust = () => {
 
   return (
     <LandingLayout>
-      <PageMetaData title={t("security.title")} />
+      <PageMetaData title={pageTitle} />
       <Layout className="min-h-screen">
         <HeaderApplyons menuItems={menuItems} />
         <div className="bg-gray-50 dark:bg-slate-900 pb-16 pt-24">

@@ -19,6 +19,9 @@ const About = () => {
   const lang = (i18n.language || "fr").split("-")[0]
   const aboutContent = pageContent?.about?.[lang]
   const hasAboutBody = aboutContent?.body && String(aboutContent.body).trim().length > 0
+  const aboutTitle = aboutContent?.title ?? t("applyons.about.title")
+  const aboutSubtitle = aboutContent?.subtitle ?? t("applyons.about.subtitle")
+  const subtitleIsHtml = aboutSubtitle && String(aboutSubtitle).trim().startsWith("<")
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -35,7 +38,6 @@ const About = () => {
 
   // Support à la fois settings.teamMembers et settings.data.teamMembers (selon la forme de la réponse API)
   const rawTeam = settings?.teamMembers ?? settings?.data?.teamMembers
-  console.log(rawTeam)
   const teamFromSettings = Array.isArray(rawTeam) && rawTeam.length > 0 ? rawTeam : null
   const teamMembers = teamFromSettings ?? [1, 2, 3]
   const useI18nTeam = !teamFromSettings
@@ -91,9 +93,10 @@ const About = () => {
                 fontWeight: 600,
                 letterSpacing: "0.02em",
               }}
+              className="dark:!bg-slate-700/50 dark:!text-slate-200"
             >
               <Target size={18} strokeWidth={2} />
-              {t("applyons.about.title")}
+              {aboutTitle}
             </div>
             <Title
               level={1}
@@ -107,20 +110,29 @@ const About = () => {
                 lineHeight: 1.2,
               }}
             >
-              {t("applyons.about.title")}
+              {aboutTitle}
             </Title>
-            <Paragraph
-              className="dark:!text-gray-300"
-              style={{
-                fontSize: "1.125rem",
-                color: "#64748b",
-                maxWidth: "600px",
-                margin: "0 auto",
-                lineHeight: 1.6,
-              }}
-            >
-              {t("applyons.about.subtitle")}
-            </Paragraph>
+            {(aboutSubtitle && String(aboutSubtitle).trim()) ? (
+              <div
+                className="dark:!text-gray-300 about-hero-subtitle"
+                style={{
+                  fontSize: "1.125rem",
+                  color: "#64748b",
+                  maxWidth: "600px",
+                  margin: "0 auto",
+                  lineHeight: 1.6,
+                }}
+              >
+                {subtitleIsHtml ? (
+                  <span
+                    className="page-content-html prose prose-sm prose-gray dark:prose-invert max-w-none prose-p:!my-1 prose-p:first-of-type:!mt-0 prose-p:last-of-type:!mb-0"
+                    dangerouslySetInnerHTML={{ __html: aboutSubtitle }}
+                  />
+                ) : (
+                  aboutSubtitle
+                )}
+              </div>
+            ) : null}
           </div>
         </div>
 
@@ -295,17 +307,21 @@ const About = () => {
               </Col>
             ))}
           </Row>
+            </>
+          )}
 
-          {/* Team */}
+          {/* Notre équipe : toujours affiché */}
           <Title
             level={2}
             style={{
               color: "#254c6b",
               textAlign: "center",
               marginBottom: "12px",
+              marginTop: hasAboutBody ? "32px" : 0,
               fontSize: "1.75rem",
               fontWeight: 700,
             }}
+            className="dark:!text-gray-100"
           >
             {t("applyons.about.team.title")}
           </Title>
@@ -318,6 +334,7 @@ const About = () => {
               margin: "0 auto 32px",
               lineHeight: 1.6,
             }}
+            className="dark:!text-gray-400"
           >
             {t("applyons.about.team.description")}
           </Paragraph>
@@ -342,6 +359,7 @@ const About = () => {
                       overflow: "hidden",
                     }}
                     bodyStyle={{ padding: "28px 24px" }}
+                    className="dark:!bg-slate-800/80 dark:!border-slate-700"
                   >
                     <div
                       style={{
@@ -365,12 +383,12 @@ const About = () => {
                         initials
                       )}
                     </div>
-                    <Title level={5} style={{ color: "#1e293b", marginBottom: "4px", fontSize: "1.1rem" }}>
+                    <Title level={5} style={{ color: "#1e293b", marginBottom: "4px", fontSize: "1.1rem" }} className="dark:!text-gray-100">
                       {name}
                     </Title>
-                    <Text style={{ color: "#64748b", fontSize: "0.9rem" }}>{role}</Text>
+                    <Text style={{ color: "#64748b", fontSize: "0.9rem" }} className="dark:!text-gray-400">{role}</Text>
                     {description ? (
-                      <Paragraph style={{ marginTop: 8, marginBottom: 0, fontSize: "0.85rem", color: "#64748b", lineHeight: 1.5 }}>
+                      <Paragraph style={{ marginTop: 8, marginBottom: 0, fontSize: "0.85rem", color: "#64748b", lineHeight: 1.5 }} className="dark:!text-gray-400">
                         {description}
                       </Paragraph>
                     ) : null}
@@ -380,7 +398,7 @@ const About = () => {
             })}
           </Row>
 
-          {/* CTA */}
+          {/* CTA : toujours affiché */}
           <div
             style={{
               marginTop: "48px",
@@ -390,8 +408,9 @@ const About = () => {
               textAlign: "center",
               border: "1px solid rgba(37, 76, 107, 0.12)",
             }}
+            className="dark:!bg-slate-800/50 dark:!border-slate-700"
           >
-            <Paragraph style={{ color: "#475569", marginBottom: "16px", fontSize: "1.05rem" }}>
+            <Paragraph style={{ color: "#475569", marginBottom: "16px", fontSize: "1.05rem" }} className="dark:!text-gray-300">
               {t("applyons.about.ctaText")}
             </Paragraph>
             <Link
@@ -412,8 +431,6 @@ const About = () => {
               {t("applyons.footer.contact")}
             </Link>
           </div>
-            </>
-          )}
         </div>
 
       </Layout>

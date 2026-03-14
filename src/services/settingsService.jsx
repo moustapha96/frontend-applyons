@@ -1,6 +1,6 @@
 import { HttpClient } from "../helpers";
 
-const urlApi = import.meta.env.VITE_API_URL;
+const urlApi = (import.meta.env.VITE_API_URL || "").replace(/\/?$/, "/");
 
 /**
  * Récupère les paramètres globaux du site depuis l'API.
@@ -38,17 +38,16 @@ export async function fetchPaymentSettings() {
 /**
  * Récupère le contenu éditable d'une page du frontend (landing, about, contact, privacy-policy, terms-and-conditions, cookie-policy, legal-notice, security-trust).
  * Réponse: { success, data: { pageKey, content: { fr: {...}, en: {...} } } }
- * Endpoint backend: GET /settings/page-content/:pageKey
+ * Endpoint backend: GET /api/settings/page-content/:pageKey
  */
 export async function fetchPageContent(pageKey) {
   try {
     const response = await HttpClient.get(
       `${urlApi}settings/page-content/${pageKey}`
     );
-    console.log("response", response.data);
     return response.data;
   } catch (error) {
-    console.error("Erreur récupération contenu page:", error);
+    console.error("Erreur récupération contenu page:", pageKey, error);
     return { success: false, data: { pageKey, content: {} } };
   }
 }

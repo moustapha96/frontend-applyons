@@ -8,9 +8,14 @@ import HeaderApplyons from "./components/Header"
 import { getApplyonsMenuItems } from "./navConfig"
 import { useEffect } from "react"
 import PageContentBody from "@/components/PageContentBody"
+import { useSettingsContext } from "@/context"
 
 const Privacy = () => {
-    const { t } = useTranslation()
+    const { t, i18n } = useTranslation()
+    const { pageContent } = useSettingsContext()
+    const lang = (i18n.language || "fr").split("-")[0]
+    const content = pageContent?.["privacy-policy"]?.[lang]
+    const pageTitle = content?.title ?? t("privacy.title")
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -20,7 +25,7 @@ const Privacy = () => {
 
     return (
         <LandingLayout>
-            <PageMetaData title={t("privacy.title")} />
+            <PageMetaData title={pageTitle} />
 
             <Layout className="min-h-screen">
                 <HeaderApplyons menuItems={menuItems} />

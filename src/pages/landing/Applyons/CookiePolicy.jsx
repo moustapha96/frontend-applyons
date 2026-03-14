@@ -8,9 +8,14 @@ import { LandingLayout } from "@/layouts"
 import { Layout } from "antd"
 import { useEffect } from "react"
 import PageContentBody from "@/components/PageContentBody"
+import { useSettingsContext } from "@/context"
 
 const CookiePolicy = () => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+  const { pageContent } = useSettingsContext()
+  const lang = (i18n.language || "fr").split("-")[0]
+  const content = pageContent?.["cookie-policy"]?.[lang]
+  const pageTitle = content?.title ?? t("cookies.title")
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -20,7 +25,7 @@ const CookiePolicy = () => {
 
   return (
     <LandingLayout>
-      <PageMetaData title={t("cookies.title")} />
+      <PageMetaData title={pageTitle} />
       <Layout className="min-h-screen">
         <HeaderApplyons menuItems={menuItems} />
         <div className="bg-gray-50 dark:bg-slate-900 pb-16 pt-24">

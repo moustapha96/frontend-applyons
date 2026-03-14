@@ -35,16 +35,19 @@ export default function PageContentBody({
             {title}
           </h1>
         )}
-        {subtitle && (
-          <p className="text-lg text-gray-600 dark:text-gray-300">
+        {subtitle && String(subtitle).trim() && (
+          <div className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-center">
             {String(subtitle).trim().startsWith("<") ? (
-              <span dangerouslySetInnerHTML={{ __html: subtitle }} />
+              <div
+                className="page-content-html prose prose-sm prose-gray dark:prose-invert max-w-none prose-p:!my-1 prose-p:first-of-type:!mt-0 prose-p:last-of-type:!mb-0 [&>*]:!text-inherit"
+                dangerouslySetInnerHTML={{ __html: subtitle }}
+              />
             ) : (
-              subtitle
+              <p className="mb-0">{subtitle}</p>
             )}
-          </p>
+          </div>
         )}
-        {lastUpdated && (
+        {lastUpdated && String(lastUpdated).trim() && (
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">{lastUpdated}</p>
         )}
       </div>

@@ -50,12 +50,14 @@ export function SettingsProvider({ children }) {
         const nextPageContent = { ...initialPageContent };
         pageContentResList.forEach((res, i) => {
           const key = PAGE_KEYS[i];
-          const content =
+          const raw =
             res?.data?.data?.content ??
             res?.data?.content ??
             res?.content ??
             null;
-          nextPageContent[key] = content && typeof content === "object" ? content : {};
+          const content =
+            raw && typeof raw === "object" && !Array.isArray(raw) ? raw : {};
+          nextPageContent[key] = content;
         });
 
         if (isMounted) {
